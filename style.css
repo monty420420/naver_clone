@@ -31,4 +31,27 @@ body {
 .header_menu {
   display: flex;
   justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.container_left {
+  width: 63%;
+  height: 400px;
+  background-color: red;
+}
+.container_right {
+  width: 35%;
+  height: 400px;
+}
+.container_right_login {
+  height: 43%;
+  background-color: aqua;
+}
+.container_right_ad {
+  height: 57%;
+  background-color: blue;
 }/*# sourceMappingURL=style.css.map */

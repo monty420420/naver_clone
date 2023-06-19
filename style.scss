@@ -33,3 +33,27 @@ body{
     justify-content: center;
    }
 }
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    &_left{
+        width: 63%;
+        height: 400px;
+        background-color: red;
+    }
+    &_right{
+        width: 35%;
+        height: 400px;
+        
+        &_login{
+           height: 43%;
+           background-color: aqua;
+        }
+        &_ad{
+           height: 57%;
+           background-color: blue;
+        }
+    }
+}
