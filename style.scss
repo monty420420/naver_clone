@@ -1,59 +1,93 @@
-body{
-    margin: 0 119px;
+body {
+    margin: 0 auto;
+    width: 1280px;
 }
-
-
 .header {
     display: block;
-    margin: 30px 0;
-   &_simple{
-    display: flex;
-    justify-content: space-between;
-    &_hamberger{
-        background-color: yellow;
-    }
-   &_function{
+    padding-top: 28px;
+
+    // background-color: yellow;
+    &_simple {
         display: flex;
-        color: red;
-        &_pay{
-            color: red;
-           }
-        &_notice{
-            color: pink;
-           }
+        justify-content: space-between;
+        &_hamburger {
+            all: unset;
+            height: 40px;
+            width: 40px;
+            justify-content: center;
+            &_img {
+                height: 26px;
+                width: 26px;
+                
+                display: inline-block;
+                background-repeat: no-repeat;
+                background-image: url(./sp-main.png);
+                background-size: 422px 405px;
+                background-position: -335px -284px;
+                cursor: pointer;
+            }
+        }
+
+        &_function {
+            display: flex;
+            width: 85px;
+            justify-content: space-between;
+
+            &_pay {
+                height: 28px;
+                width: 30px;
+                display: inline-block;
+                background-repeat: no-repeat;
+                background-image: url(./sp-main.png);
+                background-size: 422px 405px;
+                background-position: -30px -315px;
+            }
+
+            &_notice {
+                height: 28px;
+                width: 30px;
+                display: inline-block;
+                background-repeat: no-repeat;
+                background-image: url(./sp-main.png);
+                background-size: 422px 405px;
+                background-position: -361px -26px;
+                cursor: pointer;
+            }
+        }
     }
-   }
-   &_search{
-    display: flex;
-    justify-content: center;
-    margin: 40px 0;
-   }
-   &_menu{
-    display: flex;
-    justify-content: center;
-   }
+
+    &_search {
+        display: flex;
+        justify-content: center;
+        margin: 40px 0;
+    }
+
+    &_menu {
+        display: flex;
+        justify-content: center;
+    }
 }
 
-.container{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 100px;
-    &_left{
-        width: 63%;
-        height: 400px;
-        background-color: red;
-    }
-    &_right{
-        width: 35%;
-        height: 400px;
-        
-        &_login{
-           height: 43%;
-           background-color: aqua;
-        }
-        &_ad{
-           height: 57%;
-           background-color: blue;
-        }
-    }
-}
+// .container{
+//     display: flex;
+//     justify-content: space-between;
+//     margin-top: 100px;
+//     &_left{
+//         width: 63%;
+//         height: 400px;
+//         background-color: red;
+//     }
+//     &_right{
+//         width: 35%;
+//         height: 400px;
+
+//         &_login{
+//            height: 43%;
+//            background-color: aqua;
+//         }
+//         &_ad{
+//            height: 57%;
+//            background-color: blue;
+//         }
+//     }
+// }
