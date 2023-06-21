@@ -6,6 +6,8 @@ body {
 .header {
   display: block;
   padding-top: 28px;
+  height: 261px;
+  background-color: yellow;
 }
 .header_simple {
   display: flex;
@@ -54,7 +56,42 @@ body {
 .header_search {
   display: flex;
   justify-content: center;
-  margin: 40px 0;
+  padding-top: 2px;
+  height: 80px;
+}
+.header_search_form {
+  width: 702px;
+  height: 50px;
+  border: 1px solid green;
+  border-radius: 33px;
+  padding-top: 6px;
+  padding-left: 15px;
+  display: flex;
+}
+.header_search_form_logo {
+  height: 44px;
+  width: 50px;
+}
+.header_search_form_logo_a {
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(./sp-main.png);
+  background-size: 442px 425px;
+  background-position: -330px -350px;
+  align-items: center;
+  cursor: pointer;
+}
+.header_search_form_input {
+  height: 44px;
+  width: 480px;
+  border: none;
+  font-size: 28px;
+}
+.header_search_form_input:focus {
+  outline: none;
 }
 .header_menu {
   display: flex;
