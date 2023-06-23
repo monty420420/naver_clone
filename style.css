@@ -7,7 +7,6 @@ body {
   display: block;
   padding-top: 28px;
   height: 261px;
-  background-color: yellow;
 }
 .header_simple {
   display: flex;
@@ -60,38 +59,101 @@ body {
   height: 80px;
 }
 .header_search_form {
-  width: 702px;
-  height: 50px;
-  border: 1px solid green;
+  width: 698px;
+  height: 55px;
+  border: 1px solid #03c75a;
   border-radius: 33px;
   padding-top: 6px;
   padding-left: 15px;
   display: flex;
+  align-items: center;
 }
 .header_search_form_logo {
-  height: 44px;
+  height: 24px;
   width: 50px;
+  margin-right: 5px;
+  margin-top: -5px;
+  border-right: 1px rgb(197, 193, 193) solid;
 }
 .header_search_form_logo_a {
   height: 35px;
   width: 35px;
-  display: inline-block;
-  display: inline-block;
+  display: flex;
   background-repeat: no-repeat;
   background-image: url(./sp-main.png);
   background-size: 442px 425px;
-  background-position: -330px -350px;
-  align-items: center;
+  background-position: -331px -350px;
+  margin-top: -11px;
   cursor: pointer;
 }
-.header_search_form_input {
+.header_search_form_text {
   height: 44px;
-  width: 480px;
-  border: none;
-  font-size: 28px;
+  width: 530px;
+  margin-top: -7px;
 }
-.header_search_form_input:focus {
+.header_search_form_text_input {
+  height: 44px;
+  width: 520px;
+  border: none;
+  z-index: 10;
+  position: relative;
+  padding: 17px 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  font-size: 26px;
+}
+.header_search_form_text_input::-moz-placeholder {
+  font-size: 22px;
+  font-weight: 200;
+  color: rgb(197, 193, 193);
+}
+.header_search_form_text_input::placeholder {
+  font-size: 22px;
+  font-weight: 200;
+  color: rgb(197, 193, 193);
+}
+.header_search_form_text_input:focus {
   outline: none;
+}
+.header_search_form_keyboard-button {
+  border: none;
+  background-color: white;
+  margin-right: 10px;
+  height: 22px;
+  width: 26px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(./sp-main.png);
+  background-size: 422px 405px;
+  background-position: -268px -233px;
+  cursor: pointer;
+}
+.header_search_form_autocomplete-button {
+  border: none;
+  background-color: white;
+  margin-top: -10px;
+  margin-right: 10px;
+  height: 12px;
+  width: 18px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(./sp-main.png);
+  background-size: 422px 405px;
+  background-position: -409px -333px;
+  cursor: pointer;
+}
+.header_search_form_search-button {
+  border: none;
+  background-color: white;
+  margin-top: -2px;
+  height: 25px;
+  width: 28px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(./sp-main.png);
+  background-size: 422px 405px;
+  background-position: -365px -132px;
+  cursor: pointer;
 }
 .header_menu {
   display: flex;
