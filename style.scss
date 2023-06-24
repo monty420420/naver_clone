@@ -145,7 +145,7 @@ body {
                 border: none;
                 background-color: white;
                 margin-top: -10px;
-                margin-right: 10px;
+                margin-right: 12px;
                 height: 12px;
                 width: 13px;
                 display: inline-block;
@@ -176,7 +176,7 @@ body {
         display: flex;
         justify-content: center;
         height: 76px;
-
+        font-size: 15px;
         &_lists {
             display: flex;
             list-style-type: none;
