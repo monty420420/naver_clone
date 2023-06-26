@@ -1,15 +1,16 @@
 :root {}
 
 body {
-    margin: 0 auto;
-    width: 1280px;
 }
 
-
-.header {
+.wrap{
+    min-width: 1340px;
     display: block;
+.header {
+    margin: 0 auto;
+    width: 1280px;
     padding-top: 28px;
-    height: 261px;
+    height: 238px;
     // background-color: yellow;
 
     &_simple {
@@ -70,7 +71,7 @@ body {
 
         &_form {
             width: 698px;
-            height: 55px;
+            height: 54px;
             border: 1px solid #03c75a;
             border-radius: 33px;
             padding-top: 6px;
@@ -579,26 +580,28 @@ body {
 
 }
 
-// .container{
-//     display: flex;
-//     justify-content: space-between;
-//     margin-top: 100px;
-//     &_left{
-//         width: 63%;
-//         height: 400px;
-//         background-color: red;
-//     }
-//     &_right{
-//         width: 35%;
-//         height: 400px;
+.container{
+    display: flex;
+    margin: 0 auto;
+    width: 1280px;
+    justify-content: space-between;
+    &_left{
+        width: 63%;
+        height: 400px;
+        background-color: red;
+    }
+    &_right{
+        width: 35%;
+        height: 400px;
 
-//         &_login{
-//            height: 43%;
-//            background-color: aqua;
-//         }
-//         &_ad{
-//            height: 57%;
-//            background-color: blue;
-//         }
-//     }
-// }
+        &_login{
+           height: 43%;
+           background-color: aqua;
+        }
+        &_ad{
+           height: 57%;
+           background-color: blue;
+        }
+    }
+}
+}
