@@ -529,38 +529,55 @@
 }
 .wrap .setting {
   position: fixed;
-  right: 30px;
-  bottom: 30px;
-  z-index: 50;
-  width: 80px;
-  height: 30px;
   display: flex;
   justify-content: space-between;
+  right: 24px;
+  bottom: 24px;
 }
 .wrap .setting_scroll-up {
-  width: 23px;
-  height: 23px;
-  background-repeat: no-repeat;
-  background-image: url(./sp-main.png);
-  background-size: 422px 405px;
-  background-position: -268px -261px;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: 2px solid #DADCDF;
+  border-radius: 50%;
   cursor: pointer;
-  border: solid 1px;
-  border-radius: 100%;
 }
-.wrap .setting_scroll-up_hover {
+.wrap .setting_scroll-up:hover {
   box-shadow: 1px 1px 5px gray;
 }
-.wrap .setting_mode {
-  width: 23px;
-  height: 23px;
-  background-repeat: no-repeat;
+.wrap .setting_scroll-up::after {
+  content: "";
+  display: flex;
   background-image: url(./sp-main.png);
   background-size: 422px 405px;
-  background-position: -186px -265px;
+  background-position: -293px -270px;
+  background-repeat: no-repeat;
+  margin: 10px auto;
+  width: 16px;
+  height: 16px;
+}
+.wrap .setting_mode {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  background-color: #fff;
+  border: 2px solid #DADCDF;
+  border-radius: 50%;
   cursor: pointer;
-  border: solid 1px;
-  border-radius: 100%;
+}
+.wrap .setting_mode:hover {
+  box-shadow: 1px 1px 5px gray;
+}
+.wrap .setting_mode::after {
+  content: "";
+  display: flex;
+  background-image: url(./sp-main.png);
+  background-size: 422px 405px;
+  background-position: -208px -270px;
+  background-repeat: no-repeat;
+  margin: 10px auto;
+  width: 16px;
+  height: 16px;
 }
 .wrap .setting_mode_hover {
   box-shadow: 1px 1px 5px gray;
