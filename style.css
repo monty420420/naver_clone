@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .wrap {
   min-width: 1340px;
   display: block;
@@ -507,20 +508,72 @@
   height: 1200px;
 }
 .wrap .container_left {
-  float: left;
   width: 830px;
   height: 425px;
   background-color: red;
 }
 .wrap .container_right {
-  float: left;
+  display: block;
   width: 420px;
   height: 400px;
   margin-left: 30px;
 }
 .wrap .container_right_login {
-  height: 163px;
-  background-color: aqua;
+  height: 123.6px;
+  text-align: center;
+  line-height: 20px;
+  padding: 20px;
+  border: 1px solid #DADCDF;
+  border-radius: 8px;
+}
+.wrap .container_right_login_login-text {
+  justify-content: center;
+  font-size: 15px;
+}
+.wrap .container_right_login_login-btn {
+  margin: 15px 0;
+  width: 380px;
+  height: 55px;
+  border-radius: 4px;
+  border: none;
+  background-color: #03c75a;
+  cursor: pointer;
+}
+.wrap .container_right_login_login-btn .login-btn {
+  display: flex;
+  justify-content: center;
+}
+.wrap .container_right_login_login-btn .login-btn_naver-logo {
+  font-size: 18px;
+  color: white;
+  font-weight: 1000;
+}
+.wrap .container_right_login_login-btn .login-btn_login-text {
+  margin-left: 10px;
+  margin-top: 3px;
+  color: white;
+}
+.wrap .container_right_login_login-about {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+}
+.wrap .container_right_login_login-about_id-find {
+  text-decoration: none;
+}
+.wrap .container_right_login_login-about_id-find::after {
+  content: "ㅣ";
+  margin: 5px;
+}
+.wrap .container_right_login_login-about_pw-find {
+  text-decoration: none;
+}
+.wrap .container_right_login_login-about_pw-find::after {
+  content: "ㅣ";
+  margin: 5px;
+}
+.wrap .container_right_login_login-about_regi {
+  text-decoration: none;
 }
 .wrap .container_right_weather {
   margin-top: 26px;
