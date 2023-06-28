@@ -24,7 +24,7 @@
   width: 26px;
   display: inline-block;
   background-repeat: no-repeat;
-  background-image: url(./sp-main.png);
+  background-image: url(./img/sp-main.png);
   background-size: 422px 405px;
   background-position: -335px -284px;
   cursor: pointer;
@@ -39,7 +39,7 @@
   width: 30px;
   display: inline-block;
   background-repeat: no-repeat;
-  background-image: url(./sp-main.png);
+  background-image: url(./img/sp-main.png);
   background-size: 422px 405px;
   background-position: -30px -315px;
 }
@@ -48,7 +48,7 @@
   width: 30px;
   display: inline-block;
   background-repeat: no-repeat;
-  background-image: url(./sp-main.png);
+  background-image: url(./img/sp-main.png);
   background-size: 422px 405px;
   background-position: -361px -26px;
   cursor: pointer;
@@ -81,7 +81,7 @@
   width: 35px;
   display: flex;
   background-repeat: no-repeat;
-  background-image: url(./sp-main.png);
+  background-image: url(./img/sp-main.png);
   background-size: 442px 425px;
   background-position: -331px -350px;
   margin-top: -11px;
@@ -122,7 +122,7 @@
   width: 26px;
   display: inline-block;
   background-repeat: no-repeat;
-  background-image: url(./sp-main.png);
+  background-image: url(./img/sp-main.png);
   background-size: 422px 405px;
   background-position: -268px -233px;
   cursor: pointer;
@@ -136,7 +136,7 @@
   width: 13px;
   display: inline-block;
   background-repeat: no-repeat;
-  background-image: url(./sp-main.png);
+  background-image: url(./img/sp-main.png);
   background-size: 422px 405px;
   background-position: -409px -333px;
   cursor: pointer;
@@ -149,7 +149,7 @@
   width: 25px;
   display: inline-block;
   background-repeat: no-repeat;
-  background-image: url(./sp-main.png);
+  background-image: url(./img/sp-main.png);
   background-size: 422px 405px;
   background-position: -365px -132px;
   cursor: pointer;
@@ -173,7 +173,7 @@
   width: 50px;
   margin-right: 15px;
   background-repeat: no-repeat;
-  background-image: url(./sp-main.png);
+  background-image: url(./img/sp-main.png);
   background-size: 422px 405px;
   background-position: -2px -129px;
   border-radius: 38%;
@@ -190,7 +190,7 @@
   height: 48px;
   width: 48px;
   background-repeat: no-repeat;
-  background-image: url(./sp-main.png);
+  background-image: url(./img/sp-main.png);
   background-size: 422px 405px;
   background-position: -248px -90px;
   cursor: pointer;
@@ -209,7 +209,7 @@
   width: 50px;
   margin-right: 15px;
   background-repeat: no-repeat;
-  background-image: url(./sp-main.png);
+  background-image: url(./img/sp-main.png);
   background-size: 422px 405px;
   background-position: -2px -129px;
   border-radius: 38%;
@@ -225,7 +225,7 @@
   height: 48px;
   width: 48px;
   background-repeat: no-repeat;
-  background-image: url(./sp-main.png);
+  background-image: url(./img/sp-main.png);
   background-size: 422px 405px;
   background-position: -249px 1px;
   cursor: pointer;
@@ -244,7 +244,7 @@
   width: 50px;
   margin-right: 15px;
   background-repeat: no-repeat;
-  background-image: url(./sp-main.png);
+  background-image: url(./img/sp-main.png);
   background-size: 422px 405px;
   background-position: -2px -129px;
   border-radius: 38%;
@@ -260,7 +260,7 @@
   height: 48px;
   width: 48px;
   background-repeat: no-repeat;
-  background-image: url(./sp-main.png);
+  background-image: url(./img/sp-main.png);
   background-size: 422px 405px;
   background-position: -200px -95px;
   cursor: pointer;
@@ -279,7 +279,7 @@
   width: 50px;
   margin-right: 15px;
   background-repeat: no-repeat;
-  background-image: url(./sp-main.png);
+  background-image: url(./img/sp-main.png);
   background-size: 422px 405px;
   background-position: -2px -129px;
   border-radius: 38%;
@@ -295,7 +295,7 @@
   height: 48px;
   width: 48px;
   background-repeat: no-repeat;
-  background-image: url(./sp-main.png);
+  background-image: url(./img/sp-main.png);
   background-size: 422px 405px;
   background-position: -88px -205px;
   cursor: pointer;
@@ -314,7 +314,7 @@
   width: 50px;
   margin-right: 15px;
   background-repeat: no-repeat;
-  background-image: url(./sp-main.png);
+  background-image: url(./img/sp-main.png);
   background-size: 422px 405px;
   background-position: -2px -129px;
   border-radius: 38%;
@@ -330,7 +330,7 @@
   height: 48px;
   width: 48px;
   background-repeat: no-repeat;
-  background-image: url(./sp-main.png);
+  background-image: url(./img/sp-main.png);
   background-size: 422px 405px;
   background-position: 2px -205px;
   cursor: pointer;
@@ -349,7 +349,7 @@
   width: 50px;
   margin-right: 15px;
   background-repeat: no-repeat;
-  background-image: url(./sp-main.png);
+  background-image: url(./img/sp-main.png);
   background-size: 422px 405px;
   background-position: -2px -129px;
   border-radius: 38%;
@@ -365,7 +365,7 @@
   height: 48px;
   width: 48px;
   background-repeat: no-repeat;
-  background-image: url(./sp-main.png);
+  background-image: url(./img/sp-main.png);
   background-size: 422px 405px;
   background-position: -179px -205px;
   cursor: pointer;
@@ -384,7 +384,7 @@
   width: 50px;
   margin-right: 15px;
   background-repeat: no-repeat;
-  background-image: url(./sp-main.png);
+  background-image: url(./img/sp-main.png);
   background-size: 422px 405px;
   background-position: -2px -129px;
   border-radius: 38%;
@@ -400,7 +400,7 @@
   height: 48px;
   width: 48px;
   background-repeat: no-repeat;
-  background-image: url(./sp-main.png);
+  background-image: url(./img/sp-main.png);
   background-size: 422px 405px;
   background-position: -43px -205px;
   cursor: pointer;
@@ -419,7 +419,7 @@
   width: 50px;
   margin-right: 15px;
   background-repeat: no-repeat;
-  background-image: url(./sp-main.png);
+  background-image: url(./img/sp-main.png);
   background-size: 422px 405px;
   background-position: -2px -129px;
   border-radius: 38%;
@@ -435,7 +435,7 @@
   height: 48px;
   width: 48px;
   background-repeat: no-repeat;
-  background-image: url(./sp-main.png);
+  background-image: url(./img/sp-main.png);
   background-size: 422px 405px;
   background-position: -205px 2px;
   cursor: pointer;
@@ -454,7 +454,7 @@
   width: 50px;
   margin-right: 15px;
   background-repeat: no-repeat;
-  background-image: url(./sp-main.png);
+  background-image: url(./img/sp-main.png);
   background-size: 422px 405px;
   background-position: -2px -129px;
   border-radius: 38%;
@@ -470,7 +470,7 @@
   height: 48px;
   width: 48px;
   background-repeat: no-repeat;
-  background-image: url(./sp-main.png);
+  background-image: url(./img/sp-main.png);
   background-size: 422px 405px;
   background-position: -222px -206px;
   cursor: pointer;
@@ -491,7 +491,7 @@
   height: 48px;
   width: 48px;
   background-repeat: no-repeat;
-  background-image: url(./sp-main.png);
+  background-image: url(./img/sp-main.png);
   background-size: 422px 405px;
   background-position: -248px -133px;
   cursor: pointer;
@@ -509,6 +509,16 @@
 .wrap .container_left {
   width: 830px;
   height: 425px;
+  display: block;
+}
+.wrap .container_left_news {
+  width: 830px;
+  height: 425.8px;
+  border: 1px solid #DADCDF;
+  border-radius: 4px;
+}
+.wrap .container_left_news .news_category {
+  display: flex;
 }
 .wrap .container_right {
   display: block;
@@ -601,7 +611,7 @@
 .wrap .setting_scroll-up::after {
   content: "";
   display: flex;
-  background-image: url(./sp-main.png);
+  background-image: url(./img/sp-main.png);
   background-size: 422px 405px;
   background-position: -293px -270px;
   background-repeat: no-repeat;
@@ -624,7 +634,7 @@
 .wrap .setting_mode::after {
   content: "";
   display: flex;
-  background-image: url(./sp-main.png);
+  background-image: url(./img/sp-main.png);
   background-size: 422px 405px;
   background-position: -208px -270px;
   background-repeat: no-repeat;
