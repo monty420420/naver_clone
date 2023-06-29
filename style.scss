@@ -658,10 +658,15 @@ body {
                     }
                 }
                 &_rolling{
-
+                   margin-right: 200px;
                 }
                 &_stand{
-
+                padding-right: 10px;
+                &::after{
+                    content: '|';
+                    padding-left:10px;
+                    color: #DADCDF;
+                }
                 }
                 &_home{
 

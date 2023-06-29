@@ -577,6 +577,17 @@
   padding-left: 10px;
   color: #DADCDF;
 }
+.wrap .container_left_news .news_fast-view_rolling {
+  margin-right: 200px;
+}
+.wrap .container_left_news .news_fast-view_stand {
+  padding-right: 10px;
+}
+.wrap .container_left_news .news_fast-view_stand::after {
+  content: "|";
+  padding-left: 10px;
+  color: #DADCDF;
+}
 .wrap .container_left_news .news_media-type {
   margin: 20px;
   position: relative;
