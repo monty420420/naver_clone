@@ -578,7 +578,6 @@ body {
             }
         }
     }
-
 }
 
 .container{
@@ -587,30 +586,116 @@ body {
     width: 1280px;
     height: 1200px;
     &_left{
-        width: 830px;
-        height: 425px;
+        width: 830px; 
+        // height: 425px; //추가시 크기수정
         display: block;
+        &_add{
+            width: 830px;
+            margin-bottom: 15px;
+        }
         &_news{
            width: 830px;
            height: 425.8px;
-           border: 1px solid #DADCDF;;
+           border: 1px solid #DADCDF;
            border-radius: 4px;
            .news{
             &_category{
                 display: flex;
+                font-size: 16px;
+                font-weight: 800;
+                padding: 20px;
                 &_stand{
-                  
+                  &::after{
+                    content: '•';
+                    color: #DADCDF;
+                    margin: 0 5px;
+                  }
                 }
                 &_edit{
-
+                    color: gray;
+                    &::after{
+                        content: '／';
+                        color: #DADCDF;
+                        margin: 0 5px;
+                      }
                 }
                 &_entertain{
-
+                    color: gray;
+                    &::after{
+                        content: '／';
+                        color: #DADCDF;
+                        margin: 0 5px;
+                      }
                 }
                 &_sports{
+                    color: gray;
+                    &::after{
+                        content: '／';
+                        color: #DADCDF;
+                        margin: 0 5px;
+                      }
+                }
+                &_economy{
+                    color: gray;
+                }
+            }
+            &_fast-view{
+                display: flex;
+                padding: 10px;
+                margin: 0 20px;
+                font-size: 14px;
+                align-items: center;
+                height: 30px;
+                background-color: F5F7F8;
+                &_select{
+                    width: 100px;
+                    padding: 0 10px;
+                    cursor: pointer;
+                    &::after{
+                        content: '|';
+                        padding-left:10px;
+                        color: #DADCDF;
+                    }
+                }
+                &_rolling{
 
                 }
-                &__economy{
+                &_stand{
+
+                }
+                &_home{
+
+                }
+            }
+            &_media-type{
+                margin: 20px;
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                &_box{
+                    width: 129px;
+                    height: 56px;
+                    border: 1px solid #ebebeb;
+                    border-radius: 4px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &_img{
+                        width: 60px;
+                        height: 20px;
+                    }
+                }
+            }
+            &_step{
+                display: flex;
+                height: 20px;
+                justify-content: center;
+                align-items: center;
+                font-size: 14px;
+                &_text-1{
+                   color: 3A9AF2;
+                }
+                &_text-2{
 
                 }
             }
@@ -644,13 +729,17 @@ body {
             border: none;
             background-color: #03c75a;
             cursor: pointer;
+            &:hover{
+               background-color: #03af50;
+            }
             .login-btn{
                 display: flex;
                 justify-content: center;
+                text-decoration: none;
                 &_naver-logo{
                     font-size: 19px;
                     color: white;
-                    font-weight: 1000;         
+                    font-weight: 1000;       
                 }
                 &_login-text{
                     font-size: 14px;

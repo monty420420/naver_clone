@@ -508,8 +508,11 @@
 }
 .wrap .container_left {
   width: 830px;
-  height: 425px;
   display: block;
+}
+.wrap .container_left_add {
+  width: 830px;
+  margin-bottom: 15px;
 }
 .wrap .container_left_news {
   width: 830px;
@@ -519,6 +522,89 @@
 }
 .wrap .container_left_news .news_category {
   display: flex;
+  font-size: 16px;
+  font-weight: 800;
+  padding: 20px;
+}
+.wrap .container_left_news .news_category_stand::after {
+  content: "•";
+  color: #DADCDF;
+  margin: 0 5px;
+}
+.wrap .container_left_news .news_category_edit {
+  color: gray;
+}
+.wrap .container_left_news .news_category_edit::after {
+  content: "／";
+  color: #DADCDF;
+  margin: 0 5px;
+}
+.wrap .container_left_news .news_category_entertain {
+  color: gray;
+}
+.wrap .container_left_news .news_category_entertain::after {
+  content: "／";
+  color: #DADCDF;
+  margin: 0 5px;
+}
+.wrap .container_left_news .news_category_sports {
+  color: gray;
+}
+.wrap .container_left_news .news_category_sports::after {
+  content: "／";
+  color: #DADCDF;
+  margin: 0 5px;
+}
+.wrap .container_left_news .news_category_economy {
+  color: gray;
+}
+.wrap .container_left_news .news_fast-view {
+  display: flex;
+  padding: 10px;
+  margin: 0 20px;
+  font-size: 14px;
+  align-items: center;
+  height: 30px;
+  background-color: F5F7F8;
+}
+.wrap .container_left_news .news_fast-view_select {
+  width: 100px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.wrap .container_left_news .news_fast-view_select::after {
+  content: "|";
+  padding-left: 10px;
+  color: #DADCDF;
+}
+.wrap .container_left_news .news_media-type {
+  margin: 20px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrap .container_left_news .news_media-type_box {
+  width: 129px;
+  height: 56px;
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap .container_left_news .news_media-type_box_img {
+  width: 60px;
+  height: 20px;
+}
+.wrap .container_left_news .news_step {
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+.wrap .container_left_news .news_step_text-1 {
+  color: 3A9AF2;
 }
 .wrap .container_right {
   display: block;
@@ -547,9 +633,13 @@
   background-color: #03c75a;
   cursor: pointer;
 }
+.wrap .container_right_login_login-btn:hover {
+  background-color: #03af50;
+}
 .wrap .container_right_login_login-btn .login-btn {
   display: flex;
   justify-content: center;
+  text-decoration: none;
 }
 .wrap .container_right_login_login-btn .login-btn_naver-logo {
   font-size: 19px;
