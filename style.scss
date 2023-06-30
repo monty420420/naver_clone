@@ -600,7 +600,7 @@ body {
         width: 830px; 
         // height: 425px; //추가시 크기수정
         display: block;
-        &_add{
+        &_ad{
             width: 830px;
             margin-bottom: 15px;
         }
@@ -683,10 +683,67 @@ body {
 
                 }
             }
-            &_media-type{
+            &_media-type-1{
                 margin: 20px;
                 position: relative;
                 display: flex;
+                flex-wrap: wrap;
+                &_box{
+                    width: 129px;
+                    height: 56px;
+                    border: 1px solid #ebebeb;
+                    border-radius: 4px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &_img{
+                        width: 60px;
+                        height: 20px;
+                    }
+                }
+            }
+            &_media-type-2{
+                margin: 20px;
+                position: relative;
+                display: none;
+                flex-wrap: wrap;
+                &_box{
+                    width: 129px;
+                    height: 56px;
+                    border: 1px solid #ebebeb;
+                    border-radius: 4px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &_img{
+                        width: 60px;
+                        height: 20px;
+                    }
+                }
+            }
+            &_media-type-3{
+                margin: 20px;
+                position: relative;
+                display: none;
+                flex-wrap: wrap;
+                &_box{
+                    width: 129px;
+                    height: 56px;
+                    border: 1px solid #ebebeb;
+                    border-radius: 4px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &_img{
+                        width: 60px;
+                        height: 20px;
+                    }
+                }
+            }
+            &_media-type-4{
+                margin: 20px;
+                position: relative;
+                display: none;
                 flex-wrap: wrap;
                 &_box{
                     width: 129px;
@@ -732,7 +789,6 @@ body {
         
         &_login{
            height: 123.6px;
-        //    background-color: aqua;
            text-align: center;
            line-height: 20px;
            padding: 20px;
@@ -794,12 +850,20 @@ body {
               }
            }
         }
-        &_add{
+        &_ad{
            margin-top: 15px;
            width: 420px;
            height: 240px;
            border-radius: 4px;
         }
+        // &_weather{
+        //     margin-top: 15px;
+        //     height: 236px;
+        //     line-height: 20px;
+        //     padding: 20px;
+        //     border: 1px solid #DADCDF;
+        //     border-radius: 8px;
+        // }
     }
 }
 

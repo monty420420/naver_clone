@@ -8,6 +8,7 @@ function changeImg(){
 }
 changeImg();
 
+//뉴스 페이지 이동
 
 
 
