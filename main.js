@@ -3,7 +3,7 @@
 function changeImg(){
   setTimeout(function(){ 
    const element = document.querySelector(".header_search_form_logo_wing");
-   element.className = 'header_search_form_logo_naver';
+   element.className = 'header_search_form_logo_naver';  //여기서 .없이해야함
   },3000);
 }
 changeImg();
