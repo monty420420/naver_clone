@@ -84,11 +84,20 @@ body {
             &_logo {
                 height: 24px;
                 width: 50px;
-                margin-right: 5px;
+                margin-right: 7px;
                 margin-top: -5px;
                 border-right: 1px #E8ECEE solid;
-
-                &_a {
+                &_wing {
+                    height: 52px;
+                    width: 50px;
+                    display: flex;
+                    background-repeat: no-repeat;
+                    background-image: url(./img/upload_1684217675277OZzsu.gif);
+                    background-size: 52px 52px;
+                    margin-top: -12px;
+                    cursor: pointer;
+                }
+                &_naver {
                     height: 35px;
                     width: 35px;
                     display: flex;
@@ -101,7 +110,9 @@ body {
                 }
             }
 
-            &_label {}
+            &_label {
+                 
+            }
 
             &_text {
                 height: 44px;
@@ -697,11 +708,17 @@ body {
                 justify-content: center;
                 align-items: center;
                 font-size: 14px;
+                &_prev{
+
+                }
                 &_text-1{
                    color: 3A9AF2;
                 }
                 &_text-2{
 
+                }
+                &_next{
+                    
                 }
             }
            }

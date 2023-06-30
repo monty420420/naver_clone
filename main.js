@@ -1,3 +1,16 @@
+//3초뒤 이미지변환
+//3초뒤에 class이름을 변경하여 원하는 이미지로 변경 
+function changeImg(){
+  setTimeout(function(){ 
+   const element = document.querySelector(".header_search_form_logo_wing");
+   element.className = 'header_search_form_logo_naver';
+  },3000);
+}
+changeImg();
+
+
+
+
 //스크롤 이동
 document.addEventListener('DOMContentLoaded', function() {
     let scrollUpButton = document.querySelector('.setting_scroll-up');
