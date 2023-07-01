@@ -683,67 +683,10 @@ body {
 
                 }
             }
-            &_media-type-1{
+            &_page{
                 margin: 20px;
                 position: relative;
                 display: flex;
-                flex-wrap: wrap;
-                &_box{
-                    width: 129px;
-                    height: 56px;
-                    border: 1px solid #ebebeb;
-                    border-radius: 4px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    &_img{
-                        width: 60px;
-                        height: 20px;
-                    }
-                }
-            }
-            &_media-type-2{
-                margin: 20px;
-                position: relative;
-                display: none;
-                flex-wrap: wrap;
-                &_box{
-                    width: 129px;
-                    height: 56px;
-                    border: 1px solid #ebebeb;
-                    border-radius: 4px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    &_img{
-                        width: 60px;
-                        height: 20px;
-                    }
-                }
-            }
-            &_media-type-3{
-                margin: 20px;
-                position: relative;
-                display: none;
-                flex-wrap: wrap;
-                &_box{
-                    width: 129px;
-                    height: 56px;
-                    border: 1px solid #ebebeb;
-                    border-radius: 4px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    &_img{
-                        width: 60px;
-                        height: 20px;
-                    }
-                }
-            }
-            &_media-type-4{
-                margin: 20px;
-                position: relative;
-                display: none;
                 flex-wrap: wrap;
                 &_box{
                     width: 129px;
@@ -765,17 +708,37 @@ body {
                 justify-content: center;
                 align-items: center;
                 font-size: 14px;
-                &_prev{
-
+                &_prev-btn{                
+                    height: 19px;
+                    width: 19px;
+                    margin: 5px;
+                    transform: scaleX(-1);
+                    display: inline-block;
+                    background-repeat: no-repeat;
+                    background-image: url(./img/sp-main.png);
+                    background-size: 373px 316px;
+                    background-position: -333px -284px;
+                    border: 1px solid;
+                    border-radius: 33px;
+                    cursor: pointer;
                 }
                 &_text-1{
                    color: 3A9AF2;
                 }
                 &_text-2{
-
                 }
-                &_next{
-                    
+                &_next-btn{
+                    height: 19px;
+                    width: 19px;
+                    margin: 5px;
+                    display: inline-block;
+                    background-repeat: no-repeat;
+                    background-image: url(./img/sp-main.png);
+                    background-size: 373px 316px;
+                    background-position: -333px -284px;
+                    border: 1px solid;
+                    border-radius: 33px;
+                    cursor: pointer;
                 }
             }
            }
