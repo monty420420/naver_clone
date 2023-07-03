@@ -13,7 +13,6 @@ body {
     width: 1280px;
     padding-top: 16px;
     height: 238px;
-    // background-color: yellow;
 
     &_simple {
         display: flex;
@@ -819,14 +818,98 @@ body {
            height: 240px;
            border-radius: 4px;
         }
-        // &_weather{
-        //     margin-top: 15px;
-        //     height: 236px;
-        //     line-height: 20px;
-        //     padding: 20px;
-        //     border: 1px solid #DADCDF;
-        //     border-radius: 8px;
-        // }
+        &_weather{
+            margin-top: 15px;
+            height: 236px;
+            line-height: 20px;
+            padding: 0 20px;
+            border: 1px solid #DADCDF;
+            border-radius: 8px;
+           .weather{
+            display: block;
+            &_header{
+               display: flex;
+               .header{
+                display: flex;
+                justify-content: space-between;
+                height: 50px;
+                padding: 0;
+                border: solid 1px #DADCDF; 
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                margin: 0;
+                &_forecast{
+                    display: flex;
+                    
+                    &_title{
+                        width: 50px;
+                        }
+                    &_compare{
+                        }
+                }
+                &_location{
+ 
+                }
+               }
+            }
+            &_info{
+                display: flex;
+               &_temp{
+                width: 50%;
+                display: block;
+                &_main{
+                    display: flex;
+                    margin: 20px 0 18px;
+                    &_img{
+                        height: 86px;
+                        width: 86px;
+                        display: inline-block;
+                        background-repeat: no-repeat;
+                        background-image: url(./img/sp_weather.png);
+                        background-size: 402px 350px;
+                        background-position: 0px 0px;
+                    }
+                    &_data{
+                        padding-top: 15px;
+                        padding-left: 5px;
+                        height: 71px;
+                        width: 86px;
+                        &_number{
+                               font-size: 40px;
+                        }
+                        &_text{
+                            padding-left: 5px;
+                        }
+                    }
+                }
+                &_value{
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 5px;
+                    &_min{
+                        &::after{
+                            content: '／';
+                            color: #DADCDF;
+                            margin: 0 3px;
+                          }
+                    }
+                    &_max{
+                    }
+                }
+                &_degree{
+
+                }
+               }
+               &_timewave{
+                width: 50%;
+                margin: 20px 0 18px;
+                
+               }
+            }
+
+           } 
+        }
     }
 }
 

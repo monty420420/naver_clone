@@ -9,6 +9,8 @@ function changeImg(){
 changeImg();
 
 
+
+
 //뉴스 페이지 이동
   // 현재 페이지를 나타내는 변수
   let currentPage = 1;
@@ -36,19 +38,30 @@ changeImg();
     for (let i = 0; i < pages.length; i++) {
       pages[i].style.display = "none";
     }
-    console.log(currentPage)
+    // console.log(currentPage)
     document.getElementById("news_page" + currentPage).style.display = "flex";
   }
 
   showCurrentPage();
 
-  //동적인 데이터 삽입
+  //뉴스 페이지 동적인 데이터 삽입
   function innerhtml() {
     let container = document.querySelector(".news_step_text-2");
     container.innerText = `더보기 ${currentPage}/4`;
-    console.log(currentPage)
+    // console.log(currentPage)
   }
   innerhtml();
+
+
+
+
+//날씨데이터 삽입
+
+
+
+
+
+
 
 //스크롤 이동
 document.addEventListener('DOMContentLoaded', function() {

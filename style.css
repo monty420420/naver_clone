@@ -728,6 +728,83 @@
   height: 240px;
   border-radius: 4px;
 }
+.wrap .container_right_weather {
+  margin-top: 15px;
+  height: 236px;
+  line-height: 20px;
+  padding: 0 20px;
+  border: 1px solid #DADCDF;
+  border-radius: 8px;
+}
+.wrap .container_right_weather .weather {
+  display: block;
+}
+.wrap .container_right_weather .weather_header {
+  display: flex;
+}
+.wrap .container_right_weather .weather_header .header {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0;
+  border: solid 1px #DADCDF;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin: 0;
+}
+.wrap .container_right_weather .weather_header .header_forecast {
+  display: flex;
+}
+.wrap .container_right_weather .weather_header .header_forecast_title {
+  width: 50px;
+}
+.wrap .container_right_weather .weather_info {
+  display: flex;
+}
+.wrap .container_right_weather .weather_info_temp {
+  width: 50%;
+  display: block;
+}
+.wrap .container_right_weather .weather_info_temp_main {
+  display: flex;
+  margin: 20px 0 18px;
+}
+.wrap .container_right_weather .weather_info_temp_main_img {
+  height: 86px;
+  width: 86px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(./img/sp_weather.png);
+  background-size: 402px 350px;
+  background-position: 0px 0px;
+}
+.wrap .container_right_weather .weather_info_temp_main_data {
+  padding-top: 15px;
+  padding-left: 5px;
+  height: 71px;
+  width: 86px;
+}
+.wrap .container_right_weather .weather_info_temp_main_data_number {
+  font-size: 40px;
+}
+.wrap .container_right_weather .weather_info_temp_main_data_text {
+  padding-left: 5px;
+}
+.wrap .container_right_weather .weather_info_temp_value {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.wrap .container_right_weather .weather_info_temp_value_min::after {
+  content: "／";
+  color: #DADCDF;
+  margin: 0 3px;
+}
+.wrap .container_right_weather .weather_info_timewave {
+  width: 50%;
+  margin: 20px 0 18px;
+}
 .wrap .setting {
   position: fixed;
   display: flex;

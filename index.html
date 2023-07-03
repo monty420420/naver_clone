@@ -5,6 +5,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <script defer src="main.js"></script> 
+    <script defer src="api.js"></script>
 </head>
 <body>
   <div id="wrap" class="wrap">
@@ -438,11 +439,38 @@
             </div>
           </div>
           <img class="container_right_ad" src="./img/ad.jpg" alt="">
-          <!-- <div class="container_right_weather">
-            <div class="">
-              날씨
+          <div class="container_right_weather">
+            <div class="weather">
+              <div class="weather_header">
+                <div class="header">
+                  <div class="header_forecast">
+                    <p class="header_forecast_title">날씨</p>
+                    <p class="header_forecast_compare">예보 비교</p>
+                  </div>
+                  <p class="header_location">서울시 구로동</p>
+                </div>
+              </div>
+              <div class="weather_info">
+                <div class="weather_info_temp">
+                    <div class="weather_info_temp_main">
+                      <img class="weather_info_temp_main_img">
+                      <div class="weather_info_temp_main_data">
+                         <div class="weather_info_temp_main_data_number">28.4°</div>
+                         <p class="weather_info_temp_main_data_text">맑음</p>
+                      </div>
+                    </div>
+                    <div class="weather_info_temp_value">
+                      <div class="weather_info_temp_value_min">24</div>
+                      <div class="weather_info_temp_value_max">35</div>
+                    </div>
+                    <div class="weather_info_temp_degree">미세 보통 초미세 보통</div>
+                </div>
+                <div class="weather_info_timewave">
+                    <img src="./img/weatherEX.png">
+                </div>
+              </div>
             </div>
-          </div> -->
+          </div>
         </div>   
      </div>
      <div id="setting" class="setting">
