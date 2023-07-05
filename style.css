@@ -759,6 +759,13 @@
 .wrap .container_right_weather .weather_header .header_forecast_title {
   width: 50px;
 }
+.wrap .container_right_weather .weather_header .header_forecast_compare {
+  border: solid 1px #DADCDF;
+  font-size: 12px;
+  padding: 0 5px;
+  border-radius: 33px;
+  cursor: pointer;
+}
 .wrap .container_right_weather .weather_info {
   display: flex;
 }

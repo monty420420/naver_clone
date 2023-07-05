@@ -846,6 +846,11 @@ body {
                         width: 50px;
                         }
                     &_compare{
+                        border: solid 1px #DADCDF;
+                        font-size: 12px;
+                        padding: 0 5px;
+                        border-radius: 33px;
+                        cursor: pointer;
                         }
                 }
                 &_location{
