@@ -84,8 +84,8 @@ getJSON('http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=9c59ac8c75
 
 function currentWeather(data) {
   let weather = document.querySelector(".weather_info_temp_main_data_number");
-  let roundedTemp = Math.round(data.main.temp);
-  weather.innerText = `${roundedTemp}°`;
+  let formattedTemp = data.main.temp.toFixed(1);
+  weather.innerText = `${formattedTemp}°`;
 }
 
 
