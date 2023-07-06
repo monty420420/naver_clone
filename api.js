@@ -18,20 +18,20 @@
 
 
 //2.
-const getJSON = function(url, callback) {
-    const weather = new XMLHttpRequest();
-    weather.open('GET', url, true);
-    weather.responseType = 'json';
-    weather.onload = function() {
-      const status = weather.status;
-      if(status === 200) {
-        callback(null, weather.response);
-      } else {
-        callback(status, weather.response);
-      }
-    };
-    weather.send();
-  };
+// const getJSON = function(url, callback) {
+//     const weather = new XMLHttpRequest();
+//     weather.open('GET', url, true);
+//     weather.responseType = 'json';
+//     weather.onload = function() {
+//       const status = weather.status;
+//       if(status === 200) {
+//         callback(null, weather.response);
+//       } else {
+//         callback(status, weather.response);
+//       }
+//     };
+//     weather.send();
+//   };
   
 //   getJSON('http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=9c59ac8c758bb7af6ec4afbc771e28fd&units=metric',
 //   function(err, data) {
@@ -51,6 +51,44 @@ const getJSON = function(url, callback) {
 //   입니다.`)
 //     }
 //   });
+  
+// //날씨 데이터 삽입
+// function currentWeather(data) {
+//   let weather = document.querySelector(".weather_info_temp_main_data_number")
+//   weather.innerText = `${data.main.temp}°`
+// }  
+// currentWeather();
+
+const getJSON = function(url, callback) {
+  const weather = new XMLHttpRequest();
+  weather.open('GET', url, true);
+  weather.responseType = 'json';
+  weather.onload = function() {
+    const status = weather.status;
+    if(status === 200) {
+      callback(null, weather.response);
+    } else {
+      callback(status, weather.response);
+    }
+  };
+  weather.send();
+};
+
+getJSON('http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=9c59ac8c758bb7af6ec4afbc771e28fd&units=metric', function(err, data) {
+  if(err !== null) {
+    alert('예상치 못한 오류 발생.' + err);
+  } else {
+    currentWeather(data); // 수정: data를 currentWeather 함수로 전달
+  }
+});
+
+function currentWeather(data) {
+  let weather = document.querySelector(".weather_info_temp_main_data_number");
+  let roundedTemp = Math.round(data.main.temp);
+  weather.innerText = `${roundedTemp}°`;
+}
+
+
 
 
 //3.
