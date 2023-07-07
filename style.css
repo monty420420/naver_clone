@@ -762,7 +762,6 @@
 .wrap .container_right_weather .weather_header .header_forecast_compare {
   border: solid 1px #DADCDF;
   font-size: 12px;
-  padding: 0 5px;
   border-radius: 33px;
   cursor: pointer;
 }
@@ -775,16 +774,15 @@
 }
 .wrap .container_right_weather .weather_info_temp_main {
   display: flex;
-  margin: 20px 0 18px;
+  margin: 18px 0;
 }
 .wrap .container_right_weather .weather_info_temp_main_img {
   height: 86px;
   width: 86px;
-  display: inline-block;
   background-repeat: no-repeat;
-  background-image: url(./img/sp_weather.png);
-  background-size: 402px 350px;
-  background-position: 0px 0px;
+  background: url(./img/sp-weather2.png);
+  background-size: 641px 587px;
+  background-position: -2px -5px;
 }
 .wrap .container_right_weather .weather_info_temp_main_data {
   padding-top: 15px;
@@ -802,11 +800,18 @@
   display: flex;
   justify-content: center;
   margin-bottom: 5px;
+  font-size: 12px;
+}
+.wrap .container_right_weather .weather_info_temp_value_min {
+  color: blue;
 }
 .wrap .container_right_weather .weather_info_temp_value_min::after {
   content: "／";
   color: #DADCDF;
   margin: 0 3px;
+}
+.wrap .container_right_weather .weather_info_temp_value_max {
+  color: red;
 }
 .wrap .container_right_weather .weather_info_timewave {
   width: 50%;
