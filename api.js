@@ -44,7 +44,7 @@ const getJSON = function(url, callback) {
   weather.responseType = 'json';
   weather.onload = function() {
     const status = weather.status;
-    if(status === 200) {
+    if(status === 200) {          //200은 http상태코드로 ok를 의미 성공적으로 처리되고 반환을 의미함
       callback(null, weather.response);
     } else {
       callback(status, weather.response);
@@ -60,6 +60,8 @@ getJSON('http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=9c59ac8c75
     currentWeather(data); // 수정: data를 currentWeather 함수로 전달
   }
 });
+
+
 
 function currentWeather(data) {
   //현재 온도

@@ -191,7 +191,7 @@
   cursor: pointer;
 }
 .wrap .header_menu_lists_list-1:hover {
-  box-shadow: 1px 1px 5px gray;
+  box-shadow: 1px 1px 5px rgb(180, 180, 180);
 }
 .wrap .header_menu_lists_list-1_a-1 {
   text-decoration: none;
@@ -226,7 +226,7 @@
   cursor: pointer;
 }
 .wrap .header_menu_lists_list-2:hover {
-  box-shadow: 1px 1px 5px gray;
+  box-shadow: 1px 1px 5px rgb(180, 180, 180);
 }
 .wrap .header_menu_lists_list-2_a-2 {
   text-decoration: none;
@@ -261,7 +261,7 @@
   cursor: pointer;
 }
 .wrap .header_menu_lists_list-3:hover {
-  box-shadow: 1px 1px 5px gray;
+  box-shadow: 1px 1px 5px rgb(180, 180, 180);
 }
 .wrap .header_menu_lists_list-3_a-3 {
   text-decoration: none;
@@ -296,7 +296,7 @@
   cursor: pointer;
 }
 .wrap .header_menu_lists_list-4:hover {
-  box-shadow: 1px 1px 5px gray;
+  box-shadow: 1px 1px 5px rgb(180, 180, 180);
 }
 .wrap .header_menu_lists_list-4_a-4 {
   text-decoration: none;
@@ -331,7 +331,7 @@
   cursor: pointer;
 }
 .wrap .header_menu_lists_list-5:hover {
-  box-shadow: 1px 1px 5px gray;
+  box-shadow: 1px 1px 5px rgb(180, 180, 180);
 }
 .wrap .header_menu_lists_list-5_a-5 {
   text-decoration: none;
@@ -366,7 +366,7 @@
   cursor: pointer;
 }
 .wrap .header_menu_lists_list-6:hover {
-  box-shadow: 1px 1px 5px gray;
+  box-shadow: 1px 1px 5px rgb(180, 180, 180);
 }
 .wrap .header_menu_lists_list-6_a-6 {
   text-decoration: none;
@@ -401,7 +401,7 @@
   cursor: pointer;
 }
 .wrap .header_menu_lists_list-7:hover {
-  box-shadow: 1px 1px 5px gray;
+  box-shadow: 1px 1px 5px rgb(180, 180, 180);
 }
 .wrap .header_menu_lists_list-7_a-7 {
   text-decoration: none;
@@ -436,7 +436,7 @@
   cursor: pointer;
 }
 .wrap .header_menu_lists_list-8:hover {
-  box-shadow: 1px 1px 5px gray;
+  box-shadow: 1px 1px 5px rgb(180, 180, 180);
 }
 .wrap .header_menu_lists_list-8_a-8 {
   text-decoration: none;
@@ -471,7 +471,7 @@
   cursor: pointer;
 }
 .wrap .header_menu_lists_list-9:hover {
-  box-shadow: 1px 1px 5px gray;
+  box-shadow: 1px 1px 5px rgb(180, 180, 180);
 }
 .wrap .header_menu_lists_list-9_a-9 {
   text-decoration: none;
@@ -508,7 +508,7 @@
   border-radius: 38%;
 }
 .wrap .header_menu_lists_list-10_a-10_img:hover {
-  box-shadow: 1px 1px 5px gray;
+  box-shadow: 1px 1px 5px rgb(180, 180, 180);
 }
 .wrap .container {
   display: flex;
@@ -625,34 +625,58 @@
   font-size: 14px;
 }
 .wrap .container_left_news .news_step_prev-btn {
-  height: 19px;
-  width: 19px;
-  margin: 5px;
+  height: 35px;
+  width: 35px;
+  padding: 5px;
+  border: 1px solid gray;
+  background-color: white;
+  border-radius: 33px;
+  cursor: pointer;
+}
+.wrap .container_left_news .news_step_prev-btn_img {
+  height: 17px;
+  width: 15px;
   transform: scaleX(-1);
   display: inline-block;
   background-repeat: no-repeat;
   background-image: url(./img/sp-main.png);
   background-size: 373px 316px;
   background-position: -333px -284px;
-  border: 1px solid;
-  border-radius: 33px;
+  border: none;
   cursor: pointer;
+}
+.wrap .container_left_news .news_step_prev-btn:hover {
+  box-shadow: 1px 1px 5px rgb(180, 180, 180);
 }
 .wrap .container_left_news .news_step_text-1 {
   color: 3A9AF2;
+  margin-left: 20px;
+}
+.wrap .container_left_news .news_step_text-2 {
+  margin-right: 20px;
 }
 .wrap .container_left_news .news_step_next-btn {
-  height: 19px;
-  width: 19px;
-  margin: 5px;
+  height: 35px;
+  width: 35px;
+  padding: 5px;
+  border: 1px solid gray;
+  background-color: white;
+  border-radius: 33px;
+  cursor: pointer;
+}
+.wrap .container_left_news .news_step_next-btn_img {
+  height: 17px;
+  width: 15px;
   display: inline-block;
   background-repeat: no-repeat;
   background-image: url(./img/sp-main.png);
   background-size: 373px 316px;
   background-position: -333px -284px;
-  border: 1px solid;
-  border-radius: 33px;
+  border: none;
   cursor: pointer;
+}
+.wrap .container_left_news .news_step_next-btn:hover {
+  box-shadow: 1px 1px 5px rgb(180, 180, 180);
 }
 .wrap .container_right {
   display: block;
@@ -755,15 +779,20 @@
 }
 .wrap .container_right_weather .weather_header .header_forecast {
   display: flex;
+  align-items: center;
 }
 .wrap .container_right_weather .weather_header .header_forecast_title {
   width: 50px;
 }
 .wrap .container_right_weather .weather_header .header_forecast_compare {
   border: solid 1px #DADCDF;
-  font-size: 12px;
   border-radius: 33px;
+  font-size: 12px;
+  padding: 2px 10px;
   cursor: pointer;
+}
+.wrap .container_right_weather .weather_header .header_location {
+  font-size: 12px;
 }
 .wrap .container_right_weather .weather_info {
   display: flex;
@@ -813,6 +842,11 @@
 .wrap .container_right_weather .weather_info_temp_value_max {
   color: red;
 }
+.wrap .container_right_weather .weather_info_temp_degree {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
 .wrap .container_right_weather .weather_info_timewave {
   width: 50%;
   margin: 20px 0 18px;
@@ -833,7 +867,7 @@
   cursor: pointer;
 }
 .wrap .setting_scroll-up:hover {
-  box-shadow: 1px 1px 5px gray;
+  box-shadow: 1px 1px 5px rgb(180, 180, 180);
 }
 .wrap .setting_scroll-up::after {
   content: "";
@@ -856,7 +890,7 @@
   cursor: pointer;
 }
 .wrap .setting_mode:hover {
-  box-shadow: 1px 1px 5px gray;
+  box-shadow: 1px 1px 5px rgb(180, 180, 180);
 }
 .wrap .setting_mode::after {
   content: "";
@@ -870,5 +904,5 @@
   height: 16px;
 }
 .wrap .setting_mode_hover {
-  box-shadow: 1px 1px 5px gray;
+  box-shadow: 1px 1px 5px rgb(180, 180, 180);
 }/*# sourceMappingURL=style.css.map */
