@@ -1,12 +1,66 @@
 @charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .wrap {
   min-width: 1340px;
   display: block;
 }
+.wrap .navbar {
+  width: 100%;
+  height: 62px;
+  border: solid 1px #03af50;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin: 4px auto 0;
+}
+.wrap .navbar_search {
+  display: flex;
+  justify-content: center;
+  height: 74px;
+}
+.wrap .navbar_search_form {
+  width: 1280px;
+  height: 54px;
+  border-radius: 33px;
+  display: flex;
+  align-items: center;
+}
+.wrap .navbar_search_form_logo {
+  height: 24px;
+  width: 50px;
+  margin-right: 7px;
+  margin-top: -5px;
+  border-right: 1px #E8ECEE solid;
+}
+.wrap .navbar_search_form_logo_wing {
+  height: 52px;
+  width: 50px;
+  display: flex;
+  background-repeat: no-repeat;
+  background-image: url(./img/upload_1684217675277OZzsu.gif);
+  background-size: 52px 52px;
+  margin-top: -12px;
+  cursor: pointer;
+}
+.wrap .navbar_search_form_logo_naver {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  background-repeat: no-repeat;
+  background-image: url(./img/sp-main.png);
+  background-size: 442px 425px;
+  background-position: -331px -350px;
+  margin-top: -11px;
+  cursor: pointer;
+}
 .wrap .header {
   margin: 0 auto;
   width: 1280px;
-  padding-top: 16px;
+  padding-top: 26px;
   height: 238px;
 }
 .wrap .header_simple {
@@ -15,7 +69,7 @@
 }
 .wrap .header_simple_hamburger {
   all: unset;
-  height: 40px;
+  height: 28px;
   width: 40px;
   justify-content: center;
 }
@@ -56,7 +110,7 @@
 .wrap .header_search {
   display: flex;
   justify-content: center;
-  padding-top: 2px;
+  padding-top: 10px;
   height: 74px;
 }
 .wrap .header_search_form {
@@ -154,7 +208,8 @@
 .wrap .header_search_form_search-button {
   border: none;
   background-color: white;
-  margin-top: -2px;
+  margin-top: -5px;
+  margin-left: 2px;
   height: 25px;
   width: 25px;
   display: inline-block;
@@ -792,6 +847,7 @@
   cursor: pointer;
 }
 .wrap .container_right_weather .weather_header .header_location {
+  padding-top: 2px;
   font-size: 12px;
 }
 .wrap .container_right_weather .weather_info {
