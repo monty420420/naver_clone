@@ -12,12 +12,13 @@ body {
     display: block;
 .navbar{
     width: 100%;
-    height: 62px;
+    height: 64px;
+    background-color: white;
     border: solid 1px #03af50;
     border-top: none;
     border-right: none;
     border-left: none;
-    margin: 4px auto 0;
+    position: fixed;
     &_search{
         display: flex;
         justify-content: center;
@@ -28,12 +29,14 @@ body {
             border-radius: 33px;
             display: flex;
             align-items: center;
+            padding-top: 5px;
             &_logo {
                 height: 24px;
-                width: 50px;
+                width: 55px;
                 margin-right: 7px;
                 margin-top: -5px;
                 border-right: 1px #E8ECEE solid;
+                margin-left: -8px;
                 &_wing {
                     height: 52px;
                     width: 50px;
@@ -52,13 +55,90 @@ body {
                     background-image: url(./img/sp-main.png);
                     background-size: 442px 425px;
                     background-position: -331px -350px;
-                    margin-top: -11px;
+                    margin-top: -10px;
                     cursor: pointer;
                 }
+            }
+            &_label {
+                 
+            }
+
+            &_text {
+                height: 44px;
+                width: 540px;
+                margin-top: -7px;
+                margin-right: 150px;
+                &_input {
+                    height: 44px;
+                    width: 565px;
+                    margin-top: 2px;
+                    border: none;
+                    z-index: 10;
+                    position: relative;
+                    padding: 17px 10px;
+                    font-size: 22px;
+                    font-weight: bold;
+                    &::placeholder {
+                        font-weight: 200;
+                        color: rgb(197, 193, 193);
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+
+            &_keyboard-button {
+                border: none;
+                background-color: white;
+                margin-right: 10px;
+                height: 22px;
+                width: 26px;
+                display: inline-block;
+                background-repeat: no-repeat;
+                background-image: url(./img/sp-main.png);
+                background-size: 422px 405px;
+                background-position: -268px -233px;
+                cursor: pointer;
+            }
+
+            &_autocomplete-button {
+                border: none;
+                background-color: white;
+                margin-top: -10px;
+                margin-right: 12px;
+                height: 12px;
+                width: 13px;
+                display: inline-block;
+                background-repeat: no-repeat;
+                background-image: url(./img/sp-main.png);
+                background-size: 422px 405px;
+                background-position: -409px -333px;
+                cursor: pointer;
+            }
+
+            &_search-button {
+                border: none;
+                background-color: white;
+                margin-top: -5px;
+                margin-left: 2px;
+                height: 25px;
+                width: 25px;
+                display: inline-block;
+                background-repeat: no-repeat;
+                background-image: url(./img/sp-main.png);
+                background-size: 422px 405px;
+                background-position: -365px -132px;
+                cursor: pointer;
             }
         }
     }
 }
+.drop{
+    display: none;
+   }
+
 .header {
     margin: 0 auto;
     width: 1280px;
@@ -131,7 +211,7 @@ body {
 
             &_logo {
                 height: 24px;
-                width: 50px;
+                width: 55px;
                 margin-right: 7px;
                 margin-top: -5px;
                 border-right: 1px #E8ECEE solid;
@@ -153,7 +233,7 @@ body {
                     background-image: url(./img/sp-main.png);
                     background-size: 442px 425px;
                     background-position: -331px -350px;
-                    margin-top: -11px;
+                    margin-top: -10px;
                     cursor: pointer;
                 }
             }
@@ -164,7 +244,7 @@ body {
 
             &_text {
                 height: 44px;
-                width: 530px;
+                width: 520px;
                 margin-top: -7px;
 
                 &_input {
@@ -1055,3 +1135,14 @@ body {
     }
 }
 }
+
+@keyframes dropNavbar {
+    0% {
+        top: -5rem;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+

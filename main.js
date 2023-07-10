@@ -1,19 +1,56 @@
 //스크롤 내릴시 navbar생성
-
-
+function scrollNavbar(){
+  const navbar = document.querySelector(".navbar")
+  const Header = document.querySelector(".header")  //header가 안보일때 navbar를 보여주기위해 class를 변수에 담아 기준으로 삼음
+  const HeaderHeight = Header.getBoundingClientRect().height;  //header의 높이의값
+  console.log(navbar);
+  console.log(HeaderHeight);
+  console.log(window.scrollY);
+  document.addEventListener('scroll', ()=> {
+    if(window.scrollY > HeaderHeight){  //스크롤y축이 header의 높이값보다 크면
+      // console.log(window.scrollY);
+      navbar.classList.remove('drop')  //class 'drop'삭제
+    }else{
+      navbar.classList.add('drop') //class 'drop' 추가
+    }
+  })
+}
+scrollNavbar();
 
 
 
 
 //3초뒤 이미지변환
 //3초뒤에 class이름을 변경하여 원하는 이미지로 변경 
-function changeImg(){
+function changeNavImg(){
+  setTimeout(function(){ 
+   const element = document.querySelector(".navbar_search_form_logo_wing");
+   element.className = 'navbar_search_form_logo_naver';  //여기서 .없이해야함
+  },3000);
+}
+changeNavImg();
+function changeHeaderImg(){
   setTimeout(function(){ 
    const element = document.querySelector(".header_search_form_logo_wing");
    element.className = 'header_search_form_logo_naver';  //여기서 .없이해야함
   },3000);
 }
-changeImg();
+changeHeaderImg();
+
+
+//navbar검색창, main검색창 검색어 공유
+const navbarInput = document.querySelector('.navbar_search_form_text_input');
+const mainInput = document.querySelector('.header_search_form_text_input');
+
+navbarInput.addEventListener('input', function() {
+  const inputValue = navbarInput.value;
+  mainInput.value = inputValue;
+});
+
+mainInput.addEventListener('input', function() {
+  const inputValue = mainInput.value;
+  navbarInput.value = inputValue;
+});
 
 
 
@@ -58,13 +95,6 @@ changeImg();
     // console.log(currentPage)
   }
   innerhtml();
-
-
-
-
-//날씨데이터 삽입
-
-
 
 
 
