@@ -17,6 +17,8 @@ body {
   border-right: none;
   border-left: none;
   position: fixed;
+  animation: dropNavbar 0.3s;
+  z-index: 30;
 }
 .wrap .navbar_search {
   display: flex;

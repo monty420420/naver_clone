@@ -19,7 +19,6 @@ scrollNavbar();
 
 
 
-
 //3초뒤 이미지변환
 //3초뒤에 class이름을 변경하여 원하는 이미지로 변경 
 function changeNavImg(){
