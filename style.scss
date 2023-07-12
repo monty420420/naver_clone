@@ -1,5 +1,6 @@
 :root {
     //공통
+    
 }
 
 body {
@@ -144,18 +145,24 @@ body {
 .header {
     margin: 0 auto;
     width: 1280px;
-    padding-top: 26px;
+    padding-top: 20px;
     height: 238px;
     &_simple {
         display: flex;
         justify-content: space-between;
         &_hamburger {
-            all: unset;
-            height: 28px;
-            width: 40px;
+            height: 42px;
+            width: 42px;
+            display: flex;
             justify-content: center;
-
+            align-items: center;
+            border-radius: 30px;
+            margin-left: -7px;
+            &:hover{
+                background-color: rgb(240, 239, 239);
+            }
             &_img {
+                all: unset;
                 height: 26px;
                 width: 26px;
                 display: inline-block;
@@ -166,76 +173,103 @@ body {
                 cursor: pointer;
             }
         }
-
         &_function {
             display: flex;
-            width: 85px;
+            width: 87px;
+            align-items: center;
             justify-content: space-between;
-
+            margin-right: -7px;
             &_pay {
-                height: 28px;
-                width: 30px;
-                display: inline-block;
-                background-repeat: no-repeat;
-                background-image: url(./img/sp-main.png);
-                background-size: 422px 405px;
-                background-position: -30px -315px;
+                height: 42px;
+                width: 42px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 30px;
+                margin-left: -7px;
+                &:hover{
+                    background-color: rgb(240, 239, 239);
+                }
+                &_img{
+                    height: 28px;
+                    width: 30px;
+                    display: inline-block;
+                    background-repeat: no-repeat;
+                    background-image: url(./img/sp-main.png);
+                    background-size: 422px 405px;
+                    background-position: -30px -315px;
+                }
             }
-
             &_notice {
-                height: 28px;
-                width: 30px;
-                display: inline-block;
-                background-repeat: no-repeat;
-                background-image: url(./img/sp-main.png);
-                background-size: 422px 405px;
-                background-position: -361px -26px;
-                cursor: pointer;
+                height: 42px;
+                width: 42px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 30px;
+                margin-left: -7px;
+                &:hover{
+                    background-color: rgb(240, 239, 239);
+                }
+                &_img{
+                    height: 28px;
+                    width: 30px;
+                    display: inline-block;
+                    background-repeat: no-repeat;
+                    background-image: url(./img/sp-main.png);
+                    background-size: 422px 405px;
+                    background-position: -361px -26px;
+                    cursor: pointer;
+                }
             }
         }
     }
 
     &_search {
         display: flex;
+        margin-top: 2px;
         justify-content: center;
-        padding-top: 10px;
-        height: 74px;
-
+        height: 73px;
         &_form {
-            width: 698px;
-            height: 54px;
+            width: 706px;
+            height: 58px;
             border: 1px solid #03c75a;
             border-radius: 33px;
-            padding-top: 6px;
-            padding-left: 15px;
             display: flex;
             align-items: center;
-
             &_logo {
-                height: 24px;
-                width: 55px;
-                margin-right: 7px;
-                margin-top: -5px;
-                border-right: 1px #E8ECEE solid;
+                height: 40px;
+                width: 50px;
+                margin-left: 20px;
+                display: flex;
+                &::after{
+                    content: '|';
+                    margin-top: 10px;
+                    padding-left:12px;
+                    color: #e3e3e4;
+                }
                 &_wing {
-                    height: 52px;
-                    width: 50px;
+                    height: 35px;
+                    width: 35px;
                     display: flex;
+                    justify-content: center;
+                    align-items: center;
                     background-repeat: no-repeat;
                     background-image: url(./img/upload_1684217675277OZzsu.gif);
-                    background-size: 52px 52px;
-                    margin-top: -12px;
+                    background-size: 45px 45px;
                     cursor: pointer;
+                    
                 }
                 &_naver {
                     height: 35px;
                     width: 35px;
                     display: flex;
+                    justify-content: center;
+                    align-items: center;
                     background-repeat: no-repeat;
                     background-image: url(./img/sp-main.png);
-                    background-size: 442px 425px;
-                    background-position: -331px -350px;
-                    margin-top: -10px;
+                    background-size: 430px 427px;
+                    background-position: -323px -353px;
                     cursor: pointer;
                 }
             }
@@ -246,9 +280,11 @@ body {
 
             &_text {
                 height: 44px;
-                width: 520px;
-                margin-top: -7px;
-
+                width: 510px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 3px;
                 &_input {
                     height: 44px;
                     width: 520px;
@@ -261,8 +297,9 @@ body {
                     font-weight: bold;
 
                     &::placeholder {
+                        font-size: 20px;
                         font-weight: 200;
-                        color: rgb(197, 193, 193);
+                        color: rgb(231, 231, 231);
                     }
 
                     &:focus {
@@ -272,9 +309,9 @@ body {
             }
 
             &_keyboard-button {
+                margin: 5px 9px 0 10px;
                 border: none;
                 background-color: white;
-                margin-right: 10px;
                 height: 22px;
                 width: 26px;
                 display: inline-block;
@@ -286,10 +323,9 @@ body {
             }
 
             &_autocomplete-button {
+                margin: -3px 17px 0 0;
                 border: none;
                 background-color: white;
-                margin-top: -10px;
-                margin-right: 12px;
                 height: 12px;
                 width: 13px;
                 display: inline-block;
@@ -301,10 +337,9 @@ body {
             }
 
             &_search-button {
+                margin-top: 3px;
                 border: none;
                 background-color: white;
-                margin-top: -5px;
-                margin-left: 2px;
                 height: 25px;
                 width: 25px;
                 display: inline-block;
@@ -321,15 +356,14 @@ body {
         display: flex;
         justify-content: center;
         height: 76px;
-        font-size: 15px;
+        font-size: 14px;
         &_lists {
             display: flex;
             list-style-type: none;
             height: 76px;
-            width: 680px;
+            width: 660px;
             margin: 0 0 0 -40px;
             justify-content: space-between;
-
             &_list-1 {
                 height: 50px;
                 width: 50px;
@@ -338,7 +372,6 @@ body {
                 background-image: url(./img/sp-main.png);
                 background-size: 422px 405px;
                 background-position: -2px -129px;
-                border-radius: 38%;
                 border-radius: 38%;
                 cursor: pointer;
 
@@ -358,16 +391,15 @@ body {
                         background-position: -248px -90px;
                         cursor: pointer;
                     }
-
-                    &_text {
-                        margin-top: 7px;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                        display: block;
-                        margin-top: 7px;
-                        line-height: 20px;
-                        text-align: center;
-                    }
+                }
+                &_text {
+                    margin-top: 7px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    display: block;
+                    margin-top: 7px;
+                    line-height: 20px;
+                    text-align: center;
                 }
             }
 
@@ -399,15 +431,15 @@ body {
                         cursor: pointer;
                     }
 
-                    &_text {
-                        margin-top: 7px;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                        display: block;
-                        margin-top: 7px;
-                        line-height: 20px;
-                        text-align: center;
-                    }
+                }
+                &_text {
+                    margin-top: 7px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    display: block;
+                    margin-top: 7px;
+                    line-height: 20px;
+                    text-align: center;
                 }
             }
 
@@ -440,15 +472,15 @@ body {
                         cursor: pointer;
                     }
 
-                    &_text {
-                        margin-top: 7px;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                        display: block;
-                        margin-top: 7px;
-                        line-height: 20px;
-                        text-align: center;
-                    }
+                }
+                &_text {
+                    margin-top: 7px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    display: block;
+                    margin-top: 7px;
+                    line-height: 20px;
+                    text-align: center;
                 }
             }
 
@@ -481,15 +513,15 @@ body {
                         cursor: pointer;
                     }
 
-                    &_text {
-                        margin-top: 7px;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                        display: block;
-                        margin-top: 7px;
-                        line-height: 20px;
-                        text-align: center;
-                    }
+                }
+                &_text {
+                    margin-top: 7px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    display: block;
+                    margin-top: 7px;
+                    line-height: 20px;
+                    text-align: center;
                 }
             }
 
@@ -522,15 +554,15 @@ body {
                         cursor: pointer;
                     }
 
-                    &_text {
-                        margin-top: 7px;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                        display: block;
-                        margin-top: 7px;
-                        line-height: 20px;
-                        text-align: center;
-                    }
+                }
+                &_text {
+                    margin-top: 7px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    display: block;
+                    margin-top: 7px;
+                    line-height: 20px;
+                    text-align: center;
                 }
             }
 
@@ -563,15 +595,15 @@ body {
                         cursor: pointer;
                     }
 
-                    &_text {
-                        margin-top: 7px;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                        display: block;
-                        margin-top: 7px;
-                        line-height: 20px;
-                        text-align: center;
-                    }
+                }
+                &_text {
+                    margin-top: 7px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    display: block;
+                    margin-top: 7px;
+                    line-height: 20px;
+                    text-align: center;
                 }
             }
 
@@ -604,15 +636,15 @@ body {
                         cursor: pointer;
                     }
 
-                    &_text {
-                        margin-top: 7px;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                        display: block;
-                        margin-top: 7px;
-                        line-height: 20px;
-                        text-align: center;
-                    }
+                }
+                &_text {
+                    margin-top: 7px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    display: block;
+                    margin-top: 7px;
+                    line-height: 20px;
+                    text-align: center;
                 }
             }
 
@@ -645,15 +677,15 @@ body {
                         cursor: pointer;
                     }
 
-                    &_text {
-                        margin-top: 7px;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                        display: block;
-                        margin-top: 7px;
-                        line-height: 20px;
-                        text-align: center;
-                    }
+                }
+                &_text {
+                    margin-top: 7px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    display: block;
+                    margin-top: 7px;
+                    line-height: 20px;
+                    text-align: center;
                 }
             }
 
@@ -686,15 +718,15 @@ body {
                         cursor: pointer;
                     }
 
-                    &_text {
-                        margin-top: 7px;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                        display: block;
-                        margin-top: 7px;
-                        line-height: 20px;
-                        text-align: center;
-                    }
+                }
+                &_text {
+                    margin-top: 7px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    display: block;
+                    margin-top: 7px;
+                    line-height: 20px;
+                    text-align: center;
                 }
             }
 
@@ -862,7 +894,7 @@ body {
                     height: 35px;
                     width: 35px;
                     padding: 5px;
-                    border: 1px solid gray;
+                    border: 1px solid rgb(196, 194, 194);
                     background-color: white;
                     border-radius: 33px;
                     cursor: pointer;
@@ -894,7 +926,7 @@ body {
                     height: 35px;
                     width: 35px;
                     padding: 5px;
-                    border: 1px solid gray;
+                    border: 1px solid rgb(196, 194, 194);
                     background-color: white;
                     border-radius: 33px;
                     cursor: pointer;
@@ -1018,7 +1050,9 @@ body {
                     display: flex;
                     align-items: center;
                     &_title{
-                        width: 50px;
+                        width: 34px;
+                        font-size: 15px;
+                        font-weight: 600;
                         }
                     &_compare{
                         border: solid 1px #DADCDF;
