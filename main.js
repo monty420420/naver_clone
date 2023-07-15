@@ -1,11 +1,11 @@
-//스크롤 내릴시 navbar생성
+/* 스크롤 내릴시 navbar생성 */
 function scrollNavbar(){
   const navbar = document.querySelector(".navbar")
   const Header = document.querySelector(".header")  //header가 안보일때 navbar를 보여주기위해 class를 변수에 담아 기준으로 삼음
   const HeaderHeight = Header.getBoundingClientRect().height;  //header의 높이의값
-  console.log(navbar);
-  console.log(HeaderHeight);
-  console.log(window.scrollY);
+  // console.log(navbar);
+  // console.log(HeaderHeight);
+  // console.log(window.scrollY);
   document.addEventListener('scroll', ()=> {
     if(window.scrollY > HeaderHeight){  //스크롤y축이 header의 높이값보다 크면
       // console.log(window.scrollY);
@@ -18,16 +18,33 @@ function scrollNavbar(){
 scrollNavbar();
 
 
-//햄버거버튼 클릭 이벤트
+/* 햄버거 클릭시 모달창 */
+function hambergerClicked() {
+  const hamberger = document.querySelector(".header_simple_hamburger");
+  const hambergerButton = document.querySelector(".header_simple_hamburger_img");
+  const modal = document.querySelector(".header_simple_hamburger_modal");
+  const modalContent = document.querySelector(".modal"); //modal클래스 안의 div 변수
+
+  hambergerButton.addEventListener('click', function() {
+    modal.style.display = "block"; 
+    hamberger.classList.add("active");
+  });
+  
+  //데이터버블링 방지 modalContent에 클릭 이벤트 리스너를 등록하고, event.stopPropagation()을 호출하여 클릭 이벤트가 modalContent에서 전파되지 않게함
+  modalContent.addEventListener('click', function(event) {
+    event.stopPropagation();
+  });
+
+  document.addEventListener('click', function(event) {
+    if (event.target !== hambergerButton && event.target !== modal) {
+      modal.style.display = "none";
+      hamberger.classList.remove("active");
+    }
+  });
+}
 
 
-
-
-
-
-
-//3초뒤 이미지변환
-//3초뒤에 class이름을 변경하여 원하는 이미지로 변경 
+/* navaer logo 일정시간 지날때 이미지변경 */
 function changeNavImg(){
   setTimeout(function(){ 
    const element = document.querySelector(".navbar_search_form_logo_wing");
@@ -44,7 +61,7 @@ function changeHeaderImg(){
 changeHeaderImg();
 
 
-//navbar검색창, main검색창 검색어 공유
+/* navbar검색창, main검색창 검색어 공유 */
 const navbarInput = document.querySelector('.navbar_search_form_text_input');
 const mainInput = document.querySelector('.header_search_form_text_input');
 
@@ -61,7 +78,7 @@ mainInput.addEventListener('input', function() {
 
 
 
-//뉴스 페이지 이동
+/* 뉴스 페이지 이동 */
   // 현재 페이지를 나타내는 변수
   let currentPage = 1;
   
@@ -106,7 +123,7 @@ mainInput.addEventListener('input', function() {
 
 
 
-//스크롤 이동
+/* 스크롤 이동 */
 document.addEventListener('DOMContentLoaded', function() {
     let scrollUpButton = document.querySelector('.setting_scroll-up');
     scrollUpButton.addEventListener('click', function() {

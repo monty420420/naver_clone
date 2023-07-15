@@ -131,6 +131,32 @@ body {
   background-position: -365px -132px;
   cursor: pointer;
 }
+.wrap .button {
+  position: relative;
+  width: 100px;
+  height: 40px;
+  background-color: #007bff;
+  color: #ffffff;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+.wrap .button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.wrap .button.clicked::before {
+  display: block;
+}
+.wrap .modal.show {
+  display: block;
+}
 .wrap .drop {
   display: none;
 }
@@ -153,7 +179,7 @@ body {
   border-radius: 30px;
   margin-left: -7px;
 }
-.wrap .header_simple_hamburger:hover {
+.wrap .header_simple_hamburger:hover, .wrap .header_simple_hamburger.active {
   background-color: rgb(240, 239, 239);
 }
 .wrap .header_simple_hamburger_img {
@@ -166,6 +192,253 @@ body {
   background-size: 422px 405px;
   background-position: -335px -284px;
   cursor: pointer;
+}
+.wrap .header_simple_hamburger_modal {
+  position: absolute;
+  display: none;
+  top: 440px;
+  left: 500px;
+  transform: translate(-50%, -50%);
+  width: 410px;
+  height: 740px;
+  padding: 1px;
+  background-color: white;
+  border: 1px solid rgb(240, 239, 239);
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgb(180, 180, 180);
+  z-index: 25;
+  overflow-y: auto;
+}
+.wrap .header_simple_hamburger_modal .modal_title {
+  margin: 0 auto;
+  padding: 18px;
+  font-size: 17px;
+  font-weight: 600;
+  border-bottom: 1px solid rgb(240, 239, 239);
+}
+.wrap .header_simple_hamburger_modal .modal_login {
+  padding: 18px;
+  display: flex;
+  font-size: 17px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.wrap .header_simple_hamburger_modal .modal_login div:nth-child(1) {
+  font-weight: 600;
+}
+.wrap .header_simple_hamburger_modal .modal_menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  height: 178px;
+  padding: 0 0 20px 0;
+  margin: 0;
+  border-bottom: 1px solid rgb(240, 239, 239);
+}
+.wrap .header_simple_hamburger_modal .modal_menu_list {
+  width: 25%;
+}
+.wrap .header_simple_hamburger_modal .modal_menu_list_a-1 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  background-image: url(./img/sp-main.png);
+  background-size: 422px 405px;
+  background-position: -2px -129px;
+  border-radius: 38%;
+  cursor: pointer;
+}
+.wrap .header_simple_hamburger_modal .modal_menu_list_a-1_img {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 48px;
+  width: 48px;
+  background-repeat: no-repeat;
+  background-image: url(./img/sp-main.png);
+  background-size: 422px 405px;
+  background-position: -248px -90px;
+  cursor: pointer;
+}
+.wrap .header_simple_hamburger_modal .modal_menu_list_a-2 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  background-image: url(./img/sp-main.png);
+  background-size: 422px 405px;
+  background-position: -2px -129px;
+  border-radius: 38%;
+  cursor: pointer;
+}
+.wrap .header_simple_hamburger_modal .modal_menu_list_a-2_img {
+  display: flex;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+  background-repeat: no-repeat;
+  background-image: url(./img/sp-main.png);
+  background-size: 422px 405px;
+  background-position: -249px 1px;
+  cursor: pointer;
+}
+.wrap .header_simple_hamburger_modal .modal_menu_list_a-3 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  background-image: url(./img/sp-main.png);
+  background-size: 422px 405px;
+  background-position: -2px -129px;
+  border-radius: 38%;
+  cursor: pointer;
+}
+.wrap .header_simple_hamburger_modal .modal_menu_list_a-3_img {
+  display: flex;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+  background-repeat: no-repeat;
+  background-image: url(./img/sp-main.png);
+  background-size: 422px 405px;
+  background-position: -200px -95px;
+  cursor: pointer;
+}
+.wrap .header_simple_hamburger_modal .modal_menu_list_a-4 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  background-image: url(./img/sp-main.png);
+  background-size: 422px 405px;
+  background-position: -2px -129px;
+  border-radius: 38%;
+  cursor: pointer;
+}
+.wrap .header_simple_hamburger_modal .modal_menu_list_a-4_img {
+  display: flex;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+  background-repeat: no-repeat;
+  background-image: url(./img/sp-main.png);
+  background-size: 422px 405px;
+  background-position: -88px -205px;
+  cursor: pointer;
+}
+.wrap .header_simple_hamburger_modal .modal_menu_list_a-5 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  background-image: url(./img/sp-main.png);
+  background-size: 422px 405px;
+  background-position: -2px -129px;
+  border-radius: 38%;
+  cursor: pointer;
+}
+.wrap .header_simple_hamburger_modal .modal_menu_list_a-5_img {
+  display: flex;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+  background-repeat: no-repeat;
+  background-image: url(./img/sp-main.png);
+  background-size: 422px 405px;
+  background-position: -179px -205px;
+  cursor: pointer;
+}
+.wrap .header_simple_hamburger_modal .modal_menu_list_a-6 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  background-image: url(./img/sp-main.png);
+  background-size: 422px 405px;
+  background-position: -2px -129px;
+  border-radius: 38%;
+  cursor: pointer;
+}
+.wrap .header_simple_hamburger_modal .modal_menu_list_a-6_img {
+  display: flex;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+  background-repeat: no-repeat;
+  background-image: url(./img/sp-main.png);
+  background-size: 422px 405px;
+  background-position: -179px -205px;
+  cursor: pointer;
+}
+.wrap .header_simple_hamburger_modal .modal_menu_list_a-7 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  background-image: url(./img/sp-main.png);
+  background-size: 422px 405px;
+  background-position: -2px -129px;
+  border-radius: 38%;
+  cursor: pointer;
+}
+.wrap .header_simple_hamburger_modal .modal_menu_list_a-7_img {
+  display: flex;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+  background-repeat: no-repeat;
+  background-image: url(./img/sp-main.png);
+  background-size: 422px 405px;
+  background-position: -179px -205px;
+  cursor: pointer;
+}
+.wrap .header_simple_hamburger_modal .modal_menu_list_a-8 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  background-image: url(./img/sp-main.png);
+  background-size: 422px 405px;
+  background-position: -2px -129px;
+  border-radius: 38%;
+  cursor: pointer;
+}
+.wrap .header_simple_hamburger_modal .modal_menu_list_a-8_img {
+  display: flex;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+  background-repeat: no-repeat;
+  background-image: url(./img/sp-main.png);
+  background-size: 422px 405px;
+  background-position: -179px -205px;
+  cursor: pointer;
+}
+.wrap .header_simple_hamburger_modal .modal_menu_list_text {
+  margin-top: 4px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+}
+.wrap .header_simple_hamburger_modal .modal_service_title {
+  display: flex;
 }
 .wrap .header_simple_function {
   display: flex;
@@ -365,9 +638,6 @@ body {
 .wrap .header_menu_lists_list-1:hover {
   box-shadow: 1px 1px 5px rgb(180, 180, 180);
 }
-.wrap .header_menu_lists_list-1_a-1 {
-  text-decoration: none;
-}
 .wrap .header_menu_lists_list-1_a-1_img {
   height: 48px;
   width: 48px;
@@ -399,9 +669,6 @@ body {
 }
 .wrap .header_menu_lists_list-2:hover {
   box-shadow: 1px 1px 5px rgb(180, 180, 180);
-}
-.wrap .header_menu_lists_list-2_a-2 {
-  text-decoration: none;
 }
 .wrap .header_menu_lists_list-2_a-2_img {
   height: 48px;
@@ -435,9 +702,6 @@ body {
 .wrap .header_menu_lists_list-3:hover {
   box-shadow: 1px 1px 5px rgb(180, 180, 180);
 }
-.wrap .header_menu_lists_list-3_a-3 {
-  text-decoration: none;
-}
 .wrap .header_menu_lists_list-3_a-3_img {
   height: 48px;
   width: 48px;
@@ -469,9 +733,6 @@ body {
 }
 .wrap .header_menu_lists_list-4:hover {
   box-shadow: 1px 1px 5px rgb(180, 180, 180);
-}
-.wrap .header_menu_lists_list-4_a-4 {
-  text-decoration: none;
 }
 .wrap .header_menu_lists_list-4_a-4_img {
   height: 48px;
@@ -505,9 +766,6 @@ body {
 .wrap .header_menu_lists_list-5:hover {
   box-shadow: 1px 1px 5px rgb(180, 180, 180);
 }
-.wrap .header_menu_lists_list-5_a-5 {
-  text-decoration: none;
-}
 .wrap .header_menu_lists_list-5_a-5_img {
   height: 48px;
   width: 48px;
@@ -539,9 +797,6 @@ body {
 }
 .wrap .header_menu_lists_list-6:hover {
   box-shadow: 1px 1px 5px rgb(180, 180, 180);
-}
-.wrap .header_menu_lists_list-6_a-6 {
-  text-decoration: none;
 }
 .wrap .header_menu_lists_list-6_a-6_img {
   height: 48px;
@@ -575,9 +830,6 @@ body {
 .wrap .header_menu_lists_list-7:hover {
   box-shadow: 1px 1px 5px rgb(180, 180, 180);
 }
-.wrap .header_menu_lists_list-7_a-7 {
-  text-decoration: none;
-}
 .wrap .header_menu_lists_list-7_a-7_img {
   height: 48px;
   width: 48px;
@@ -609,9 +861,6 @@ body {
 }
 .wrap .header_menu_lists_list-8:hover {
   box-shadow: 1px 1px 5px rgb(180, 180, 180);
-}
-.wrap .header_menu_lists_list-8_a-8 {
-  text-decoration: none;
 }
 .wrap .header_menu_lists_list-8_a-8_img {
   height: 48px;
@@ -645,9 +894,6 @@ body {
 .wrap .header_menu_lists_list-9:hover {
   box-shadow: 1px 1px 5px rgb(180, 180, 180);
 }
-.wrap .header_menu_lists_list-9_a-9 {
-  text-decoration: none;
-}
 .wrap .header_menu_lists_list-9_a-9_img {
   height: 48px;
   width: 48px;
@@ -665,9 +911,6 @@ body {
   margin-top: 7px;
   line-height: 20px;
   text-align: center;
-}
-.wrap .header_menu_lists_list-10_a-10 {
-  text-decoration: none;
 }
 .wrap .header_menu_lists_list-10_a-10_img {
   height: 48px;

@@ -7,10 +7,26 @@ body {
     margin: 0;
     padding: 0;
 }
+// .popup-container {
+//     z-index: 20;
+//     position: absolute;
+//     top: 25%;
+//     left: 28%;
+//     transform: translate(-50%, -50%);
+//     width: 400px;
+//     height: 300px;
+//     background-color: #ffffff;
+//     border: 1px solid #000000;
+//     padding: 20px;
+//   }
+//   .popup-content {
+//     text-align: center;
+//  }
 
 .wrap{
     min-width: 1340px;
     display: block;
+
 .navbar{
     width: 100%;
     height: 64px;
@@ -138,6 +154,52 @@ body {
         }
     }
 }
+
+.button {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+  
+//   .modal {
+//     position: absolute;
+//     top: 535px;
+//     left: 470px;
+//     transform: translate(-50%, -50%);
+//     width: 300px;
+//     height: 900px;
+//     background-color: #ffffff;
+//     border: 1px solid #000000;
+//     padding: 20px;
+//     display: none;
+//     z-index: 20;
+//   }
+  
+  .button.clicked::before {
+    display: block;
+  }
+  
+  .modal.show {
+    display: block;
+  }
+
+//news scroll
 .drop{
     display: none;
    }
@@ -158,9 +220,10 @@ body {
             align-items: center;
             border-radius: 30px;
             margin-left: -7px;
-            &:hover{
+            &:hover,
+            &.active {
                 background-color: rgb(240, 239, 239);
-            }
+              }
             &_img {
                 all: unset;
                 height: 26px;
@@ -171,7 +234,255 @@ body {
                 background-size: 422px 405px;
                 background-position: -335px -284px;
                 cursor: pointer;
-            }
+            }  
+            &_modal{
+                    position: absolute;
+                    display: none;
+                    top: 440px;
+                    left: 500px;
+                    transform: translate(-50%, -50%);
+                    width: 410px;
+                    height: 740px;
+                    padding: 1px;
+                    background-color: white;
+                    border: 1px solid rgb(240, 239, 239);
+                    border-radius: 10px;
+                    box-shadow: 1px 1px 5px rgb(180, 180, 180);
+                    z-index: 25;
+                    overflow-y: auto;
+                    .modal{
+                        &_title{
+                           margin: 0 auto;
+                           padding: 18px;
+                           font-size: 17px;
+                           font-weight: 600;
+                           border-bottom: 1px solid rgb(240, 239, 239);
+                        }
+                        &_login{
+                            padding: 18px;
+                            display: flex;
+                            font-size: 17px;
+                            font-weight:400;
+                            cursor: pointer;
+                            div:nth-child(1){
+                                font-weight: 600;
+                            }
+                        }
+                        &_menu{
+                            display: flex;
+                            flex-wrap: wrap;
+                            list-style-type: none;
+                            height: 178px;
+                            padding: 0 0 20px 0;
+                            margin: 0;
+                            border-bottom: 1px solid rgb(240, 239, 239);
+                           &_list{
+                            width: 25%;
+                            &_a-1{
+                                display: flex;
+                                justify-content: center;
+                                margin: 0 auto;
+                                height: 50px;
+                                width: 50px;
+                                background-repeat: no-repeat;
+                                background-image: url(./img/sp-main.png);
+                                background-size: 422px 405px;
+                                background-position: -2px -129px;
+                                border-radius: 38%;
+                                cursor: pointer;
+                                &_img{
+                                    display: flex;
+                                    justify-content: center;
+                                    margin: 0 auto;
+                                    height: 48px;
+                                    width: 48px;
+                                    background-repeat: no-repeat;
+                                    background-image: url(./img/sp-main.png);
+                                    background-size: 422px 405px;
+                                    background-position: -248px -90px;
+                                    cursor: pointer;
+                                }
+                            }
+                            &_a-2 {
+                                display: flex;
+                                justify-content: center;
+                                margin: 0 auto;
+                                height: 50px;
+                                width: 50px;
+                                background-repeat: no-repeat;
+                                background-image: url(./img/sp-main.png);
+                                background-size: 422px 405px;
+                                background-position: -2px -129px;
+                                border-radius: 38%;
+                                cursor: pointer;
+                                &_img {
+                                    display: flex;
+                                    justify-content: center;
+                                    height: 48px;
+                                    width: 48px;
+                                    background-repeat: no-repeat;
+                                    background-image: url(./img/sp-main.png);
+                                    background-size: 422px 405px;
+                                    background-position: -249px 1px;
+                                    cursor: pointer;
+                                }
+                            }
+
+                            &_a-3{                                display: flex;
+                                justify-content: center;
+                                margin: 0 auto;
+                                height: 50px;
+                                width: 50px;
+                                background-repeat: no-repeat;
+                                background-image: url(./img/sp-main.png);
+                                background-size: 422px 405px;
+                                background-position: -2px -129px;
+                                border-radius: 38%;
+                                cursor: pointer;
+                                &_img{
+                                    display: flex;
+                                    justify-content: center;
+                                    height: 48px;
+                                    width: 48px;
+                                    background-repeat: no-repeat;
+                                    background-image: url(./img/sp-main.png);
+                                    background-size: 422px 405px;
+                                    background-position: -200px -95px;
+                                    cursor: pointer;
+                                }
+                            }
+
+                            &_a-4{                                display: flex;
+                                justify-content: center;
+                                margin: 0 auto;
+                                height: 50px;
+                                width: 50px;
+                                background-repeat: no-repeat;
+                                background-image: url(./img/sp-main.png);
+                                background-size: 422px 405px;
+                                background-position: -2px -129px;
+                                border-radius: 38%;
+                                cursor: pointer;
+                                &_img{
+                                    display: flex;
+                                    justify-content: center;
+                                    height: 48px;
+                                    width: 48px;
+                                    background-repeat: no-repeat;
+                                    background-image: url(./img/sp-main.png);
+                                    background-size: 422px 405px;
+                                    background-position: -88px -205px;
+                                    cursor: pointer;
+                                }
+                            }
+                            &_a-5{                                display: flex;
+                                justify-content: center;
+                                margin: 0 auto;
+                                height: 50px;
+                                width: 50px;
+                                background-repeat: no-repeat;
+                                background-image: url(./img/sp-main.png);
+                                background-size: 422px 405px;
+                                background-position: -2px -129px;
+                                border-radius: 38%;
+                                cursor: pointer;
+                                &_img{
+                                    display: flex;
+                                    justify-content: center;
+                                    height: 48px;
+                                    width: 48px;
+                                    background-repeat: no-repeat;
+                                    background-image: url(./img/sp-main.png);
+                                    background-size: 422px 405px;
+                                    background-position: -179px -205px;
+                                    cursor: pointer;
+                                }
+                            }
+                            &_a-6{                                display: flex;
+                                justify-content: center;
+                                margin: 0 auto;
+                                height: 50px;
+                                width: 50px;
+                                background-repeat: no-repeat;
+                                background-image: url(./img/sp-main.png);
+                                background-size: 422px 405px;
+                                background-position: -2px -129px;
+                                border-radius: 38%;
+                                cursor: pointer;
+                                &_img{
+                                    display: flex;
+                                    justify-content: center;
+                                    height: 48px;
+                                    width: 48px;
+                                    background-repeat: no-repeat;
+                                    background-image: url(./img/sp-main.png);
+                                    background-size: 422px 405px;
+                                    background-position: -179px -205px;
+                                    cursor: pointer;
+                                }
+                            }
+                            &_a-7{                                display: flex;
+                                justify-content: center;
+                                margin: 0 auto;
+                                height: 50px;
+                                width: 50px;
+                                background-repeat: no-repeat;
+                                background-image: url(./img/sp-main.png);
+                                background-size: 422px 405px;
+                                background-position: -2px -129px;
+                                border-radius: 38%;
+                                cursor: pointer;
+                                &_img{
+                                    display: flex;
+                                    justify-content: center;
+                                    height: 48px;
+                                    width: 48px;
+                                    background-repeat: no-repeat;
+                                    background-image: url(./img/sp-main.png);
+                                    background-size: 422px 405px;
+                                    background-position: -179px -205px;
+                                    cursor: pointer;
+                                }
+                            }
+                            &_a-8{                                display: flex;
+                                justify-content: center;
+                                margin: 0 auto;
+                                height: 50px;
+                                width: 50px;
+                                background-repeat: no-repeat;
+                                background-image: url(./img/sp-main.png);
+                                background-size: 422px 405px;
+                                background-position: -2px -129px;
+                                border-radius: 38%;
+                                cursor: pointer;
+                                &_img{
+                                    display: flex;
+                                    justify-content: center;
+                                    height: 48px;
+                                    width: 48px;
+                                    background-repeat: no-repeat;
+                                    background-image: url(./img/sp-main.png);
+                                    background-size: 422px 405px;
+                                    background-position: -179px -205px;
+                                    cursor: pointer;
+                                }
+                            }
+
+                            &_text{
+                                margin-top: 4px;
+                                font-size: 14px;
+                                display: flex;
+                                justify-content: center;
+                            }
+                           }
+                        }
+                        &_service{
+                            &_title{
+                                display: flex;
+                            }
+                        }
+                    }
+            } 
         }
         &_function {
             display: flex;
@@ -380,8 +691,7 @@ body {
                 }
 
                 &_a-1 {
-                    text-decoration: none;
-
+                    
                     &_img {
                         height: 48px;
                         width: 48px;
@@ -419,7 +729,6 @@ body {
                 }
 
                 &_a-2 {
-                    text-decoration: none;
 
                     &_img {
                         height: 48px;
@@ -451,7 +760,6 @@ body {
                 background-image: url(./img/sp-main.png);
                 background-size: 422px 405px;
                 background-position: -2px -129px;
-                
                 border-radius: 38%;
                 cursor: pointer;
 
@@ -460,7 +768,6 @@ body {
                 }
 
                 &_a-3 {
-                    text-decoration: none;
 
                     &_img {
                         height: 48px;
@@ -492,7 +799,6 @@ body {
                 background-image: url(./img/sp-main.png);
                 background-size: 422px 405px;
                 background-position: -2px -129px;
-                
                 border-radius: 38%;
                 cursor: pointer;
 
@@ -501,8 +807,6 @@ body {
                 }
 
                 &_a-4 {
-                    text-decoration: none;
-
                     &_img {
                         height: 48px;
                         width: 48px;
@@ -542,8 +846,6 @@ body {
                 }
 
                 &_a-5 {
-                    text-decoration: none;
-
                     &_img {
                         height: 48px;
                         width: 48px;
@@ -574,7 +876,6 @@ body {
                 background-image: url(./img/sp-main.png);
                 background-size: 422px 405px;
                 background-position: -2px -129px;
-                
                 border-radius: 38%;
                 cursor: pointer;
 
@@ -583,8 +884,6 @@ body {
                 }
 
                 &_a-6 {
-                    text-decoration: none;
-
                     &_img {
                         height: 48px;
                         width: 48px;
@@ -624,7 +923,6 @@ body {
                 }
 
                 &_a-7 {
-                    text-decoration: none;
 
                     &_img {
                         height: 48px;
@@ -665,7 +963,6 @@ body {
                 }
 
                 &_a-8 {
-                    text-decoration: none;
 
                     &_img {
                         height: 48px;
@@ -706,8 +1003,6 @@ body {
                 }
 
                 &_a-9 {
-                    text-decoration: none;
-
                     &_img {
                         height: 48px;
                         width: 48px;
@@ -732,8 +1027,6 @@ body {
 
             &_list-10 {
                 &_a-10 {
-                    text-decoration: none;
-
                     &_img {
                         height: 48px;
                         width: 48px;
