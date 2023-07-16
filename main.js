@@ -51,6 +51,7 @@ function changeNavImg(){
    element.className = 'navbar_search_form_logo_naver';  //여기서 .없이해야함
   },3000);
 }
+
 changeNavImg();
 function changeHeaderImg(){
   setTimeout(function(){ 

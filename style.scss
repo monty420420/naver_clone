@@ -213,6 +213,7 @@ body {
         display: flex;
         justify-content: space-between;
         &_hamburger {
+            position: relative;
             height: 42px;
             width: 42px;
             display: flex;
@@ -238,8 +239,9 @@ body {
             &_modal{
                     position: absolute;
                     display: none;
-                    top: 440px;
-                    left: 500px;
+                    // display: block;
+                    top: 1000%;
+                    left: 480%;
                     transform: translate(-50%, -50%);
                     width: 410px;
                     height: 740px;
@@ -263,6 +265,7 @@ body {
                             display: flex;
                             font-size: 17px;
                             font-weight:400;
+                            width: 114px;
                             cursor: pointer;
                             div:nth-child(1){
                                 font-weight: 600;
@@ -274,7 +277,7 @@ body {
                             list-style-type: none;
                             height: 178px;
                             padding: 0 0 20px 0;
-                            margin: 0;
+                            margin: 0 0 10px 0;
                             border-bottom: 1px solid rgb(240, 239, 239);
                            &_list{
                             width: 25%;
@@ -479,6 +482,74 @@ body {
                         &_service{
                             &_title{
                                 display: flex;
+                                justify-content: space-between;
+                                padding: 18px;
+                                div:nth-child(1){
+                                    font-weight: 600;
+                                }
+                            }
+                            &_news{
+                              .news{
+                                margin: 18px;
+                                border: 1px solid black;
+                                &_title{
+                                    padding: 10px;
+                                    background-color: #EEf2f9;
+                                    border-bottom: 1px solid rgb(240, 239, 239);
+                                }
+                                &_menu{
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    padding: 0;
+                                    &_list{
+                                        width: 50%;
+                                        display: flex;
+                                        &_img{
+                                         width: 32px;
+                                         height: 32px;
+                                        }
+                                        &_text{
+                                            
+                                        }
+                                    }
+                                }
+                              }
+                            }
+                              &_finance{
+                                .finance{
+                                    margin: 18px;
+                                    border: 1px solid black;
+                                    &_title{
+                                        padding: 10px;
+                                        background-color: #EEf2f9;
+                                        border-bottom: 1px solid rgb(240, 239, 239);
+                                    }
+                                    &_menu{
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        &_list{
+                                            width: 50%;
+                                        }
+                                    }
+                                  }
+                              }
+                            &_entertain{
+                               .entertain{
+                                margin: 18px;
+                                border: 1px solid black;
+                                &_title{
+                                    padding: 10px;
+                                    background-color: #EEf2f9;
+                                    border-bottom: 1px solid rgb(240, 239, 239);
+                                }
+                                &_menu{
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    &_list{
+                                        width: 50%;
+                                    }
+                                }
+                               }
                             }
                         }
                     }
@@ -586,7 +657,7 @@ body {
             }
 
             &_label {
-                 
+                
             }
 
             &_text {
@@ -837,10 +908,8 @@ body {
                 background-image: url(./img/sp-main.png);
                 background-size: 422px 405px;
                 background-position: -2px -129px;
-                
                 border-radius: 38%;
                 cursor: pointer;
-
                 &:hover {
                     box-shadow: 1px 1px 5px rgb(180, 180, 180);
                 }
@@ -878,11 +947,9 @@ body {
                 background-position: -2px -129px;
                 border-radius: 38%;
                 cursor: pointer;
-
                 &:hover {
                     box-shadow: 1px 1px 5px rgb(180, 180, 180);
                 }
-
                 &_a-6 {
                     &_img {
                         height: 48px;
@@ -893,7 +960,6 @@ body {
                         background-position: -179px -205px;
                         cursor: pointer;
                     }
-
                 }
                 &_text {
                     margin-top: 7px;
@@ -905,7 +971,6 @@ body {
                     text-align: center;
                 }
             }
-
             &_list-7 {
                 height: 50px;
                 width: 50px;
@@ -914,10 +979,8 @@ body {
                 background-image: url(./img/sp-main.png);
                 background-size: 422px 405px;
                 background-position: -2px -129px;
-                
                 border-radius: 38%;
                 cursor: pointer;
-
                 &:hover {
                     box-shadow: 1px 1px 5px rgb(180, 180, 180);
                 }
@@ -933,7 +996,6 @@ body {
                         background-position: -43px -205px;
                         cursor: pointer;
                     }
-
                 }
                 &_text {
                     margin-top: 7px;
@@ -954,16 +1016,12 @@ body {
                 background-image: url(./img/sp-main.png);
                 background-size: 422px 405px;
                 background-position: -2px -129px;
-                
                 border-radius: 38%;
                 cursor: pointer;
-
                 &:hover {
                     box-shadow: 1px 1px 5px rgb(180, 180, 180);
                 }
-
                 &_a-8 {
-
                     &_img {
                         height: 48px;
                         width: 48px;
@@ -973,7 +1031,6 @@ body {
                         background-position: -205px 2px;
                         cursor: pointer;
                     }
-
                 }
                 &_text {
                     margin-top: 7px;
@@ -985,7 +1042,6 @@ body {
                     text-align: center;
                 }
             }
-
             &_list-9 {
                 height: 50px;
                 width: 50px;
@@ -994,10 +1050,8 @@ body {
                 background-image: url(./img/sp-main.png);
                 background-size: 422px 405px;
                 background-position: -2px -129px;
-                
                 border-radius: 38%;
                 cursor: pointer;
-
                 &:hover {
                     box-shadow: 1px 1px 5px rgb(180, 180, 180);
                 }
@@ -1012,7 +1066,6 @@ body {
                         background-position: -222px -206px;
                         cursor: pointer;
                     }
-
                 }
                 &_text {
                     margin-top: 7px;
@@ -1036,7 +1089,6 @@ body {
                         background-position: -248px -133px;
                         cursor: pointer;
                         border-radius: 38%;
-
                         &:hover {
                             box-shadow: 1px 1px 5px rgb(180, 180, 180);
                         }

@@ -171,6 +171,7 @@ body {
   justify-content: space-between;
 }
 .wrap .header_simple_hamburger {
+  position: relative;
   height: 42px;
   width: 42px;
   display: flex;
@@ -196,8 +197,8 @@ body {
 .wrap .header_simple_hamburger_modal {
   position: absolute;
   display: none;
-  top: 440px;
-  left: 500px;
+  top: 1000%;
+  left: 480%;
   transform: translate(-50%, -50%);
   width: 410px;
   height: 740px;
@@ -221,6 +222,7 @@ body {
   display: flex;
   font-size: 17px;
   font-weight: 400;
+  width: 114px;
   cursor: pointer;
 }
 .wrap .header_simple_hamburger_modal .modal_login div:nth-child(1) {
@@ -232,7 +234,7 @@ body {
   list-style-type: none;
   height: 178px;
   padding: 0 0 20px 0;
-  margin: 0;
+  margin: 0 0 10px 0;
   border-bottom: 1px solid rgb(240, 239, 239);
 }
 .wrap .header_simple_hamburger_modal .modal_menu_list {
@@ -439,6 +441,65 @@ body {
 }
 .wrap .header_simple_hamburger_modal .modal_service_title {
   display: flex;
+  justify-content: space-between;
+  padding: 18px;
+}
+.wrap .header_simple_hamburger_modal .modal_service_title div:nth-child(1) {
+  font-weight: 600;
+}
+.wrap .header_simple_hamburger_modal .modal_service_news .news {
+  margin: 18px;
+  border: 1px solid black;
+}
+.wrap .header_simple_hamburger_modal .modal_service_news .news_title {
+  padding: 10px;
+  background-color: #EEf2f9;
+  border-bottom: 1px solid rgb(240, 239, 239);
+}
+.wrap .header_simple_hamburger_modal .modal_service_news .news_menu {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.wrap .header_simple_hamburger_modal .modal_service_news .news_menu_list {
+  width: 50%;
+  display: flex;
+}
+.wrap .header_simple_hamburger_modal .modal_service_news .news_menu_list_img {
+  width: 32px;
+  height: 32px;
+}
+.wrap .header_simple_hamburger_modal .modal_service_finance .finance {
+  margin: 18px;
+  border: 1px solid black;
+}
+.wrap .header_simple_hamburger_modal .modal_service_finance .finance_title {
+  padding: 10px;
+  background-color: #EEf2f9;
+  border-bottom: 1px solid rgb(240, 239, 239);
+}
+.wrap .header_simple_hamburger_modal .modal_service_finance .finance_menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrap .header_simple_hamburger_modal .modal_service_finance .finance_menu_list {
+  width: 50%;
+}
+.wrap .header_simple_hamburger_modal .modal_service_entertain .entertain {
+  margin: 18px;
+  border: 1px solid black;
+}
+.wrap .header_simple_hamburger_modal .modal_service_entertain .entertain_title {
+  padding: 10px;
+  background-color: #EEf2f9;
+  border-bottom: 1px solid rgb(240, 239, 239);
+}
+.wrap .header_simple_hamburger_modal .modal_service_entertain .entertain_menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrap .header_simple_hamburger_modal .modal_service_entertain .entertain_menu_list {
+  width: 50%;
 }
 .wrap .header_simple_function {
   display: flex;
