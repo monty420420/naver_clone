@@ -1,12 +1,13 @@
 :root {
     //공통
-    
+
 }
 
 body {
     margin: 0;
     padding: 0;
 }
+
 // .popup-container {
 //     z-index: 20;
 //     position: absolute;
@@ -23,220 +24,217 @@ body {
 //     text-align: center;
 //  }
 
-.wrap{
+.wrap {
     min-width: 1340px;
     display: block;
 
-.navbar{
-    width: 100%;
-    height: 64px;
-    background-color: white;
-    border: solid 1px #03af50;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    position: fixed;
-    animation: dropNavbar 0.3s;
-    z-index: 30;
-    &_search{
-        display: flex;
-        justify-content: center;
-        height: 74px;
-        &_form{
-            width: 1280px;
-            height: 54px;
-            border-radius: 33px;
+    .navbar {
+        width: 100%;
+        height: 64px;
+        background-color: white;
+        border: solid 1px #03af50;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        position: fixed;
+        animation: dropNavbar 0.3s;
+        z-index: 30;
+
+        &_search {
             display: flex;
-            align-items: center;
-            padding-top: 5px;
-            &_logo {
-                height: 24px;
-                width: 55px;
-                margin-right: 7px;
-                margin-top: -5px;
-                border-right: 1px #E8ECEE solid;
-                margin-left: -8px;
-                &_wing {
-                    height: 52px;
-                    width: 50px;
-                    display: flex;
-                    background-repeat: no-repeat;
-                    background-image: url(./img/upload_1684217675277OZzsu.gif);
-                    background-size: 52px 52px;
-                    margin-top: -12px;
-                    cursor: pointer;
+            justify-content: center;
+            height: 74px;
+
+            &_form {
+                width: 1280px;
+                height: 54px;
+                border-radius: 33px;
+                display: flex;
+                align-items: center;
+                padding-top: 5px;
+
+                &_logo {
+                    height: 24px;
+                    width: 55px;
+                    margin-right: 7px;
+                    margin-top: -5px;
+                    border-right: 1px #E8ECEE solid;
+                    margin-left: -8px;
+
+                    &_wing {
+                        height: 52px;
+                        width: 50px;
+                        display: flex;
+                        background-repeat: no-repeat;
+                        background-image: url(./img/upload_1684217675277OZzsu.gif);
+                        background-size: 52px 52px;
+                        margin-top: -12px;
+                        cursor: pointer;
+                    }
+
+                    &_naver {
+                        height: 35px;
+                        width: 35px;
+                        display: flex;
+                        background-repeat: no-repeat;
+                        background-image: url(./img/sp-main.png);
+                        background-size: 442px 425px;
+                        background-position: -331px -350px;
+                        margin-top: -10px;
+                        cursor: pointer;
+                    }
                 }
-                &_naver {
-                    height: 35px;
-                    width: 35px;
-                    display: flex;
+
+                &_label {}
+
+                &_text {
+                    height: 44px;
+                    width: 540px;
+                    margin-top: -7px;
+                    margin-right: 150px;
+
+                    &_input {
+                        height: 44px;
+                        width: 565px;
+                        margin-top: 2px;
+                        border: none;
+                        z-index: 10;
+                        position: relative;
+                        padding: 17px 10px;
+                        font-size: 22px;
+                        font-weight: bold;
+
+                        &::placeholder {
+                            font-weight: 200;
+                            color: rgb(197, 193, 193);
+                        }
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+
+                &_keyboard-button {
+                    border: none;
+                    background-color: white;
+                    margin-right: 10px;
+                    height: 22px;
+                    width: 26px;
+                    display: inline-block;
                     background-repeat: no-repeat;
                     background-image: url(./img/sp-main.png);
-                    background-size: 442px 425px;
-                    background-position: -331px -350px;
-                    margin-top: -10px;
+                    background-size: 422px 405px;
+                    background-position: -268px -233px;
                     cursor: pointer;
                 }
-            }
-            &_label {
-                 
-            }
 
-            &_text {
-                height: 44px;
-                width: 540px;
-                margin-top: -7px;
-                margin-right: 150px;
-                &_input {
-                    height: 44px;
-                    width: 565px;
-                    margin-top: 2px;
+                &_autocomplete-button {
                     border: none;
-                    z-index: 10;
-                    position: relative;
-                    padding: 17px 10px;
-                    font-size: 22px;
-                    font-weight: bold;
-                    &::placeholder {
-                        font-weight: 200;
-                        color: rgb(197, 193, 193);
-                    }
-
-                    &:focus {
-                        outline: none;
-                    }
+                    background-color: white;
+                    margin-top: -10px;
+                    margin-right: 12px;
+                    height: 12px;
+                    width: 13px;
+                    display: inline-block;
+                    background-repeat: no-repeat;
+                    background-image: url(./img/sp-main.png);
+                    background-size: 422px 405px;
+                    background-position: -409px -333px;
+                    cursor: pointer;
                 }
-            }
 
-            &_keyboard-button {
-                border: none;
-                background-color: white;
-                margin-right: 10px;
-                height: 22px;
-                width: 26px;
-                display: inline-block;
-                background-repeat: no-repeat;
-                background-image: url(./img/sp-main.png);
-                background-size: 422px 405px;
-                background-position: -268px -233px;
-                cursor: pointer;
-            }
-
-            &_autocomplete-button {
-                border: none;
-                background-color: white;
-                margin-top: -10px;
-                margin-right: 12px;
-                height: 12px;
-                width: 13px;
-                display: inline-block;
-                background-repeat: no-repeat;
-                background-image: url(./img/sp-main.png);
-                background-size: 422px 405px;
-                background-position: -409px -333px;
-                cursor: pointer;
-            }
-
-            &_search-button {
-                border: none;
-                background-color: white;
-                margin-top: -5px;
-                margin-left: 2px;
-                height: 25px;
-                width: 25px;
-                display: inline-block;
-                background-repeat: no-repeat;
-                background-image: url(./img/sp-main.png);
-                background-size: 422px 405px;
-                background-position: -365px -132px;
-                cursor: pointer;
+                &_search-button {
+                    border: none;
+                    background-color: white;
+                    margin-top: -5px;
+                    margin-left: 2px;
+                    height: 25px;
+                    width: 25px;
+                    display: inline-block;
+                    background-repeat: no-repeat;
+                    background-image: url(./img/sp-main.png);
+                    background-size: 422px 405px;
+                    background-position: -365px -132px;
+                    cursor: pointer;
+                }
             }
         }
     }
-}
 
-.button {
-    position: relative;
-    width: 100px;
-    height: 40px;
-    background-color: #007bff;
-    color: #ffffff;
-    text-align: center;
-    line-height: 40px;
-    cursor: pointer;
-  }
-  
-  .button::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
-  }
-  
-//   .modal {
-//     position: absolute;
-//     top: 535px;
-//     left: 470px;
-//     transform: translate(-50%, -50%);
-//     width: 300px;
-//     height: 900px;
-//     background-color: #ffffff;
-//     border: 1px solid #000000;
-//     padding: 20px;
-//     display: none;
-//     z-index: 20;
-//   }
-  
-  .button.clicked::before {
-    display: block;
-  }
-  
-  .modal.show {
-    display: block;
-  }
+    .button {
+        position: relative;
+        width: 100px;
+        height: 40px;
+        background-color: #007bff;
+        color: #ffffff;
+        text-align: center;
+        line-height: 40px;
+        cursor: pointer;
+    }
 
-//news scroll
-.drop{
-    display: none;
-   }
+    .button::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+    }
 
-.header {
-    margin: 0 auto;
-    width: 1280px;
-    padding-top: 20px;
-    height: 238px;
-    &_simple {
-        display: flex;
-        justify-content: space-between;
-        &_hamburger {
-            position: relative;
-            height: 42px;
-            width: 42px;
+    .button.clicked::before {
+        display: block;
+    }
+
+    .modal.show {
+        display: block;
+    }
+
+    //news scroll
+    .drop {
+        display: none;
+    }
+
+    .header {
+        margin: 0 auto;
+        width: 1280px;
+        padding-top: 20px;
+        height: 238px;
+
+        &_simple {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 30px;
-            margin-left: -7px;
-            &:hover,
-            &.active {
-                background-color: rgb(240, 239, 239);
-              }
-            &_img {
-                all: unset;
-                height: 26px;
-                width: 26px;
-                display: inline-block;
-                background-repeat: no-repeat;
-                background-image: url(./img/sp-main.png);
-                background-size: 422px 405px;
-                background-position: -335px -284px;
-                cursor: pointer;
-            }  
-            &_modal{
+            justify-content: space-between;
+
+            &_hamburger {
+                position: relative;
+                height: 42px;
+                width: 42px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 30px;
+                margin-left: -7px;
+
+                &:hover,
+                &.active {
+                    background-color: rgb(240, 239, 239);
+                }
+
+                &_img {
+                    all: unset;
+                    height: 26px;
+                    width: 26px;
+                    display: inline-block;
+                    background-repeat: no-repeat;
+                    background-image: url(./img/sp-main.png);
+                    background-size: 422px 405px;
+                    background-position: -335px -284px;
+                    cursor: pointer;
+                }
+
+                &_modal {
                     position: absolute;
                     display: none;
                     // display: block;
@@ -249,29 +247,34 @@ body {
                     background-color: white;
                     border: 1px solid rgb(240, 239, 239);
                     border-radius: 10px;
-                    box-shadow: 1px 1px 5px rgb(180, 180, 180);
+                    box-shadow: 1px 1px 5px 1px rgb(180, 180, 180);
                     z-index: 25;
                     overflow-y: auto;
-                    .modal{
-                        &_title{
-                           margin: 0 auto;
-                           padding: 18px;
-                           font-size: 17px;
-                           font-weight: 600;
-                           border-bottom: 1px solid rgb(240, 239, 239);
+
+                    .modal {
+                        &_title {
+                            margin: 0 auto;
+                            padding: 18px;
+                            font-size: 17px;
+                            font-weight: 600;
+                            
+                            border-bottom: 1px solid rgb(240, 239, 239);
                         }
-                        &_login{
+
+                        &_login {
                             padding: 18px;
                             display: flex;
                             font-size: 17px;
-                            font-weight:400;
+                            font-weight: 400;
                             width: 114px;
                             cursor: pointer;
-                            div:nth-child(1){
+
+                            div:nth-child(1) {
                                 font-weight: 600;
                             }
                         }
-                        &_menu{
+
+                        &_menu {
                             display: flex;
                             flex-wrap: wrap;
                             list-style-type: none;
@@ -279,1282 +282,1469 @@ body {
                             padding: 0 0 20px 0;
                             margin: 0 0 10px 0;
                             border-bottom: 1px solid rgb(240, 239, 239);
-                           &_list{
-                            width: 25%;
-                            &_a-1{
-                                display: flex;
-                                justify-content: center;
-                                margin: 0 auto;
-                                height: 50px;
-                                width: 50px;
-                                background-repeat: no-repeat;
-                                background-image: url(./img/sp-main.png);
-                                background-size: 422px 405px;
-                                background-position: -2px -129px;
-                                border-radius: 38%;
-                                cursor: pointer;
-                                &_img{
+
+                            &_list {
+                                width: 25%;
+
+                                &_a-1 {
                                     display: flex;
                                     justify-content: center;
                                     margin: 0 auto;
-                                    height: 48px;
-                                    width: 48px;
+                                    height: 50px;
+                                    width: 50px;
                                     background-repeat: no-repeat;
                                     background-image: url(./img/sp-main.png);
                                     background-size: 422px 405px;
-                                    background-position: -248px -90px;
+                                    background-position: -2px -129px;
+                                    border-radius: 38%;
                                     cursor: pointer;
-                                }
-                            }
-                            &_a-2 {
-                                display: flex;
-                                justify-content: center;
-                                margin: 0 auto;
-                                height: 50px;
-                                width: 50px;
-                                background-repeat: no-repeat;
-                                background-image: url(./img/sp-main.png);
-                                background-size: 422px 405px;
-                                background-position: -2px -129px;
-                                border-radius: 38%;
-                                cursor: pointer;
-                                &_img {
-                                    display: flex;
-                                    justify-content: center;
-                                    height: 48px;
-                                    width: 48px;
-                                    background-repeat: no-repeat;
-                                    background-image: url(./img/sp-main.png);
-                                    background-size: 422px 405px;
-                                    background-position: -249px 1px;
-                                    cursor: pointer;
-                                }
-                            }
 
-                            &_a-3{                                display: flex;
-                                justify-content: center;
-                                margin: 0 auto;
-                                height: 50px;
-                                width: 50px;
-                                background-repeat: no-repeat;
-                                background-image: url(./img/sp-main.png);
-                                background-size: 422px 405px;
-                                background-position: -2px -129px;
-                                border-radius: 38%;
-                                cursor: pointer;
-                                &_img{
-                                    display: flex;
-                                    justify-content: center;
-                                    height: 48px;
-                                    width: 48px;
-                                    background-repeat: no-repeat;
-                                    background-image: url(./img/sp-main.png);
-                                    background-size: 422px 405px;
-                                    background-position: -200px -95px;
-                                    cursor: pointer;
+                                    &_img {
+                                        display: flex;
+                                        justify-content: center;
+                                        margin: 0 auto;
+                                        height: 48px;
+                                        width: 48px;
+                                        background-repeat: no-repeat;
+                                        background-image: url(./img/sp-main.png);
+                                        background-size: 422px 405px;
+                                        background-position: -248px -90px;
+                                        cursor: pointer;
+                                    }
                                 }
-                            }
 
-                            &_a-4{                                display: flex;
-                                justify-content: center;
-                                margin: 0 auto;
-                                height: 50px;
-                                width: 50px;
-                                background-repeat: no-repeat;
-                                background-image: url(./img/sp-main.png);
-                                background-size: 422px 405px;
-                                background-position: -2px -129px;
-                                border-radius: 38%;
-                                cursor: pointer;
-                                &_img{
+                                &_a-2 {
                                     display: flex;
                                     justify-content: center;
-                                    height: 48px;
-                                    width: 48px;
+                                    margin: 0 auto;
+                                    height: 50px;
+                                    width: 50px;
                                     background-repeat: no-repeat;
                                     background-image: url(./img/sp-main.png);
                                     background-size: 422px 405px;
-                                    background-position: -88px -205px;
+                                    background-position: -2px -129px;
+                                    border-radius: 38%;
                                     cursor: pointer;
-                                }
-                            }
-                            &_a-5{                                display: flex;
-                                justify-content: center;
-                                margin: 0 auto;
-                                height: 50px;
-                                width: 50px;
-                                background-repeat: no-repeat;
-                                background-image: url(./img/sp-main.png);
-                                background-size: 422px 405px;
-                                background-position: -2px -129px;
-                                border-radius: 38%;
-                                cursor: pointer;
-                                &_img{
-                                    display: flex;
-                                    justify-content: center;
-                                    height: 48px;
-                                    width: 48px;
-                                    background-repeat: no-repeat;
-                                    background-image: url(./img/sp-main.png);
-                                    background-size: 422px 405px;
-                                    background-position: -179px -205px;
-                                    cursor: pointer;
-                                }
-                            }
-                            &_a-6{                                display: flex;
-                                justify-content: center;
-                                margin: 0 auto;
-                                height: 50px;
-                                width: 50px;
-                                background-repeat: no-repeat;
-                                background-image: url(./img/sp-main.png);
-                                background-size: 422px 405px;
-                                background-position: -2px -129px;
-                                border-radius: 38%;
-                                cursor: pointer;
-                                &_img{
-                                    display: flex;
-                                    justify-content: center;
-                                    height: 48px;
-                                    width: 48px;
-                                    background-repeat: no-repeat;
-                                    background-image: url(./img/sp-main.png);
-                                    background-size: 422px 405px;
-                                    background-position: -179px -205px;
-                                    cursor: pointer;
-                                }
-                            }
-                            &_a-7{                                display: flex;
-                                justify-content: center;
-                                margin: 0 auto;
-                                height: 50px;
-                                width: 50px;
-                                background-repeat: no-repeat;
-                                background-image: url(./img/sp-main.png);
-                                background-size: 422px 405px;
-                                background-position: -2px -129px;
-                                border-radius: 38%;
-                                cursor: pointer;
-                                &_img{
-                                    display: flex;
-                                    justify-content: center;
-                                    height: 48px;
-                                    width: 48px;
-                                    background-repeat: no-repeat;
-                                    background-image: url(./img/sp-main.png);
-                                    background-size: 422px 405px;
-                                    background-position: -179px -205px;
-                                    cursor: pointer;
-                                }
-                            }
-                            &_a-8{                                display: flex;
-                                justify-content: center;
-                                margin: 0 auto;
-                                height: 50px;
-                                width: 50px;
-                                background-repeat: no-repeat;
-                                background-image: url(./img/sp-main.png);
-                                background-size: 422px 405px;
-                                background-position: -2px -129px;
-                                border-radius: 38%;
-                                cursor: pointer;
-                                &_img{
-                                    display: flex;
-                                    justify-content: center;
-                                    height: 48px;
-                                    width: 48px;
-                                    background-repeat: no-repeat;
-                                    background-image: url(./img/sp-main.png);
-                                    background-size: 422px 405px;
-                                    background-position: -179px -205px;
-                                    cursor: pointer;
-                                }
-                            }
 
-                            &_text{
-                                margin-top: 4px;
-                                font-size: 14px;
-                                display: flex;
-                                justify-content: center;
+                                    &_img {
+                                        display: flex;
+                                        justify-content: center;
+                                        height: 48px;
+                                        width: 48px;
+                                        background-repeat: no-repeat;
+                                        background-image: url(./img/sp-main.png);
+                                        background-size: 422px 405px;
+                                        background-position: -249px 1px;
+                                        cursor: pointer;
+                                    }
+                                }
+
+                                &_a-3 {
+                                    display: flex;
+                                    justify-content: center;
+                                    margin: 0 auto;
+                                    height: 50px;
+                                    width: 50px;
+                                    background-repeat: no-repeat;
+                                    background-image: url(./img/sp-main.png);
+                                    background-size: 422px 405px;
+                                    background-position: -2px -129px;
+                                    border-radius: 38%;
+                                    cursor: pointer;
+
+                                    &_img {
+                                        display: flex;
+                                        justify-content: center;
+                                        height: 48px;
+                                        width: 48px;
+                                        background-repeat: no-repeat;
+                                        background-image: url(./img/sp-main.png);
+                                        background-size: 422px 405px;
+                                        background-position: -200px -95px;
+                                        cursor: pointer;
+                                    }
+                                }
+
+                                &_a-4 {
+                                    display: flex;
+                                    justify-content: center;
+                                    margin: 0 auto;
+                                    height: 50px;
+                                    width: 50px;
+                                    background-repeat: no-repeat;
+                                    background-image: url(./img/sp-main.png);
+                                    background-size: 422px 405px;
+                                    background-position: -2px -129px;
+                                    border-radius: 38%;
+                                    cursor: pointer;
+
+                                    &_img {
+                                        display: flex;
+                                        justify-content: center;
+                                        height: 48px;
+                                        width: 48px;
+                                        background-repeat: no-repeat;
+                                        background-image: url(./img/sp-main.png);
+                                        background-size: 422px 405px;
+                                        background-position: -88px -205px;
+                                        cursor: pointer;
+                                    }
+                                }
+
+                                &_a-5 {
+                                    display: flex;
+                                    justify-content: center;
+                                    margin: 0 auto;
+                                    height: 50px;
+                                    width: 50px;
+                                    background-repeat: no-repeat;
+                                    background-image: url(./img/sp-main.png);
+                                    background-size: 422px 405px;
+                                    background-position: -2px -129px;
+                                    border-radius: 38%;
+                                    cursor: pointer;
+
+                                    &_img {
+                                        display: flex;
+                                        justify-content: center;
+                                        height: 48px;
+                                        width: 48px;
+
+                                        cursor: pointer;
+                                    }
+                                }
+
+                                &_a-6 {
+                                    display: flex;
+                                    justify-content: center;
+                                    margin: 0 auto;
+                                    height: 50px;
+                                    width: 50px;
+                                    background-repeat: no-repeat;
+                                    background-image: url(./img/sp-main.png);
+                                    background-size: 422px 405px;
+                                    background-position: -2px -129px;
+                                    border-radius: 38%;
+                                    cursor: pointer;
+
+                                    &_img {
+                                        display: flex;
+                                        justify-content: center;
+                                        height: 48px;
+                                        width: 48px;
+                                        background-repeat: no-repeat;
+                                        background-image: url(./img/sp-main.png);
+                                        background-size: 422px 405px;
+                                        background-position: -179px -205px;
+                                        cursor: pointer;
+                                    }
+                                }
+
+                                &_a-7 {
+                                    display: flex;
+                                    justify-content: center;
+                                    margin: 0 auto;
+                                    height: 50px;
+                                    width: 50px;
+                                    background-repeat: no-repeat;
+                                    background-image: url(./img/sp-main.png);
+                                    background-size: 422px 405px;
+                                    background-position: -2px -129px;
+                                    border-radius: 38%;
+                                    cursor: pointer;
+
+                                    &_img {
+                                        display: flex;
+                                        justify-content: center;
+                                        height: 48px;
+                                        width: 48px;
+
+                                        cursor: pointer;
+                                    }
+                                }
+
+                                &_a-8 {
+                                    display: flex;
+                                    justify-content: center;
+                                    margin: 0 auto;
+                                    height: 50px;
+                                    width: 50px;
+                                    background-repeat: no-repeat;
+                                    background-image: url(./img/sp-main.png);
+                                    background-size: 422px 405px;
+                                    background-position: -2px -129px;
+                                    border-radius: 38%;
+                                    cursor: pointer;
+
+                                    &_img {
+                                        display: flex;
+                                        justify-content: center;
+                                        height: 48px;
+                                        width: 48px;
+
+                                        cursor: pointer;
+                                    }
+                                }
+
+                                &_text {
+                                    margin-top: 4px;
+                                    font-size: 14px;
+                                    display: flex;
+                                    justify-content: center;
+                                }
                             }
-                           }
                         }
-                        &_service{
-                            &_title{
+
+                        &_service {
+                            &_title {
                                 display: flex;
                                 justify-content: space-between;
-                                padding: 18px;
-                                div:nth-child(1){
+                                padding: 10px 18px;
+                                div:nth-child(1) {
                                     font-weight: 600;
                                 }
                             }
-                            &_news{
-                              .news{
-                                margin: 18px;
-                                border: 1px solid black;
-                                &_title{
-                                    padding: 10px;
-                                    background-color: #EEf2f9;
-                                    border-bottom: 1px solid rgb(240, 239, 239);
-                                }
-                                &_menu{
-                                    display: flex;
-                                    flex-wrap: wrap;
-                                    padding: 0;
-                                    &_list{
-                                        width: 50%;
+
+                            &_news {
+                                .news {
+                                    margin: 18px;
+                                    &_title {
+                                        padding: 10px;
+                                        background-color: #EEf2f9;
                                         display: flex;
-                                        &_img{
-                                         width: 32px;
-                                         height: 32px;
+                                        font-size: 14px;  
+                                        h4{
+                                            margin: 0;
                                         }
-                                        &_text{
+                                        div:nth-child(2) {
+                                            color: #3579f7;
+                                        }
+                                    }
+
+                                    &_menu {
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        margin: 0;
+                                        padding: 0;
+                                        background-color: #ffffff;
+                                        padding: 10px;
+
+                                        &_list {
+                                            width: 50%;
+                                            display: flex;
+                                            cursor: pointer;
+                                            margin-bottom: 5px;
                                             
+                              
+                                            &_img {
+                                                width: 32px;
+                                                height: 32px;
+                                                margin-right: 5px;
+                                            }
+
+                                            &_text {
+                                                display: flex;
+                                                align-items: center;
+                                            }
                                         }
                                     }
                                 }
-                              }
                             }
-                              &_finance{
-                                .finance{
+
+                            &_finance {
+                                .finance {
                                     margin: 18px;
-                                    border: 1px solid black;
-                                    &_title{
+
+
+                                    &_title {
                                         padding: 10px;
                                         background-color: #EEf2f9;
                                         border-bottom: 1px solid rgb(240, 239, 239);
-                                    }
-                                    &_menu{
                                         display: flex;
-                                        flex-wrap: wrap;
-                                        &_list{
-                                            width: 50%;
+                                        font-size: 14px;  
+                                        h4{
+                                            margin: 0;
                                         }
                                     }
-                                  }
-                              }
-                            &_entertain{
-                               .entertain{
-                                margin: 18px;
-                                border: 1px solid black;
-                                &_title{
-                                    padding: 10px;
-                                    background-color: #EEf2f9;
-                                    border-bottom: 1px solid rgb(240, 239, 239);
-                                }
-                                &_menu{
-                                    display: flex;
-                                    flex-wrap: wrap;
-                                    &_list{
-                                        width: 50%;
+
+                                    &_menu {
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        padding: 10px;
+
+                                        &_list {
+                                            width: 50%;
+                                            display: flex;
+                                            cursor: pointer;
+                                            margin-bottom: 5px;
+
+                                            &_img {
+                                                width: 32px;
+                                                height: 32px;
+                                                margin-right: 5px;
+                                            }
+
+                                            &_text {
+                                                display: flex;
+                                                align-items: center;
+                                            }
+                                        }
                                     }
                                 }
-                               }
+                            }
+
+                            &_entertain {
+                                .entertain {
+                                    margin: 18px;
+                                    &_title {
+                                        padding: 10px;
+                                        background-color: #EEf2f9;
+                                        border-bottom: 1px solid rgb(240, 239, 239);
+                                        display: flex;
+                                        font-size: 14px;  
+                                        h4{
+                                            margin: 0;
+                                        }
+                                    }
+
+                                    &_menu {
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        padding: 10px;
+                                     
+                                        &_list {
+                                            width: 50%;
+                                            display: flex;
+                                            cursor: pointer;
+                                            margin-bottom: 5px;
+                                            &_img {
+                                                width: 32px;
+                                                height: 32px;
+                                                margin-right: 5px;
+                                            }
+
+                                            &_text {
+                                                display: flex;
+                                                align-items: center;
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
-            } 
-        }
-        &_function {
-            display: flex;
-            width: 87px;
-            align-items: center;
-            justify-content: space-between;
-            margin-right: -7px;
-            &_pay {
-                height: 42px;
-                width: 42px;
+                }
+            }
+
+            &_function {
                 display: flex;
-                justify-content: center;
+                width: 87px;
                 align-items: center;
-                border-radius: 30px;
-                margin-left: -7px;
-                &:hover{
-                    background-color: rgb(240, 239, 239);
-                }
-                &_img{
-                    height: 28px;
-                    width: 30px;
-                    display: inline-block;
-                    background-repeat: no-repeat;
-                    background-image: url(./img/sp-main.png);
-                    background-size: 422px 405px;
-                    background-position: -30px -315px;
-                }
-            }
-            &_notice {
-                height: 42px;
-                width: 42px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 30px;
-                margin-left: -7px;
-                &:hover{
-                    background-color: rgb(240, 239, 239);
-                }
-                &_img{
-                    height: 28px;
-                    width: 30px;
-                    display: inline-block;
-                    background-repeat: no-repeat;
-                    background-image: url(./img/sp-main.png);
-                    background-size: 422px 405px;
-                    background-position: -361px -26px;
-                    cursor: pointer;
-                }
-            }
-        }
-    }
-
-    &_search {
-        display: flex;
-        margin-top: 2px;
-        justify-content: center;
-        height: 73px;
-        &_form {
-            width: 706px;
-            height: 58px;
-            border: 1px solid #03c75a;
-            border-radius: 33px;
-            display: flex;
-            align-items: center;
-            &_logo {
-                height: 40px;
-                width: 50px;
-                margin-left: 20px;
-                display: flex;
-                &::after{
-                    content: '|';
-                    margin-top: 10px;
-                    padding-left:12px;
-                    color: #e3e3e4;
-                }
-                &_wing {
-                    height: 35px;
-                    width: 35px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background-repeat: no-repeat;
-                    background-image: url(./img/upload_1684217675277OZzsu.gif);
-                    background-size: 45px 45px;
-                    cursor: pointer;
-                    
-                }
-                &_naver {
-                    height: 35px;
-                    width: 35px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background-repeat: no-repeat;
-                    background-image: url(./img/sp-main.png);
-                    background-size: 430px 427px;
-                    background-position: -323px -353px;
-                    cursor: pointer;
-                }
-            }
-
-            &_label {
-                
-            }
-
-            &_text {
-                height: 44px;
-                width: 510px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-left: 3px;
-                &_input {
-                    height: 44px;
-                    width: 520px;
-                    margin-top: 2px;
-                    border: none;
-                    z-index: 10;
-                    position: relative;
-                    padding: 17px 10px;
-                    font-size: 22px;
-                    font-weight: bold;
-
-                    &::placeholder {
-                        font-size: 20px;
-                        font-weight: 200;
-                        color: rgb(231, 231, 231);
-                    }
-
-                    &:focus {
-                        outline: none;
-                    }
-                }
-            }
-
-            &_keyboard-button {
-                margin: 5px 9px 0 10px;
-                border: none;
-                background-color: white;
-                height: 22px;
-                width: 26px;
-                display: inline-block;
-                background-repeat: no-repeat;
-                background-image: url(./img/sp-main.png);
-                background-size: 422px 405px;
-                background-position: -268px -233px;
-                cursor: pointer;
-            }
-
-            &_autocomplete-button {
-                margin: -3px 17px 0 0;
-                border: none;
-                background-color: white;
-                height: 12px;
-                width: 13px;
-                display: inline-block;
-                background-repeat: no-repeat;
-                background-image: url(./img/sp-main.png);
-                background-size: 422px 405px;
-                background-position: -409px -333px;
-                cursor: pointer;
-            }
-
-            &_search-button {
-                margin-top: 3px;
-                border: none;
-                background-color: white;
-                height: 25px;
-                width: 25px;
-                display: inline-block;
-                background-repeat: no-repeat;
-                background-image: url(./img/sp-main.png);
-                background-size: 422px 405px;
-                background-position: -365px -132px;
-                cursor: pointer;
-            }
-        }
-    }
-
-    &_menu {
-        display: flex;
-        justify-content: center;
-        height: 76px;
-        font-size: 14px;
-        &_lists {
-            display: flex;
-            list-style-type: none;
-            height: 76px;
-            width: 660px;
-            margin: 0 0 0 -40px;
-            justify-content: space-between;
-            &_list-1 {
-                height: 50px;
-                width: 50px;
-                margin-right: 15px;
-                background-repeat: no-repeat;
-                background-image: url(./img/sp-main.png);
-                background-size: 422px 405px;
-                background-position: -2px -129px;
-                border-radius: 38%;
-                cursor: pointer;
-
-                &:hover {
-                    box-shadow: 1px 1px 5px rgb(180, 180, 180);
-                }
-
-                &_a-1 {
-                    
-                    &_img {
-                        height: 48px;
-                        width: 48px;
-                        background-repeat: no-repeat;
-                        background-image: url(./img/sp-main.png);
-                        background-size: 422px 405px;
-                        background-position: -248px -90px;
-                        cursor: pointer;
-                    }
-                }
-                &_text {
-                    margin-top: 7px;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    display: block;
-                    margin-top: 7px;
-                    line-height: 20px;
-                    text-align: center;
-                }
-            }
-
-            &_list-2 {
-                height: 50px;
-                width: 50px;
-                margin-right: 15px;
-                background-repeat: no-repeat;
-                background-image: url(./img/sp-main.png);
-                background-size: 422px 405px;
-                background-position: -2px -129px;
-                border-radius: 38%;
-                cursor: pointer;
-
-                &:hover {
-                    box-shadow: 1px 1px 5px rgb(180, 180, 180);
-                }
-
-                &_a-2 {
-
-                    &_img {
-                        height: 48px;
-                        width: 48px;
-                        background-repeat: no-repeat;
-                        background-image: url(./img/sp-main.png);
-                        background-size: 422px 405px;
-                        background-position: -249px 1px;
-                        cursor: pointer;
-                    }
-
-                }
-                &_text {
-                    margin-top: 7px;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    display: block;
-                    margin-top: 7px;
-                    line-height: 20px;
-                    text-align: center;
-                }
-            }
-
-            &_list-3 {
-                height: 50px;
-                width: 50px;
-                margin-right: 15px;
-                background-repeat: no-repeat;
-                background-image: url(./img/sp-main.png);
-                background-size: 422px 405px;
-                background-position: -2px -129px;
-                border-radius: 38%;
-                cursor: pointer;
-
-                &:hover {
-                    box-shadow: 1px 1px 5px rgb(180, 180, 180);
-                }
-
-                &_a-3 {
-
-                    &_img {
-                        height: 48px;
-                        width: 48px;
-                        background-repeat: no-repeat;
-                        background-image: url(./img/sp-main.png);
-                        background-size: 422px 405px;
-                        background-position: -200px -95px;
-                        cursor: pointer;
-                    }
-
-                }
-                &_text {
-                    margin-top: 7px;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    display: block;
-                    margin-top: 7px;
-                    line-height: 20px;
-                    text-align: center;
-                }
-            }
-
-            &_list-4 {
-                height: 50px;
-                width: 50px;
-                margin-right: 15px;
-                background-repeat: no-repeat;
-                background-image: url(./img/sp-main.png);
-                background-size: 422px 405px;
-                background-position: -2px -129px;
-                border-radius: 38%;
-                cursor: pointer;
-
-                &:hover {
-                    box-shadow: 1px 1px 5px rgb(180, 180, 180);
-                }
-
-                &_a-4 {
-                    &_img {
-                        height: 48px;
-                        width: 48px;
-                        background-repeat: no-repeat;
-                        background-image: url(./img/sp-main.png);
-                        background-size: 422px 405px;
-                        background-position: -88px -205px;
-                        cursor: pointer;
-                    }
-
-                }
-                &_text {
-                    margin-top: 7px;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    display: block;
-                    margin-top: 7px;
-                    line-height: 20px;
-                    text-align: center;
-                }
-            }
-
-            &_list-5 {
-                height: 50px;
-                width: 50px;
-                margin-right: 15px;
-                background-repeat: no-repeat;
-                background-image: url(./img/sp-main.png);
-                background-size: 422px 405px;
-                background-position: -2px -129px;
-                border-radius: 38%;
-                cursor: pointer;
-                &:hover {
-                    box-shadow: 1px 1px 5px rgb(180, 180, 180);
-                }
-
-                &_a-5 {
-                    &_img {
-                        height: 48px;
-                        width: 48px;
-                        background-repeat: no-repeat;
-                        background-image: url(./img/sp-main.png);
-                        background-size: 422px 405px;
-                        background-position: 2px -205px;
-                        cursor: pointer;
-                    }
-
-                }
-                &_text {
-                    margin-top: 7px;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    display: block;
-                    margin-top: 7px;
-                    line-height: 20px;
-                    text-align: center;
-                }
-            }
-
-            &_list-6 {
-                height: 50px;
-                width: 50px;
-                margin-right: 15px;
-                background-repeat: no-repeat;
-                background-image: url(./img/sp-main.png);
-                background-size: 422px 405px;
-                background-position: -2px -129px;
-                border-radius: 38%;
-                cursor: pointer;
-                &:hover {
-                    box-shadow: 1px 1px 5px rgb(180, 180, 180);
-                }
-                &_a-6 {
-                    &_img {
-                        height: 48px;
-                        width: 48px;
-                        background-repeat: no-repeat;
-                        background-image: url(./img/sp-main.png);
-                        background-size: 422px 405px;
-                        background-position: -179px -205px;
-                        cursor: pointer;
-                    }
-                }
-                &_text {
-                    margin-top: 7px;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    display: block;
-                    margin-top: 7px;
-                    line-height: 20px;
-                    text-align: center;
-                }
-            }
-            &_list-7 {
-                height: 50px;
-                width: 50px;
-                margin-right: 15px;
-                background-repeat: no-repeat;
-                background-image: url(./img/sp-main.png);
-                background-size: 422px 405px;
-                background-position: -2px -129px;
-                border-radius: 38%;
-                cursor: pointer;
-                &:hover {
-                    box-shadow: 1px 1px 5px rgb(180, 180, 180);
-                }
-
-                &_a-7 {
-
-                    &_img {
-                        height: 48px;
-                        width: 48px;
-                        background-repeat: no-repeat;
-                        background-image: url(./img/sp-main.png);
-                        background-size: 422px 405px;
-                        background-position: -43px -205px;
-                        cursor: pointer;
-                    }
-                }
-                &_text {
-                    margin-top: 7px;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    display: block;
-                    margin-top: 7px;
-                    line-height: 20px;
-                    text-align: center;
-                }
-            }
-
-            &_list-8 {
-                height: 50px;
-                width: 50px;
-                margin-right: 15px;
-                background-repeat: no-repeat;
-                background-image: url(./img/sp-main.png);
-                background-size: 422px 405px;
-                background-position: -2px -129px;
-                border-radius: 38%;
-                cursor: pointer;
-                &:hover {
-                    box-shadow: 1px 1px 5px rgb(180, 180, 180);
-                }
-                &_a-8 {
-                    &_img {
-                        height: 48px;
-                        width: 48px;
-                        background-repeat: no-repeat;
-                        background-image: url(./img/sp-main.png);
-                        background-size: 422px 405px;
-                        background-position: -205px 2px;
-                        cursor: pointer;
-                    }
-                }
-                &_text {
-                    margin-top: 7px;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    display: block;
-                    margin-top: 7px;
-                    line-height: 20px;
-                    text-align: center;
-                }
-            }
-            &_list-9 {
-                height: 50px;
-                width: 50px;
-                margin-right: 15px;
-                background-repeat: no-repeat;
-                background-image: url(./img/sp-main.png);
-                background-size: 422px 405px;
-                background-position: -2px -129px;
-                border-radius: 38%;
-                cursor: pointer;
-                &:hover {
-                    box-shadow: 1px 1px 5px rgb(180, 180, 180);
-                }
-
-                &_a-9 {
-                    &_img {
-                        height: 48px;
-                        width: 48px;
-                        background-repeat: no-repeat;
-                        background-image: url(./img/sp-main.png);
-                        background-size: 422px 405px;
-                        background-position: -222px -206px;
-                        cursor: pointer;
-                    }
-                }
-                &_text {
-                    margin-top: 7px;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    display: block;
-                    margin-top: 7px;
-                    line-height: 20px;
-                    text-align: center;
-                }
-            }
-
-            &_list-10 {
-                &_a-10 {
-                    &_img {
-                        height: 48px;
-                        width: 48px;
-                        background-repeat: no-repeat;
-                        background-image: url(./img/sp-main.png);
-                        background-size: 422px 405px;
-                        background-position: -248px -133px;
-                        cursor: pointer;
-                        border-radius: 38%;
-                        &:hover {
-                            box-shadow: 1px 1px 5px rgb(180, 180, 180);
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-.container{
-    display: flex;
-    margin: 0 auto;
-    width: 1280px;
-    height: 1200px;
-    &_left{
-        width: 830px; 
-        // height: 425px; //추가시 크기수정
-        display: block;
-        &_ad{
-            width: 830px;
-            margin-bottom: 15px;
-        }
-        &_news{
-           width: 830px;
-           height: 425.8px;
-           border: 1px solid #DADCDF;
-           border-radius: 4px;
-           .news{
-            &_category{
-                display: flex;
-                font-size: 16px;
-                font-weight: 800;
-                padding: 20px;
-                &_stand{
-                  &::after{
-                    content: '•';
-                    color: #DADCDF;
-                    margin: 0 5px;
-                  }
-                }
-                &_edit{
-                    color: gray;
-                    &::after{
-                        content: '／';
-                        color: #DADCDF;
-                        margin: 0 5px;
-                      }
-                }
-                &_entertain{
-                    color: gray;
-                    &::after{
-                        content: '／';
-                        color: #DADCDF;
-                        margin: 0 5px;
-                      }
-                }
-                &_sports{
-                    color: gray;
-                    &::after{
-                        content: '／';
-                        color: #DADCDF;
-                        margin: 0 5px;
-                      }
-                }
-                &_economy{
-                    color: gray;
-                }
-            }
-            &_fast-view{
-                display: flex;
-                padding: 10px;
-                margin: 0 20px;
-                font-size: 14px;
-                align-items: center;
-                height: 30px;
-                background-color: F5F7F8;
-              
-                &_name{
-                  margin-right: 10px;
-                }
-                &_select{
-                    width: 100px;
-                    padding: 0 10px;
-                    cursor: pointer;
-                    &::after{
-                        content: '|';
-                        padding-left:10px;
-                        color: #DADCDF;
-                    }
-                }
-                &_rolling{
-                   width: 380px;
-                   height: 20px;
-                   padding: 0;
-                   margin-right: 60px;
-                   display: block;
-                   list-style-type: none;
-                   overflow: hidden;
-                  &_detail {
-                       width: 390px;
-                       white-space: nowrap;
-                       overflow: hidden;
-                       text-overflow: ellipsis; 
-                       position: relative;
-                       height: 100%;
-                       animation: slide 9s infinite; /* 9초 동안 슬라이드 애니메이션 반복 */
-                    }
-                }
-                &_stand{
-                padding-right: 10px;
-                &::after{
-                    content: '|';
-                    padding-left:10px;
-                    color: #DADCDF;
-                }
-                }
-                &_home{
-
-                }
-            }
-            &_page{
-                margin: 20px;
-                position: relative;
-                display: flex;
-                flex-wrap: wrap;
-                &_box{
-                    width: 129px;
-                    height: 56px;
-                    border: 1px solid #ebebeb;
-                    border-radius: 4px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    &_img{
-                        width: 60px;
-                        height: 20px;
-                    }
-                }
-            }
-            &_step{
-                display: flex;
-                height: 20px;
-                justify-content: center;
-                align-items: center;
-                font-size: 14px;
-                &_prev-btn{
-                    height: 35px;
-                    width: 35px;
-                    padding: 5px;
-                    border: 1px solid rgb(196, 194, 194);
-                    background-color: white;
-                    border-radius: 33px;
-                    cursor: pointer;
-                    &_img{             
-                        height: 17px;
-                        width: 15px;
-                        transform: scaleX(-1);
-                        display: inline-block;
-                        background-repeat: no-repeat;
-                        background-image: url(./img/sp-main.png);
-                        background-size: 373px 316px;
-                        background-position: -333px -284px;
-                        border: none;
-                        cursor: pointer;
-                    }
-                    
-                &:hover {
-                    box-shadow: 1px 1px 5px rgb(180, 180, 180);
-                }
-                }
-                &_text-1{
-                   color: 3A9AF2;
-                   margin-left: 20px;
-                }
-                &_text-2{
-                    margin-right: 20px;
-                }
-                &_next-btn{
-                    height: 35px;
-                    width: 35px;
-                    padding: 5px;
-                    border: 1px solid rgb(196, 194, 194);
-                    background-color: white;
-                    border-radius: 33px;
-                    cursor: pointer;
-                    &_img{             
-                        height: 17px;
-                        width: 15px;
-                        display: inline-block;
-                        background-repeat: no-repeat;
-                        background-image: url(./img/sp-main.png);
-                        background-size: 373px 316px;
-                        background-position: -333px -284px;
-                        border: none;
-                        cursor: pointer;
-                    }
-                    
-                &:hover {
-                    box-shadow: 1px 1px 5px rgb(180, 180, 180);
-                }
-                }
-            }
-           }
-        }
-    }
-    &_right{
-        display: block;
-        width: 420px;
-        height: 400px;
-        margin-left: 30px;
-        
-        &_login{
-           height: 123.6px;
-           text-align: center;
-           line-height: 20px;
-           padding: 20px;
-           border: 1px solid #DADCDF;
-           border-radius: 8px;
-
-           &_login-explanation{
-            justify-content: center;
-            font-size: 14px;
-           }
-           &_login-btn{
-            margin: 15px 0;
-            width: 380px;
-            height: 55px;
-            border-radius: 4px;
-            border: none;
-            background-color: #03c75a;
-            cursor: pointer;
-            &:hover{
-               background-color: #03af50;
-            }
-            .login-btn{
-                display: flex;
-                justify-content: center;
-                text-decoration: none;
-                &_naver-logo{
-                    font-size: 19px;
-                    color: white;
-                    font-weight: 1000;       
-                }
-                &_login-text{
-                    font-size: 14px;
-                   margin-left: 8px;
-                   margin-top: 4px;
-                   color: white;
-                }
-            }
-           }
-           &_login-about{
-            display: flex;
-            justify-content: center;
-            font-size: 13px;
-            &_id-find{
-            text-decoration: none;
-                &::after{
-                   content: 'ㅣ';
-                   margin: 5px;
-                }
-              }
-              &_pw-find{
-            text-decoration: none;
-                 &::after{
-                    content: 'ㅣ';
-                    margin: 5px;
-                }  
-              }
-              &_regi{
-            text-decoration: none;
-              }
-           }
-        }
-        &_ad{
-           margin-top: 15px;
-           width: 420px;
-           height: 240px;
-           border-radius: 4px;
-        }
-        &_weather{
-            margin-top: 15px;
-            height: 236px;
-            line-height: 20px;
-            padding: 0 20px;
-            border: 1px solid #DADCDF;
-            border-radius: 8px;
-           .weather{
-            display: block;
-            &_header{
-               display: flex;
-               .header{
-                display: flex;
                 justify-content: space-between;
-                height: 50px;
-                padding: 0;
-                border: solid 1px #DADCDF; 
-                border-top: none;
-                border-right: none;
-                border-left: none;
-                margin: 0;
-                &_forecast{
-                    display: flex;
-                    align-items: center;
-                    &_title{
-                        width: 34px;
-                        font-size: 15px;
-                        font-weight: 600;
-                        }
-                    &_compare{
-                        border: solid 1px #DADCDF;
-                        border-radius: 33px;
-                        font-size: 12px;
-                        padding: 2px 10px;
-                        cursor: pointer;
-                        }
-                }
-                &_location{
-                    padding-top: 2px;
-                    font-size: 12px;
-                }
-               }
-            }
-            &_info{
-                display: flex;
-               &_temp{
-                width: 50%;
-                display: block;
-                &_main{
-                    display: flex;
-                    margin: 18px 0;
-                    &_img{
-                        height: 86px;
-                        width: 86px;
-                        background-repeat: no-repeat;
-                        background: url(./img/sp-weather2.png);
-                        background-size: 641px 587px;
-                        background-position: -2px -5px;
-                    }
-                    &_data{
-                        padding-top: 15px;
-                        padding-left: 5px;
-                        height: 71px;
-                        width: 86px;
-                        &_number{
-                         font-size: 40px;
-                        }
-                        &_text{
-                            padding-left: 5px;
-                        }
-                    }
-                }
-                &_value{
+                margin-right: -7px;
+
+                &_pay {
+                    height: 42px;
+                    width: 42px;
                     display: flex;
                     justify-content: center;
-                    margin-bottom: 5px;
-                    font-size: 12px;
-                    &_min{
-                        color: blue;
-                        &::after{
-                            content: '／';
-                            color: #DADCDF;
-                            margin: 0 3px;
-                          }
+                    align-items: center;
+                    border-radius: 30px;
+                    margin-left: -7px;
+
+                    &:hover {
+                        background-color: rgb(240, 239, 239);
                     }
-                    &_max{
-                        color: red;
+
+                    &_img {
+                        height: 28px;
+                        width: 30px;
+                        display: inline-block;
+                        background-repeat: no-repeat;
+                        background-image: url(./img/sp-main.png);
+                        background-size: 422px 405px;
+                        background-position: -30px -315px;
                     }
                 }
-                &_degree{
-                  display: flex;
-                  justify-content: center;
-                  font-size: 14px;
+
+                &_notice {
+                    height: 42px;
+                    width: 42px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 30px;
+                    margin-left: -7px;
+
+                    &:hover {
+                        background-color: rgb(240, 239, 239);
+                    }
+
+                    &_img {
+                        height: 28px;
+                        width: 30px;
+                        display: inline-block;
+                        background-repeat: no-repeat;
+                        background-image: url(./img/sp-main.png);
+                        background-size: 422px 405px;
+                        background-position: -361px -26px;
+                        cursor: pointer;
+                    }
                 }
-               }
-               &_timewave{
-                width: 50%;
-                margin: 20px 0 18px;
-                
-               }
+            }
+        }
+
+        &_search {
+            display: flex;
+            margin-top: 2px;
+            justify-content: center;
+            height: 73px;
+
+            &_form {
+                width: 706px;
+                height: 58px;
+                border: 1px solid #03c75a;
+                border-radius: 33px;
+                display: flex;
+                align-items: center;
+
+                &_logo {
+                    height: 40px;
+                    width: 50px;
+                    margin-left: 20px;
+                    display: flex;
+
+                    &::after {
+                        content: '|';
+                        margin-top: 10px;
+                        padding-left: 12px;
+                        color: #e3e3e4;
+                    }
+
+                    &_wing {
+                        height: 35px;
+                        width: 35px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-repeat: no-repeat;
+                        background-image: url(./img/upload_1684217675277OZzsu.gif);
+                        background-size: 45px 45px;
+                        cursor: pointer;
+
+                    }
+
+                    &_naver {
+                        height: 35px;
+                        width: 35px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-repeat: no-repeat;
+                        background-image: url(./img/sp-main.png);
+                        background-size: 430px 427px;
+                        background-position: -323px -353px;
+                        cursor: pointer;
+                    }
+                }
+
+                &_label {}
+
+                &_text {
+                    height: 44px;
+                    width: 510px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 3px;
+
+                    &_input {
+                        height: 44px;
+                        width: 520px;
+                        margin-top: 2px;
+                        border: none;
+                        z-index: 10;
+                        position: relative;
+                        padding: 17px 10px;
+                        font-size: 22px;
+                        font-weight: bold;
+
+                        &::placeholder {
+                            font-size: 20px;
+                            font-weight: 200;
+                            color: rgb(231, 231, 231);
+                        }
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+
+                &_keyboard-button {
+                    margin: 5px 9px 0 10px;
+                    border: none;
+                    background-color: white;
+                    height: 22px;
+                    width: 26px;
+                    display: inline-block;
+                    background-repeat: no-repeat;
+                    background-image: url(./img/sp-main.png);
+                    background-size: 422px 405px;
+                    background-position: -268px -233px;
+                    cursor: pointer;
+                }
+
+                &_autocomplete-button {
+                    margin: -3px 17px 0 0;
+                    border: none;
+                    background-color: white;
+                    height: 12px;
+                    width: 13px;
+                    display: inline-block;
+                    background-repeat: no-repeat;
+                    background-image: url(./img/sp-main.png);
+                    background-size: 422px 405px;
+                    background-position: -409px -333px;
+                    cursor: pointer;
+                }
+
+                &_search-button {
+                    margin-top: 3px;
+                    border: none;
+                    background-color: white;
+                    height: 25px;
+                    width: 25px;
+                    display: inline-block;
+                    background-repeat: no-repeat;
+                    background-image: url(./img/sp-main.png);
+                    background-size: 422px 405px;
+                    background-position: -365px -132px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &_menu {
+            display: flex;
+            justify-content: center;
+            height: 76px;
+            font-size: 14px;
+
+            &_lists {
+                display: flex;
+                list-style-type: none;
+                height: 76px;
+                width: 660px;
+                margin: 0 0 0 -40px;
+                justify-content: space-between;
+
+                &_list-1 {
+                    height: 50px;
+                    width: 50px;
+                    margin-right: 15px;
+                    background-repeat: no-repeat;
+                    background-image: url(./img/sp-main.png);
+                    background-size: 422px 405px;
+                    background-position: -2px -129px;
+                    border-radius: 38%;
+                    cursor: pointer;
+
+                    &:hover {
+                        box-shadow: 1px 1px 5px rgb(180, 180, 180);
+                    }
+
+                    &_a-1 {
+
+                        &_img {
+                            height: 48px;
+                            width: 48px;
+                            background-repeat: no-repeat;
+                            background-image: url(./img/sp-main.png);
+                            background-size: 422px 405px;
+                            background-position: -248px -90px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    &_text {
+                        margin-top: 7px;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        display: block;
+                        margin-top: 7px;
+                        line-height: 20px;
+                        text-align: center;
+                    }
+                }
+
+                &_list-2 {
+                    height: 50px;
+                    width: 50px;
+                    margin-right: 15px;
+                    background-repeat: no-repeat;
+                    background-image: url(./img/sp-main.png);
+                    background-size: 422px 405px;
+                    background-position: -2px -129px;
+                    border-radius: 38%;
+                    cursor: pointer;
+
+                    &:hover {
+                        box-shadow: 1px 1px 5px rgb(180, 180, 180);
+                    }
+
+                    &_a-2 {
+
+                        &_img {
+                            height: 48px;
+                            width: 48px;
+                            background-repeat: no-repeat;
+                            background-image: url(./img/sp-main.png);
+                            background-size: 422px 405px;
+                            background-position: -249px 1px;
+                            cursor: pointer;
+                        }
+
+                    }
+
+                    &_text {
+                        margin-top: 7px;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        display: block;
+                        margin-top: 7px;
+                        line-height: 20px;
+                        text-align: center;
+                    }
+                }
+
+                &_list-3 {
+                    height: 50px;
+                    width: 50px;
+                    margin-right: 15px;
+                    background-repeat: no-repeat;
+                    background-image: url(./img/sp-main.png);
+                    background-size: 422px 405px;
+                    background-position: -2px -129px;
+                    border-radius: 38%;
+                    cursor: pointer;
+
+                    &:hover {
+                        box-shadow: 1px 1px 5px rgb(180, 180, 180);
+                    }
+
+                    &_a-3 {
+
+                        &_img {
+                            height: 48px;
+                            width: 48px;
+                            background-repeat: no-repeat;
+                            background-image: url(./img/sp-main.png);
+                            background-size: 422px 405px;
+                            background-position: -200px -95px;
+                            cursor: pointer;
+                        }
+
+                    }
+
+                    &_text {
+                        margin-top: 7px;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        display: block;
+                        margin-top: 7px;
+                        line-height: 20px;
+                        text-align: center;
+                    }
+                }
+
+                &_list-4 {
+                    height: 50px;
+                    width: 50px;
+                    margin-right: 15px;
+                    background-repeat: no-repeat;
+                    background-image: url(./img/sp-main.png);
+                    background-size: 422px 405px;
+                    background-position: -2px -129px;
+                    border-radius: 38%;
+                    cursor: pointer;
+
+                    &:hover {
+                        box-shadow: 1px 1px 5px rgb(180, 180, 180);
+                    }
+
+                    &_a-4 {
+                        &_img {
+                            height: 48px;
+                            width: 48px;
+                            background-repeat: no-repeat;
+                            background-image: url(./img/sp-main.png);
+                            background-size: 422px 405px;
+                            background-position: -88px -205px;
+                            cursor: pointer;
+                        }
+
+                    }
+
+                    &_text {
+                        margin-top: 7px;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        display: block;
+                        margin-top: 7px;
+                        line-height: 20px;
+                        text-align: center;
+                    }
+                }
+
+                &_list-5 {
+                    height: 50px;
+                    width: 50px;
+                    margin-right: 15px;
+                    background-repeat: no-repeat;
+                    background-image: url(./img/sp-main.png);
+                    background-size: 422px 405px;
+                    background-position: -2px -129px;
+                    border-radius: 38%;
+                    cursor: pointer;
+
+                    &:hover {
+                        box-shadow: 1px 1px 5px rgb(180, 180, 180);
+                    }
+
+                    &_a-5 {
+                        &_img {
+                            height: 48px;
+                            width: 48px;
+                            background-repeat: no-repeat;
+                            background-image: url(./img/sp-main.png);
+                            background-size: 422px 405px;
+                            background-position: 2px -205px;
+                            cursor: pointer;
+                        }
+
+                    }
+
+                    &_text {
+                        margin-top: 7px;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        display: block;
+                        margin-top: 7px;
+                        line-height: 20px;
+                        text-align: center;
+                    }
+                }
+
+                &_list-6 {
+                    height: 50px;
+                    width: 50px;
+                    margin-right: 15px;
+                    background-repeat: no-repeat;
+                    background-image: url(./img/sp-main.png);
+                    background-size: 422px 405px;
+                    background-position: -2px -129px;
+                    border-radius: 38%;
+                    cursor: pointer;
+
+                    &:hover {
+                        box-shadow: 1px 1px 5px rgb(180, 180, 180);
+                    }
+
+                    &_a-6 {
+                        &_img {
+                            height: 48px;
+                            width: 48px;
+                            background-repeat: no-repeat;
+                            background-image: url(./img/sp-main.png);
+                            background-size: 422px 405px;
+                            background-position: -179px -205px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    &_text {
+                        margin-top: 7px;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        display: block;
+                        margin-top: 7px;
+                        line-height: 20px;
+                        text-align: center;
+                    }
+                }
+
+                &_list-7 {
+                    height: 50px;
+                    width: 50px;
+                    margin-right: 15px;
+                    background-repeat: no-repeat;
+                    background-image: url(./img/sp-main.png);
+                    background-size: 422px 405px;
+                    background-position: -2px -129px;
+                    border-radius: 38%;
+                    cursor: pointer;
+
+                    &:hover {
+                        box-shadow: 1px 1px 5px rgb(180, 180, 180);
+                    }
+
+                    &_a-7 {
+
+                        &_img {
+                            height: 48px;
+                            width: 48px;
+                            background-repeat: no-repeat;
+                            background-image: url(./img/sp-main.png);
+                            background-size: 422px 405px;
+                            background-position: -43px -205px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    &_text {
+                        margin-top: 7px;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        display: block;
+                        margin-top: 7px;
+                        line-height: 20px;
+                        text-align: center;
+                    }
+                }
+
+                &_list-8 {
+                    height: 50px;
+                    width: 50px;
+                    margin-right: 15px;
+                    background-repeat: no-repeat;
+                    background-image: url(./img/sp-main.png);
+                    background-size: 422px 405px;
+                    background-position: -2px -129px;
+                    border-radius: 38%;
+                    cursor: pointer;
+
+                    &:hover {
+                        box-shadow: 1px 1px 5px rgb(180, 180, 180);
+                    }
+
+                    &_a-8 {
+                        &_img {
+                            height: 48px;
+                            width: 48px;
+                            background-repeat: no-repeat;
+                            background-image: url(./img/sp-main.png);
+                            background-size: 422px 405px;
+                            background-position: -205px 2px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    &_text {
+                        margin-top: 7px;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        display: block;
+                        margin-top: 7px;
+                        line-height: 20px;
+                        text-align: center;
+                    }
+                }
+
+                &_list-9 {
+                    height: 50px;
+                    width: 50px;
+                    margin-right: 15px;
+                    background-repeat: no-repeat;
+                    background-image: url(./img/sp-main.png);
+                    background-size: 422px 405px;
+                    background-position: -2px -129px;
+                    border-radius: 38%;
+                    cursor: pointer;
+
+                    &:hover {
+                        box-shadow: 1px 1px 5px rgb(180, 180, 180);
+                    }
+
+                    &_a-9 {
+                        &_img {
+                            height: 48px;
+                            width: 48px;
+                            background-repeat: no-repeat;
+                            background-image: url(./img/sp-main.png);
+                            background-size: 422px 405px;
+                            background-position: -222px -206px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    &_text {
+                        margin-top: 7px;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        display: block;
+                        margin-top: 7px;
+                        line-height: 20px;
+                        text-align: center;
+                    }
+                }
+
+                &_list-10 {
+                    &_a-10 {
+                        &_img {
+                            height: 48px;
+                            width: 48px;
+                            background-repeat: no-repeat;
+                            background-image: url(./img/sp-main.png);
+                            background-size: 422px 405px;
+                            background-position: -248px -133px;
+                            cursor: pointer;
+                            border-radius: 38%;
+
+                            &:hover {
+                                box-shadow: 1px 1px 5px rgb(180, 180, 180);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .container {
+        display: flex;
+        margin: 0 auto;
+        width: 1280px;
+        height: 1200px;
+
+        &_left {
+            width: 830px;
+            // height: 425px; //추가시 크기수정
+            display: block;
+
+            &_ad {
+                width: 830px;
+                margin-bottom: 15px;
             }
 
-           } 
-        }
-    }
-}
+            &_news {
+                width: 830px;
+                height: 425.8px;
+                border: 1px solid #DADCDF;
+                border-radius: 4px;
 
-.setting{
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    right: 24px;
-    bottom: 24px;
-    &_scroll-up{
-        width: 40px;
-        height: 40px;
-        background-color: #fff;
-        border: 2px solid #DADCDF;
-        border-radius: 50%;
-        cursor: pointer;
-        &:hover{
-            box-shadow: 1px 1px 5px rgb(180, 180, 180);
+                .news {
+                    &_category {
+                        display: flex;
+                        font-size: 16px;
+                        font-weight: 800;
+                        padding: 20px;
+
+                        &_stand {
+                            &::after {
+                                content: '•';
+                                color: #DADCDF;
+                                margin: 0 5px;
+                            }
+                        }
+
+                        &_edit {
+                            color: gray;
+
+                            &::after {
+                                content: '／';
+                                color: #DADCDF;
+                                margin: 0 5px;
+                            }
+                        }
+
+                        &_entertain {
+                            color: gray;
+
+                            &::after {
+                                content: '／';
+                                color: #DADCDF;
+                                margin: 0 5px;
+                            }
+                        }
+
+                        &_sports {
+                            color: gray;
+
+                            &::after {
+                                content: '／';
+                                color: #DADCDF;
+                                margin: 0 5px;
+                            }
+                        }
+
+                        &_economy {
+                            color: gray;
+                        }
+                    }
+
+                    &_fast-view {
+                        display: flex;
+                        padding: 10px;
+                        margin: 0 20px;
+                        font-size: 14px;
+                        align-items: center;
+                        height: 30px;
+                        background-color: F5F7F8;
+
+                        &_name {
+                            margin-right: 10px;
+                        }
+
+                        &_select {
+                            width: 100px;
+                            padding: 0 10px;
+                            cursor: pointer;
+
+                            &::after {
+                                content: '|';
+                                padding-left: 10px;
+                                color: #DADCDF;
+                            }
+                        }
+
+                        &_rolling {
+                            width: 380px;
+                            height: 20px;
+                            padding: 0;
+                            margin-right: 60px;
+                            display: block;
+                            list-style-type: none;
+                            overflow: hidden;
+
+                            &_detail {
+                                width: 390px;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                position: relative;
+                                height: 100%;
+                                animation: slide 9s infinite;
+                                /* 9초 동안 슬라이드 애니메이션 반복 */
+                            }
+                        }
+
+                        &_stand {
+                            padding-right: 10px;
+
+                            &::after {
+                                content: '|';
+                                padding-left: 10px;
+                                color: #DADCDF;
+                            }
+                        }
+
+                        &_home {}
+                    }
+
+                    &_page {
+                        margin: 20px;
+                        position: relative;
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        &_box {
+                            width: 129px;
+                            height: 56px;
+                            border: 1px solid #ebebeb;
+                            border-radius: 4px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            &_img {
+                                width: 60px;
+                                height: 20px;
+                            }
+                        }
+                    }
+
+                    &_step {
+                        display: flex;
+                        height: 20px;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 14px;
+
+                        &_prev-btn {
+                            height: 35px;
+                            width: 35px;
+                            padding: 5px;
+                            border: 1px solid rgb(196, 194, 194);
+                            background-color: white;
+                            border-radius: 33px;
+                            cursor: pointer;
+
+                            &_img {
+                                height: 17px;
+                                width: 15px;
+                                transform: scaleX(-1);
+                                display: inline-block;
+                                background-repeat: no-repeat;
+                                background-image: url(./img/sp-main.png);
+                                background-size: 373px 316px;
+                                background-position: -333px -284px;
+                                border: none;
+                                cursor: pointer;
+                            }
+
+                            &:hover {
+                                box-shadow: 1px 1px 5px rgb(180, 180, 180);
+                            }
+                        }
+
+                        &_text-1 {
+                            color: 3A9AF2;
+                            margin-left: 20px;
+                        }
+
+                        &_text-2 {
+                            margin-right: 20px;
+                        }
+
+                        &_next-btn {
+                            height: 35px;
+                            width: 35px;
+                            padding: 5px;
+                            border: 1px solid rgb(196, 194, 194);
+                            background-color: white;
+                            border-radius: 33px;
+                            cursor: pointer;
+
+                            &_img {
+                                height: 17px;
+                                width: 15px;
+                                display: inline-block;
+                                background-repeat: no-repeat;
+                                background-image: url(./img/sp-main.png);
+                                background-size: 373px 316px;
+                                background-position: -333px -284px;
+                                border: none;
+                                cursor: pointer;
+                            }
+
+                            &:hover {
+                                box-shadow: 1px 1px 5px rgb(180, 180, 180);
+                            }
+                        }
+                    }
+                }
+            }
         }
-        &::after{
-            content: "";
-            display: flex; //after 선택자로 생성된 가상 요소가 기본적으로 display: inline으로 설정되어 있기 때문에 display를 설정해주어야함
-            background-image: url(./img/sp-main.png);
-            background-size: 422px 405px;
-            background-position: -293px -270px;
-            background-repeat: no-repeat;
-            margin: 10px auto;
-            width: 16px;
-            height: 16px;
+
+        &_right {
+            display: block;
+            width: 420px;
+            height: 400px;
+            margin-left: 30px;
+
+            &_login {
+                height: 123.6px;
+                text-align: center;
+                line-height: 20px;
+                padding: 20px;
+                border: 1px solid #DADCDF;
+                border-radius: 8px;
+
+                &_login-explanation {
+                    justify-content: center;
+                    font-size: 14px;
+                }
+
+                &_login-btn {
+                    margin: 15px 0;
+                    width: 380px;
+                    height: 55px;
+                    border-radius: 4px;
+                    border: none;
+                    background-color: #03c75a;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #03af50;
+                    }
+
+                    .login-btn {
+                        display: flex;
+                        justify-content: center;
+                        text-decoration: none;
+
+                        &_naver-logo {
+                            font-size: 19px;
+                            color: white;
+                            font-weight: 1000;
+                        }
+
+                        &_login-text {
+                            font-size: 14px;
+                            margin-left: 8px;
+                            margin-top: 4px;
+                            color: white;
+                        }
+                    }
+                }
+
+                &_login-about {
+                    display: flex;
+                    justify-content: center;
+                    font-size: 13px;
+
+                    &_id-find {
+                        text-decoration: none;
+
+                        &::after {
+                            content: 'ㅣ';
+                            margin: 5px;
+                        }
+                    }
+
+                    &_pw-find {
+                        text-decoration: none;
+
+                        &::after {
+                            content: 'ㅣ';
+                            margin: 5px;
+                        }
+                    }
+
+                    &_regi {
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            &_ad {
+                margin-top: 15px;
+                width: 420px;
+                height: 240px;
+                border-radius: 4px;
+            }
+
+            &_weather {
+                margin-top: 15px;
+                height: 236px;
+                line-height: 20px;
+                padding: 0 20px;
+                border: 1px solid #DADCDF;
+                border-radius: 8px;
+
+                .weather {
+                    display: block;
+
+                    &_header {
+                        display: flex;
+
+                        .header {
+                            display: flex;
+                            justify-content: space-between;
+                            height: 50px;
+                            padding: 0;
+                            border: solid 1px #DADCDF;
+                            border-top: none;
+                            border-right: none;
+                            border-left: none;
+                            margin: 0;
+
+                            &_forecast {
+                                display: flex;
+                                align-items: center;
+
+                                &_title {
+                                    width: 34px;
+                                    font-size: 15px;
+                                    font-weight: 600;
+                                }
+
+                                &_compare {
+                                    border: solid 1px #DADCDF;
+                                    border-radius: 33px;
+                                    font-size: 12px;
+                                    padding: 2px 10px;
+                                    cursor: pointer;
+                                }
+                            }
+
+                            &_location {
+                                padding-top: 2px;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    &_info {
+                        display: flex;
+
+                        &_temp {
+                            width: 50%;
+                            display: block;
+
+                            &_main {
+                                display: flex;
+                                margin: 18px 0;
+
+                                &_img {
+                                    height: 86px;
+                                    width: 86px;
+                                    background-repeat: no-repeat;
+                                    background: url(./img/sp-weather2.png);
+                                    background-size: 641px 587px;
+                                    background-position: -2px -5px;
+                                }
+
+                                &_data {
+                                    padding-top: 15px;
+                                    padding-left: 5px;
+                                    height: 71px;
+                                    width: 86px;
+
+                                    &_number {
+                                        font-size: 40px;
+                                    }
+
+                                    &_text {
+                                        padding-left: 5px;
+                                    }
+                                }
+                            }
+
+                            &_value {
+                                display: flex;
+                                justify-content: center;
+                                margin-bottom: 5px;
+                                font-size: 12px;
+
+                                &_min {
+                                    color: blue;
+
+                                    &::after {
+                                        content: '／';
+                                        color: #DADCDF;
+                                        margin: 0 3px;
+                                    }
+                                }
+
+                                &_max {
+                                    color: red;
+                                }
+                            }
+
+                            &_degree {
+                                display: flex;
+                                justify-content: center;
+                                font-size: 14px;
+                            }
+                        }
+
+                        &_timewave {
+                            width: 50%;
+                            margin: 20px 0 18px;
+
+                        }
+                    }
+
+                }
+            }
         }
     }
-    &_mode{
-        width: 40px;
-        height: 40px;
-        margin-left: 10px;
-        background-color: #fff;
-        // position: relative;
-        border: 2px solid #DADCDF;
-        border-radius: 50%;
-        cursor: pointer;
-        &:hover{
-            box-shadow: 1px 1px 5px rgb(180, 180, 180);
-        }
-        &::after{
-            content: "";
-            display: flex; //after 선택자로 생성된 가상 요소가 기본적으로 display: inline으로 설정되어 있기 때문에 block으로 설정해주어야함
-            background-image: url(./img/sp-main.png); 
-            background-size: 422px 405px;
-            background-position: -208px -270px;
-            background-repeat: no-repeat;
-            margin: 10px auto;
-            width: 16px;
-            height: 16px;
-        }
-            &_hover{
+
+    .setting {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        right: 24px;
+        bottom: 24px;
+
+        &_scroll-up {
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            border: 2px solid #DADCDF;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &:hover {
                 box-shadow: 1px 1px 5px rgb(180, 180, 180);
             }
-        
+
+            &::after {
+                content: "";
+                display: flex; //after 선택자로 생성된 가상 요소가 기본적으로 display: inline으로 설정되어 있기 때문에 display를 설정해주어야함
+                background-image: url(./img/sp-main.png);
+                background-size: 422px 405px;
+                background-position: -293px -270px;
+                background-repeat: no-repeat;
+                margin: 10px auto;
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        &_mode {
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+            background-color: #fff;
+            // position: relative;
+            border: 2px solid #DADCDF;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &:hover {
+                box-shadow: 1px 1px 5px rgb(180, 180, 180);
+            }
+
+            &::after {
+                content: "";
+                display: flex; //after 선택자로 생성된 가상 요소가 기본적으로 display: inline으로 설정되어 있기 때문에 block으로 설정해주어야함
+                background-image: url(./img/sp-main.png);
+                background-size: 422px 405px;
+                background-position: -208px -270px;
+                background-repeat: no-repeat;
+                margin: 10px auto;
+                width: 16px;
+                height: 16px;
+            }
+
+            &_hover {
+                box-shadow: 1px 1px 5px rgb(180, 180, 180);
+            }
+
+        }
     }
-}
 }
 
 @keyframes dropNavbar {
     0% {
         top: -5rem;
     }
+
     100% {
         top: 0;
     }
 }
 
 @keyframes slide {
-    0%, 25% {
-      transform: translateY(0); /* 이미지가 보이는 위치로 이동 */
-    }
-    33.33%, 58.33% {
-      transform: translateY(-100%); /* 첫 번째 이미지를 위로 숨김 */
-    }
-    66.66%, 91.66% {
-      transform: translateY(-200%); /* 두 번째 이미지를 위로 숨김 */
-    }
-  }
 
+    0%,
+    25% {
+        transform: translateY(0);
+        /* 이미지가 보이는 위치로 이동 */
+    }
 
+    33.33%,
+    58.33% {
+        transform: translateY(-100%);
+        /* 첫 번째 이미지를 위로 숨김 */
+    }
+
+    66.66%,
+    91.66% {
+        transform: translateY(-200%);
+        /* 두 번째 이미지를 위로 숨김 */
+    }
+}

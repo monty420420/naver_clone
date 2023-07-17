@@ -1,18 +1,20 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="main.js"></script> 
-    <script defer src="api.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="main.js"></script>
+  <script defer src="api.js"></script>
 </head>
+
 <body>
   <div id="wrap" class="wrap">
-     <div id="navbar" class="navbar drop">
+    <div id="navbar" class="navbar drop">
       <div class="navbar_search">
         <form class="navbar_search_form" action="">
-          <div  class="navbar_search_form_logo">
+          <div class="navbar_search_form_logo">
             <a href="#" class="navbar_search_form_logo_wing"></a>
           </div>
           <label class="navbar_search_form_label" for=""></label>
@@ -24,123 +26,172 @@
           <button class="navbar_search_form_search-button"></button>
         </form>
       </div>
-     </div>
-     <div id="header" class="header">
+    </div>
+    <div id="header" class="header">
       <div class="header_simple">
         <div class="header_simple_hamburger">
           <button class="header_simple_hamburger_img" onclick="hambergerClicked()"></button>
           <div class="header_simple_hamburger_modal">
             <div class="modal">
               <h3 class="modal_title">바로가기</h3>
-              <div class="modal_login"><div>로그인</div><div>하세요</div><div>></div></div>
+              <div class="modal_login">
+                <div>로그인</div>
+                <div>하세요</div>
+                <div>></div>
+              </div>
               <ul class="modal_menu">
-                  <li class="modal_menu_list">
-                    <a class="modal_menu_list_a-1" href="https://mail.naver.com/v2/folders/0/all">
-                      <div class="modal_menu_list_a-1_img"></div>
-                    </a>
-                    <div class="modal_menu_list_text">메일</div>  
-                  </li>
-                  <li class="modal_menu_list">
-                    <a class="modal_menu_list_a-2" href="https://section.cafe.naver.com/ca-fe/">
-                      <div class="modal_menu_list_a-2_img"></div>   
-                    </a>
-                    <div class="modal_menu_list_text">카페</div>   
-                  </li>
-                  <li class="modal_menu_list">
-                    <a class="modal_menu_list_a-3" href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0">
-                      <div class="modal_menu_list_a-3_img"></div>
-                    </a>
-                    <div class="modal_menu_list_text">블로그</div>  
-                  </li>
-                  <li class="modal_menu_list">
-                    <a class="modal_menu_list_a-4" href="https://shopping.naver.com/home">
-                      <div class="modal_menu_list_a-4_img"></div>
-                    </a>
-                    <div class="modal_menu_list_text">네이버쇼핑</div>      
-                  </li>
-                  <li class="modal_menu_list">
-                    <a class="modal_menu_list_a-5" href="https://news.naver.com/">
-                      <div class="modal_menu_list_a-5_img"></div>
-                    </a>
-                    <div class="modal_menu_list_text">네이버페이</div>    
-                  </li>
-                  <li class="modal_menu_list">
-                    <a class="modal_menu_list_a-6" href="https://finance.naver.com/">
-                      <div class="modal_menu_list_a-6_img"></div>
-                    </a>
-                    <div class="modal_menu_list_text">증권</div>      
-                  </li>
-                  <li class="modal_menu_list">
-                    <a class="modal_menu_list_a-7" href="https://land.naver.com/">
-                      <div class="modal_menu_list_a-7_img"></div>
-                    </a>
-                    <div class="modal_menu_list_text">Keep</div>      
-                  </li>
-                  <li class="modal_menu_list">
-                    <a class="modal_menu_list_a-8" href="https://map.naver.com/v5/">
-                      <div class="modal_menu_list_a-8_img"></div>
-                    </a>
-                    <div class="modal_menu_list_text">톡톡</div>      
-                  </li>
+                <li class="modal_menu_list">
+                  <a class="modal_menu_list_a-1" href="https://mail.naver.com/v2/folders/0/all">
+                    <div class="modal_menu_list_a-1_img"></div>
+                  </a>
+                  <div class="modal_menu_list_text">메일</div>
+                </li>
+                <li class="modal_menu_list">
+                  <a class="modal_menu_list_a-2" href="https://section.cafe.naver.com/ca-fe/">
+                    <div class="modal_menu_list_a-2_img"></div>
+                  </a>
+                  <div class="modal_menu_list_text">카페</div>
+                </li>
+                <li class="modal_menu_list">
+                  <a class="modal_menu_list_a-3"
+                    href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0">
+                    <div class="modal_menu_list_a-3_img"></div>
+                  </a>
+                  <div class="modal_menu_list_text">블로그</div>
+                </li>
+                <li class="modal_menu_list">
+                  <a class="modal_menu_list_a-4" href="https://shopping.naver.com/home">
+                    <div class="modal_menu_list_a-4_img"></div>
+                  </a>
+                  <div class="modal_menu_list_text">네이버쇼핑</div>
+                </li>
+                <li class="modal_menu_list">
+                  <a class="modal_menu_list_a-5" href="https://new-m.pay.naver.com/pcpay?page=1">
+                    <img class="modal_menu_list_a-5_img" src="./img/menu-icon/naverPay.png"></img>
+                  </a>
+                  <div class="modal_menu_list_text">네이버페이</div>
+                </li>
+                <li class="modal_menu_list">
+                  <a class="modal_menu_list_a-6" href="https://finance.naver.com/">
+                    <div class="modal_menu_list_a-6_img"></div>
+                  </a>
+                  <div class="modal_menu_list_text">증권</div>
+                </li>
+                <li class="modal_menu_list">
+                  <a class="modal_menu_list_a-7" href="https://keep.naver.com/">
+                    <img class="modal_menu_list_a-7_img" src="./img/menu-icon/Keep.png"></img>
+                  </a>
+                  <div class="modal_menu_list_text">Keep</div>
+                </li>
+                <li class="modal_menu_list">
+                  <a class="modal_menu_list_a-8" href="https://talk.naver.com/">
+                    <img class="modal_menu_list_a-8_img" src="./img/menu-icon/talktalk.png"></img>
+                  </a>
+                  <div class="modal_menu_list_text">톡톡</div>
+                </li>
               </ul>
               <div class="modal_service">
-                <div class="modal_service_title"><div>전체서비스</div> <div>서비스검색</div></div>
-                 <div class="modal_service_news">
-                   <div class="news">
-                      <div class="news_title">
-                         뉴스4
-                      </div>
-                      <ul class="news_menu">
-                        <li class="news_menu_list">
-                          <img class="news_menu_list_img" src="./img/menu-icon/weather.png"></img>
-                          <div class="news_menu_list_text">날씨</div>
-                        </li>
-                        <li class="news_menu_list">
-                          <img class="news_menu_list_img" src="./img/menu-icon/news.png"></img>
-                          <div class="news_menu_list_text">뉴스</div>
-                        </li>
-                        <li class="news_menu_list">
-                          <img class="news_menu_list_img" src="./img/menu-icon/sports.png"></img>
-                          <div class="news_menu_list_text">스포츠</div>
-                        </li>
-                        <li class="news_menu_list">
-                          <img class="news_menu_list_img" src="./img/menu-icon/tvEnter.png"></img>
-                          <div class="news_menu_list_text">TV연예</div>
-                        </li>
-                      </ul>
-                   </div>
-                 </div>
-                 <div class="modal_service_finance">
+                <div class="modal_service_title">
+                  <div>전체서비스</div>
+                  <div>서비스검색</div>
+                </div>
+                <div class="modal_service_news">
+                  <div class="news">
+                    <div class="news_title">
+                      <h4 class="news_title_text">뉴스</h4>
+                      <h4 class="news_title_num">4</h4>
+                    </div>
+                    <ul class="news_menu">
+                      <li class="news_menu_list">
+                        <img class="news_menu_list_img" src="./img/menu-icon/weather.png"></img>
+                        <div class="news_menu_list_text">날씨</div>
+                      </li>
+                      <li class="news_menu_list">
+                        <img class="news_menu_list_img" src="./img/menu-icon/news.png"></img>
+                        <div class="news_menu_list_text">뉴스</div>
+                      </li>
+                      <li class="news_menu_list">
+                        <img class="news_menu_list_img" src="./img/menu-icon/sports.png"></img>
+                        <div class="news_menu_list_text">스포츠</div>
+                      </li>
+                      <li class="news_menu_list">
+                        <img class="news_menu_list_img" src="./img/menu-icon/tvEnter.png"></img>
+                        <div class="news_menu_list_text">TV연예</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal_service_finance">
                   <div class="finance">
                     <div class="finance_title">
-                      금융·자산4
+                      <h4 class="finance_title_text">금융∙자산</h4><h4 class="finance_title_num">4</h4>
                     </div>
-                      <div class="finance_menu">
-                        <div class="finance_menu_list">1</div>
-                        <div class="finance_menu_list">2</div>
-                        <div class="finance_menu_list">3</div>
-                        <div class="finance_menu_list">4</div>
+                    <div class="finance_menu">
+                      <div class="finance_menu_list">
+                        <img class="finance_menu_list_img" src="./img/menu-icon/naverPay.png" alt="">
+                        <div class="finance_menu_list_text">네이버페이</div>
                       </div>
+                      <div class="finance_menu_list">
+                        <img class="finance_menu_list_img" src="./img/menu-icon/land.png" alt="">
+                        <div class="finance_menu_list_text">부동산</div>
+                      </div>
+                      <div class="finance_menu_list">
+                        <img class="finance_menu_list_img" src="./img/menu-icon/stock.png" alt="">
+                        <div class="finance_menu_list_text">증권</div>
+                      </div>
+                      <div class="finance_menu_list">
+                        <img class="finance_menu_list_img" src="./img/menu-icon/myCar.png" alt="">
+                        <div class="finance_menu_list_text">MY CAR</div>
+                      </div>
+                    </div>
                   </div>
-                 </div>
-                 <div class="modal_service_entertain">
+                </div>
+                <div class="modal_service_entertain">
                   <div class="entertain">
                     <div class="entertain_title">
-                      엔터테인먼트·문화9
+                      <h4 class="entertain_title_text">엔터테인먼트·문화</h4><h4 class="entertain_title_num">9</h4>
                     </div>
-                      <div class="entertain_menu">
-                          <div class="entertain_menu_list">1</div>
-                          <div class="entertain_menu_list">2</div>
-                          <div class="entertain_menu_list">3</div>
-                          <div class="entertain_menu_list">4</div>
-                          <div class="entertain_menu_list">5</div>
-                          <div class="entertain_menu_list">6</div>
-                          <div class="entertain_menu_list">7</div>
-                          <div class="entertain_menu_list">8</div>
-                          <div class="entertain_menu_list">9</div>
+                    <div class="entertain_menu">
+                      <div class="entertain_menu_list">
+                        <img class="entertain_menu_list_img" src="./img/menu-icon/game.png" alt="">
+                        <div class="entertain_menu_list_text">네이버게임</div>
                       </div>
-                     </div>
+                      <div class="entertain_menu_list">
+                        <img class="entertain_menu_list_img" src="./img/menu-icon/naverTV.png" alt="">
+                        <div class="entertain_menu_list_text">네이버TV</div>
+                      </div>
+                      <div class="entertain_menu_list">
+                        <img class="entertain_menu_list_img" src="./img/menu-icon/series.png" alt="">
+                        <div class="entertain_menu_list_text">시리즈</div>
+                      </div>
+                      <div class="entertain_menu_list">
+                        <img class="entertain_menu_list_img" src="./img/menu-icon/on.png" alt="">
+                        <div class="entertain_menu_list_text">시리즈온</div>
+                      </div>
+                      <div class="entertain_menu_list">
+                        <img class="entertain_menu_list_img" src="./img/menu-icon/audio.png" alt="">
+                        <div class="entertain_menu_list_text">오디오클립</div>
+                      </div>
+                      <div class="entertain_menu_list">
+                        <img class="entertain_menu_list_img" src="./img/menu-icon/web.png" alt="">
+                        <div class="entertain_menu_list_text">웹소설</div>
+                      </div>
+                      <div class="entertain_menu_list">
+                        <img class="entertain_menu_list_img" src="./img/menu-icon/webtoon.png" alt="">
+                        <div class="entertain_menu_list_text">웹툰</div>
+                      </div>
+                      <div class="entertain_menu_list">
+                        <img class="entertain_menu_list_img" src="./img/menu-icon/now.png" alt="">
+                        <div class="entertain_menu_list_text">NOW</div>
+                      </div>
+                      <div class="entertain_menu_list">
+                        <img class="entertain_menu_list_img" src="./img/menu-icon/vibe.png" alt="">
+                        <div class="entertain_menu_list_text">VIBE</div>
+                      </div>
+                     
+                    </div>
                   </div>
+                </div>
               </div>
             </div>
           </div>
@@ -149,24 +200,24 @@
           <div class="header_simple_function_pay">
             <a class="header_simple_function_pay_img" href="https://new-m.pay.naver.com/pcpay?page=1"></a>
           </div>
-         <div class="header_simple_function_notice">
+          <div class="header_simple_function_notice">
             <span class="header_simple_function_notice_img"></span>
-         </div>
+          </div>
         </div>
       </div>
       <div class="header_search">
-          <form class="header_search_form" action="">
-            <div  class="header_search_form_logo">
-              <a href="#" class="header_search_form_logo_wing"></a>
-            </div>
-            <label class="header_search_form_label" for=""></label>
-            <div class="header_search_form_text">
-              <input class="header_search_form_text_input" type="text" placeholder="검색어를 입력해 주세요">
-            </div>
-            <button class="header_search_form_keyboard-button"></button>
-            <button class="header_search_form_autocomplete-button"></button>
-            <button class="header_search_form_search-button"></button>
-          </form>
+        <form class="header_search_form" action="">
+          <div class="header_search_form_logo">
+            <a href="#" class="header_search_form_logo_wing"></a>
+          </div>
+          <label class="header_search_form_label" for=""></label>
+          <div class="header_search_form_text">
+            <input class="header_search_form_text_input" type="text" placeholder="검색어를 입력해 주세요">
+          </div>
+          <button class="header_search_form_keyboard-button"></button>
+          <button class="header_search_form_autocomplete-button"></button>
+          <button class="header_search_form_search-button"></button>
+        </form>
       </div>
       <div class="header_menu">
         <ul class="header_menu_lists">
@@ -174,454 +225,460 @@
             <a class="header_menu_lists_list-1_a-1" href="https://mail.naver.com/v2/folders/0/all">
               <div class="header_menu_lists_list-1_a-1_img"></div>
             </a>
-            <div class="header_menu_lists_list-1_text">메일</div>  
+            <div class="header_menu_lists_list-1_text">메일</div>
           </li>
           <li class="header_menu_lists_list-2">
             <a class="header_menu_lists_list-2_a-2" href="https://section.cafe.naver.com/ca-fe/">
-              <div class="header_menu_lists_list-2_a-2_img"></div>   
+              <div class="header_menu_lists_list-2_a-2_img"></div>
             </a>
-            <div class="header_menu_lists_list-2_text">카페</div>   
+            <div class="header_menu_lists_list-2_text">카페</div>
           </li>
           <li class="header_menu_lists_list-3">
-            <a class="header_menu_lists_list-3_a-3" href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0">
+            <a class="header_menu_lists_list-3_a-3"
+              href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0">
               <div class="header_menu_lists_list-3_a-3_img"></div>
             </a>
-            <div class="header_menu_lists_list-3_text">블로그</div>  
+            <div class="header_menu_lists_list-3_text">블로그</div>
           </li>
           <li class="header_menu_lists_list-4">
             <a class="header_menu_lists_list-4_a-4" href="https://shopping.naver.com/home">
               <div class="header_menu_lists_list-4_a-4_img"></div>
             </a>
-            <div class="header_menu_lists_list-4_text">쇼핑</div>      
+            <div class="header_menu_lists_list-4_text">쇼핑</div>
           </li>
           <li class="header_menu_lists_list-5">
             <a class="header_menu_lists_list-5_a-5" href="https://news.naver.com/">
               <div class="header_menu_lists_list-5_a-5_img"></div>
             </a>
-            <div class="header_menu_lists_list-5_text">뉴스</div>    
+            <div class="header_menu_lists_list-5_text">뉴스</div>
           </li>
           <li class="header_menu_lists_list-6">
             <a class="header_menu_lists_list-6_a-6" href="https://finance.naver.com/">
               <div class="header_menu_lists_list-6_a-6_img"></div>
             </a>
-            <div class="header_menu_lists_list-6_text">증권</div>      
+            <div class="header_menu_lists_list-6_text">증권</div>
           </li>
           <li class="header_menu_lists_list-7">
             <a class="header_menu_lists_list-7_a-7" href="https://land.naver.com/">
               <div class="header_menu_lists_list-7_a-7_img"></div>
             </a>
-            <div class="header_menu_lists_list-7_text">부동산</div>      
+            <div class="header_menu_lists_list-7_text">부동산</div>
           </li>
           <li class="header_menu_lists_list-8">
             <a class="header_menu_lists_list-8_a-8" href="https://map.naver.com/v5/">
               <div class="header_menu_lists_list-8_a-8_img"></div>
             </a>
-            <div class="header_menu_lists_list-8_text">지도</div>      
+            <div class="header_menu_lists_list-8_text">지도</div>
           </li>
           <li class="header_menu_lists_list-9">
             <a class="header_menu_lists_list-9_a-9" href="https://comic.naver.com/index">
               <div class="header_menu_lists_list-9_a-9_img"></div>
             </a>
-            <div class="header_menu_lists_list-9_text">웹툰</div>      
+            <div class="header_menu_lists_list-9_text">웹툰</div>
           </li>
           <li class="header_menu_lists_list-10">
             <a class="header_menu_lists_list-10_a-10" href="">
-              <div class="header_menu_lists_list-10_a-10_img"></div>      
+              <div class="header_menu_lists_list-10_a-10_img"></div>
             </a>
           </li>
-          
+
         </ul>
       </div>
-     </div>
-     <div id="container" class="container">
-        <div class="container_left">
-          <img class="container_left_ad" src="./img/ad2.jpg" alt="광고">
-          <div class="container_left_news">
-             <div class="news">
-               <div class="news_category">
-                 <div class="news_category_stand">뉴스스탠드</div>
-                 <div class="news_category_edit">언론사편집</div>
-                 <div class="news_category_entertain">엔터</div>
-                 <div class="news_category_sports">스포츠</div>
-                 <div class="news_category_economy">경제</div>
-               </div>  
-               <div class="news_fast-view">
-                <div class="news_fast-view_select">전체언론사 ▾</div>
-                <div class="news_fast-view_name">연합뉴스</div>
-                <ul class="news_fast-view_rolling">
-                  <li class="news_fast-view_rolling_detail">서울에 '극한호우'…구로·동작·영등포구에 첫 긴급재난문자 오늘 밤 '물폭탄' 쏟아진다…집중호우에 중대본 '2단계' 격상</li>
-                  <li class="news_fast-view_rolling_detail">25~49세 남성 47%·여성 33%는 미혼…혼외자 출생 7천700명</li>
-                  <li class="news_fast-view_rolling_detail">서울 전역에 호우경보…"앞을 보기 어려울 정도 많은 비"</li>
-                  <li class="news_fast-view_rolling_detail">내일부터 신청 않고도 전기료·TV수신료 '분리 납부' 가능</li>
-                </ul>
-                <div class="news_fast-view_stand">뉴스스탠드</div>
-                <div class="news_fast-view_home">뉴스홈</div>
-               </div>
-               <div id="news_page1" class="news_page">
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/10asia.png" alt="10아시아">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/asia.png" alt="asia">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/arirang.png" alt="arirang">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/boan.png" alt="보안뉴스">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/brif.png" alt="정책브리핑">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/chosun.png" alt="경제조선">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/chosunBiz.png" alt="조선비즈">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/cnb.png" alt="cnbNews">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/comedy.png" alt="comedy">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/cookie.png" alt="cookie">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/culture.png" alt="culture">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/customer.png" alt="customer">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/digital.png" alt="digital">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/digitalD.png" alt="digitalD">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/docksea.png" alt="docksea">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/donga.png" alt="donga">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/dongasi.png" alt="dongasi">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/economyK.png" alt="economyK">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/elle.png" alt="elle">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/export.png" alt="export">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/finan.png" alt="finan">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/he.png" alt="he">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/hello.png" alt="hello">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/impact.png" alt="impact">
-                </div>
-               </div>
-               <div id="news_page2" class="news_page">
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/info.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/jiji.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/jungle.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/koreaEco.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/koreaTv.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/maeil.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/max.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/mbn.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/mk.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/mp.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/mto.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/mydaily.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/newDaily.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/nocut.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/obs.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/pen.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/people.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/prime.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/nsd16121208.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/sbsE.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/score.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/seoul.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/sisa.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/sisaweek.png">
-                </div>
-               </div>
-               <div id="news_page3" class="news_page">
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/sonen.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/sports.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/sportsD.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/tjb.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/tomato.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/tvd.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/union.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/us.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/wiki.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/wire.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/woman.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/work.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/digital.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/digitalD.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/docksea.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/donga.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/dongasi.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/nsd14491516.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/elle.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/export.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/finan.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/he.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/hello.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/impact.png">
-                </div>
-               </div>
-               <div id="news_page4" class="news_page">
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/005.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/asia.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/arirang.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/006.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/brif.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/chosun.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/213.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/cnb.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/comedy.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/cookie.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/culture.png">
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/customer.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/293.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/digitalD.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/915.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/donga.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/948.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/economyK.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/nsd16121208.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/export.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/finan.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/nsd14491516.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/hello.png" >
-                </div>
-                <div class="news_page_box">
-                  <img class="news_page_box_img" src="./img/news/nsd20247547.png" >
-                </div>
-               </div>
-               <div class="news_step">
-                <button class="news_step_prev-btn" onclick="previousPage()">
-                  <div class="news_step_prev-btn_img"></div>
-                </button>
-          
-                <p class="news_step_text-1">언론사</p>
-                <p class="news_step_text-2"></p>
-                <button class="news_step_next-btn" onclick="nextPage()">
-                  <div class="news_step_next-btn_img"></div>
-                </button>
+    </div>
+    <div id="container" class="container">
+      <div class="container_left">
+        <img class="container_left_ad" src="./img/ad2.jpg" alt="광고">
+        <div class="container_left_news">
+          <div class="news">
+            <div class="news_category">
+              <div class="news_category_stand">뉴스스탠드</div>
+              <div class="news_category_edit">언론사편집</div>
+              <div class="news_category_entertain">엔터</div>
+              <div class="news_category_sports">스포츠</div>
+              <div class="news_category_economy">경제</div>
+            </div>
+            <div class="news_fast-view">
+              <div class="news_fast-view_select">전체언론사 ▾</div>
+              <div class="news_fast-view_name">연합뉴스</div>
+              <ul class="news_fast-view_rolling">
+                <li class="news_fast-view_rolling_detail">서울에 '극한호우'…구로·동작·영등포구에 첫 긴급재난문자 오늘 밤 '물폭탄' 쏟아진다…집중호우에 중대본
+                  '2단계' 격상</li>
+                <li class="news_fast-view_rolling_detail">25~49세 남성 47%·여성 33%는 미혼…혼외자 출생 7천700명</li>
+                <li class="news_fast-view_rolling_detail">서울 전역에 호우경보…"앞을 보기 어려울 정도 많은 비"</li>
+                <li class="news_fast-view_rolling_detail">내일부터 신청 않고도 전기료·TV수신료 '분리 납부' 가능</li>
+              </ul>
+              <div class="news_fast-view_stand">뉴스스탠드</div>
+              <div class="news_fast-view_home">뉴스홈</div>
+            </div>
+            <div id="news_page1" class="news_page">
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/10asia.png" alt="10아시아">
               </div>
-             </div>
- 
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/asia.png" alt="asia">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/arirang.png" alt="arirang">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/boan.png" alt="보안뉴스">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/brif.png" alt="정책브리핑">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/chosun.png" alt="경제조선">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/chosunBiz.png" alt="조선비즈">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/cnb.png" alt="cnbNews">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/comedy.png" alt="comedy">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/cookie.png" alt="cookie">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/culture.png" alt="culture">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/customer.png" alt="customer">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/digital.png" alt="digital">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/digitalD.png" alt="digitalD">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/docksea.png" alt="docksea">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/donga.png" alt="donga">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/dongasi.png" alt="dongasi">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/economyK.png" alt="economyK">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/elle.png" alt="elle">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/export.png" alt="export">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/finan.png" alt="finan">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/he.png" alt="he">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/hello.png" alt="hello">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/impact.png" alt="impact">
+              </div>
+            </div>
+            <div id="news_page2" class="news_page">
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/info.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/jiji.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/jungle.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/koreaEco.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/koreaTv.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/maeil.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/max.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/mbn.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/mk.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/mp.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/mto.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/mydaily.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/newDaily.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/nocut.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/obs.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/pen.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/people.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/prime.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/nsd16121208.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/sbsE.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/score.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/seoul.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/sisa.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/sisaweek.png">
+              </div>
+            </div>
+            <div id="news_page3" class="news_page">
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/sonen.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/sports.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/sportsD.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/tjb.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/tomato.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/tvd.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/union.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/us.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/wiki.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/wire.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/woman.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/work.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/digital.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/digitalD.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/docksea.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/donga.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/dongasi.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/nsd14491516.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/elle.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/export.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/finan.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/he.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/hello.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/impact.png">
+              </div>
+            </div>
+            <div id="news_page4" class="news_page">
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/005.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/asia.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/arirang.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/006.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/brif.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/chosun.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/213.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/cnb.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/comedy.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/cookie.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/culture.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/customer.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/293.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/digitalD.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/915.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/donga.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/948.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/economyK.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/nsd16121208.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/export.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/finan.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/nsd14491516.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/hello.png">
+              </div>
+              <div class="news_page_box">
+                <img class="news_page_box_img" src="./img/news/nsd20247547.png">
+              </div>
+            </div>
+            <div class="news_step">
+              <button class="news_step_prev-btn" onclick="previousPage()">
+                <div class="news_step_prev-btn_img"></div>
+              </button>
+
+              <p class="news_step_text-1">언론사</p>
+              <p class="news_step_text-2"></p>
+              <button class="news_step_next-btn" onclick="nextPage()">
+                <div class="news_step_next-btn_img"></div>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="container_right">
+        <div class="container_right_login">
+          <div class="container_right_login_login-explanation">네이버를 더 안전하고 편리하게 이용하세요</div>
+          <button class="container_right_login_login-btn">
+            <a class="login-btn" href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/">
+              <span class="login-btn_naver-logo">NAVER</span>
+              <span class="login-btn_login-text">로그인</span>
+            </a>
+          </button>
+          <div class="container_right_login_login-about">
+            <a class="container_right_login_login-about_id-find"
+              href="https://nid.naver.com/user2/help/idInquiry.nhn?menu=idinquiry">아이디 찾기</a>
+            <a class="container_right_login_login-about_pw-find"
+              href="https://nid.naver.com/user2/help/pwInquiry.nhn?menu=pwinquiry">비밀번호 찾기</a>
+            <a class="container_right_login_login-about_regi"
+              href="https://nid.naver.com/user2/join/agree?lang=ko_KR&domain=null">회원가입</a>
           </div>
         </div>
-        <div class="container_right">
-          <div class="container_right_login">
-            <div class="container_right_login_login-explanation">네이버를 더 안전하고 편리하게 이용하세요</div>
-            <button class="container_right_login_login-btn">
-              <a class="login-btn" href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/">
-                <span class="login-btn_naver-logo">NAVER</span>
-                <span class="login-btn_login-text">로그인</span>
-              </a>
-            </button>
-            <div class="container_right_login_login-about">
-              <a class="container_right_login_login-about_id-find" href="https://nid.naver.com/user2/help/idInquiry.nhn?menu=idinquiry">아이디 찾기</a>
-              <a class="container_right_login_login-about_pw-find" href="https://nid.naver.com/user2/help/pwInquiry.nhn?menu=pwinquiry">비밀번호 찾기</a>
-              <a class="container_right_login_login-about_regi" href="https://nid.naver.com/user2/join/agree?lang=ko_KR&domain=null">회원가입</a>
+        <img class="container_right_ad" src="./img/ad.jpg" alt="">
+        <div class="container_right_weather">
+          <div class="weather">
+            <div class="weather_header">
+              <div class="header">
+                <div class="header_forecast">
+                  <p class="header_forecast_title">날씨</p>
+                  <p class="header_forecast_compare">예보 비교</p>
+                </div>
+                <p class="header_location">서울시 구로동</p>
+              </div>
             </div>
-          </div>
-          <img class="container_right_ad" src="./img/ad.jpg" alt="">
-          <div class="container_right_weather">
-            <div class="weather">
-              <div class="weather_header">
-                <div class="header">
-                  <div class="header_forecast">
-                    <p class="header_forecast_title">날씨</p>
-                    <p class="header_forecast_compare">예보 비교</p>
+            <div class="weather_info">
+              <div class="weather_info_temp">
+                <div class="weather_info_temp_main">
+                  <div class="weather_info_temp_main_img"></div>
+                  <div class="weather_info_temp_main_data">
+                    <div class="weather_info_temp_main_data_number"></div>
+                    <p class="weather_info_temp_main_data_text">맑음</p>
                   </div>
-                  <p class="header_location">서울시 구로동</p>
                 </div>
+                <div class="weather_info_temp_value">
+                  <div class="weather_info_temp_value_min"></div>
+                  <div class="weather_info_temp_value_max"></div>
+                </div>
+                <div class="weather_info_temp_degree">미세 보통 초미세 보통</div>
               </div>
-              <div class="weather_info">
-                <div class="weather_info_temp">
-                    <div class="weather_info_temp_main">
-                      <div class="weather_info_temp_main_img"></div>
-                      <div class="weather_info_temp_main_data">
-                         <div class="weather_info_temp_main_data_number"></div>
-                         <p class="weather_info_temp_main_data_text">맑음</p>
-                      </div>
-                    </div>
-                    <div class="weather_info_temp_value">
-                      <div class="weather_info_temp_value_min"></div>
-                      <div class="weather_info_temp_value_max"></div>
-                    </div>
-                    <div class="weather_info_temp_degree">미세 보통 초미세 보통</div>
-                </div>
-                <div class="weather_info_timewave">
-                    <img src="./img/weatherEX.png">
-                </div>
+              <div class="weather_info_timewave">
+                <img src="./img/weatherEX.png">
               </div>
             </div>
           </div>
-        </div>   
-     </div>
-     <div id="setting" class="setting">
+        </div>
+      </div>
+    </div>
+    <div id="setting" class="setting">
       <div class="setting_scroll-up"></div>
       <div class="setting_mode"></div>
-     </div>
+    </div>
   </div>
 </body>
+
 </html>
