@@ -112,6 +112,8 @@ mainInput.addEventListener('input', function() {
 
   showCurrentPage();
 
+  
+
   //뉴스 페이지 동적인 데이터 삽입
   function innerhtml() {
     let container = document.querySelector(".news_step_text-2");
