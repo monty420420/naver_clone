@@ -1,67 +1,73 @@
 'use strict';
-//온도데이터
-
-//openweather 온도데이터 테스트
-// const getJSON = function(url, callback) {
-//     const weather = new XMLHttpRequest();
-//     weather.open('GET', url, true);
-//     weather.responseType = 'json';
-//     weather.onload = function() {
-//       const status = weather.status;
-//       if(status === 200) {
-//         callback(null, weather.response);
-//       } else {
-//         callback(status, weather.response);
-//       }
-//     };
-//     weather.send();
-//   };
-  
-//   getJSON('http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=9c59ac8c758bb7af6ec4afbc771e28fd&units=metric',
-//   function(err, data) {
-//     console.log(data)
-//     if(err !== null) {
-//       alert('예상치 못한 오류 발생.' + err);
-//     } else {
-//         console.log(data)
-//       alert(`현재
-//         온도는 ${data.main.temp}°
-//         풍속은 ${data.wind.speed}m/s
-//         습도는 ${data.main.humidity}%
-//   입니다.
-//   오늘의
-//         최고기온은 ${data.main.temp_max}°
-//         최저기온은 ${data.main.temp_min}°
-//   입니다.`)
-//     }
-//   });
-
 
 //데이터 삽입
-const getJSON = function(url, callback) {
-  const weather = new XMLHttpRequest();
-  weather.open('GET', url, true);
-  weather.responseType = 'json';
-  weather.onload = function() {
-    const status = weather.status;
-    if(status === 200) {          //200은 http상태코드로 ok를 의미 성공적으로 처리되고 반환을 의미함
-      callback(null, weather.response);
-    } else {
-      callback(status, weather.response);
+fetch('http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=9c59ac8c758bb7af6ec4afbc771e28fd&units=metric')
+  .then(response => {
+    if (!response.ok) {  //response.ok는 응답의 성공 여부를 나타내는 불리언 값입니다. HTTP 상태 코드가 200~299 사이의 범위에 속하면 response.ok는 true
+      throw new Error('예상치 못한 오류 발생.'); // 응답이 성공적이지 않을 경우 오류 발생
     }
-  };
-  weather.send();
-};
+    return response.json(); // 응답 데이터를 JSON 형식으로 파싱하여 반환
+  })
+  .then(data => {
+    currentWeather(data); // 날씨 정보를 처리하는 함수 호출
+    // console.log(data)
+    // console.log(data.weather[0].main)
+    
+    //날씨에따른 이미지와 텍스트 변경
+    const weather = data.weather[0].main;
+    const weatherImage = document.querySelector('.weather_info_temp_main_img');
+    const weatherText = document.querySelector('.weather_info_temp_main_data_text')
 
-getJSON('http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=9c59ac8c758bb7af6ec4afbc771e28fd&units=metric', function(err, data) {
-  if(err !== null) {
-    alert('예상치 못한 오류 발생.' + err);
-  } else {
-    currentWeather(data); // 수정: data를 currentWeather 함수로 전달
-  }
-});
-
-
+    if (weather === 'Clear') { //맑음
+      weatherImage.style.backgroundPosition = '-2px -5px';
+      weatherText.innerText = '맑음'
+    }else if (weather === 'Clouds'){ //흐림
+      weatherImage.style.backgroundPosition = '-553px -298px';
+      weatherText.innerText = '흐림'
+    }else if (weather === 'Rain'){ //비
+      weatherImage.style.backgroundPosition = '-549px -493px';
+      weatherText.innerText = '비'
+    }else if(weather === 'Snow'){ //눈
+      weatherImage.style.backgroundPosition = '-175px -5px';
+      weatherText.innerText = '눈'
+    }else if(weather === 'Thunderstorm'){ //천둥번개
+      weatherImage.style.backgroundPosition = '-275px -5px';
+      weatherText.innerText = '천둥번개'
+    }else if(weather === 'Drizzle'){ //이슬비
+      weatherImage.style.backgroundPosition = '-549px -391px';
+      weatherText.innerText = '이슬비'
+    }else if(weather === 'Mist'){ //안개
+      weatherImage.style.backgroundPosition = '-189px -211px';
+      weatherText.innerText = '안개'
+    }else if(weather === 'Smoke'){ //연기
+      weatherImage.style.backgroundPosition = '-189px -211px';
+      weatherText.innerText = '연기'
+    }else if(weather === 'Haze'){ //안개
+      weatherImage.style.backgroundPosition = '-189px -211px';
+      weatherText.innerText = '안개'
+    }else if(weather === 'Dust'){ //먼지
+      weatherImage.style.backgroundPosition = '-4px -304px';
+      weatherText.innerText = '먼지'
+    }else if(weather === 'Fog'){ //안개
+      weatherImage.style.backgroundPosition = '-189px -211px';
+      weatherText.innerText = '안개'
+    }else if(weather === 'Sand'){ //황사
+      weatherImage.style.backgroundPosition = '-4px -304px';
+      weatherText.innerText = '황사'
+    }else if(weather === 'Ash'){ //화산재
+      weatherImage.style.backgroundPosition = '-4px -304px';
+      weatherText.innerText = '화산재'
+    }else if(weather === 'Squall'){ //돌풍
+      weatherImage.style.backgroundPosition = '-87px -6px';
+      weatherText.innerText = '돌풍'
+    }else if(weather === 'Tornado'){ //태풍
+      weatherImage.style.backgroundPosition = '-87px -6px';
+      weatherText.innerText = '태풍'
+    }
+  })
+  .catch(error => {
+    alert(error.message); // 오류 처리
+  });
 
 function currentWeather(data) {
   //현재 온도

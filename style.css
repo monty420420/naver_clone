@@ -1,4 +1,8 @@
 @charset "UTF-8";
+:root {
+  --color-sky-blue: #EEf2f9;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -440,7 +444,7 @@ body {
 }
 .wrap .header_simple_hamburger_modal .modal_service_news .news_title {
   padding: 10px;
-  background-color: #EEf2f9;
+  background-color: var(--color-sky-blue);
   display: flex;
   font-size: 14px;
 }
@@ -478,7 +482,7 @@ body {
 }
 .wrap .header_simple_hamburger_modal .modal_service_finance .finance_title {
   padding: 10px;
-  background-color: #EEf2f9;
+  background-color: var(--color-sky-blue);
   border-bottom: 1px solid rgb(240, 239, 239);
   display: flex;
   font-size: 14px;
@@ -511,7 +515,7 @@ body {
 }
 .wrap .header_simple_hamburger_modal .modal_service_entertain .entertain_title {
   padding: 10px;
-  background-color: #EEf2f9;
+  background-color: var(--color-sky-blue);
   border-bottom: 1px solid rgb(240, 239, 239);
   display: flex;
   font-size: 14px;
@@ -1089,7 +1093,7 @@ body {
   font-size: 14px;
   align-items: center;
   height: 30px;
-  background-color: F5F7F8;
+  background-color: var(--color-sky-blue);
 }
 .wrap .container_left_news .news_fast-view_name {
   margin-right: 10px;
