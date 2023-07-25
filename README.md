@@ -1,6 +1,6 @@
 ﻿# naver_clone
 https://phenomenal-lolly-0faf9c.netlify.app
-네이버클론코딩 적응형제작
+네이버클론코딩 적응형제작 <br>
 동기: react를 사용하지 않고 순수 html css sass javascript를 더 공부하기위해 제작
 
 
