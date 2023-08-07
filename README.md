@@ -13,4 +13,5 @@ netlify에서 베포 -> 정적인 사이트베포를 위해 제작되었고 일�
 ![20230718_190454](https://github.com/monty420420/naver_clone/assets/72345833/ab49fce5-e7f8-4b1e-85fb-983e3c2ae0d9)
 
 해결중:
-aws를 통한 동적사이트 실시간 베포나 require함수를 이용해 시도중
+1. aws를 통한 동적사이트 실시간 베포나 require함수를 이용해 시도중,
+2. 2. 서버만들어서 베포해보기
