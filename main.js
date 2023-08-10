@@ -37,6 +37,7 @@ function hambergerClicked() {
 
   document.addEventListener('click', function(event) {
     if (event.target !== hambergerButton && event.target !== modal) {
+      
       modal.style.display = "none";
       hamberger.classList.remove("active");
     }
@@ -44,7 +45,7 @@ function hambergerClicked() {
 }
 
 
-/* navaer logo 일정시간 지날때 이미지변경 */
+/* naver logo 일정시간 지날때 이미지변경 */
 function changeNavImg(){
   setTimeout(function(){ 
    const element = document.querySelector(".navbar_search_form_logo_wing");
